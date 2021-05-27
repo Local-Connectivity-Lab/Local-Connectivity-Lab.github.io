@@ -6,7 +6,6 @@ body {
 
 ul {
   list-style-type: none;
-  top: 0;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -22,6 +21,7 @@ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover {
