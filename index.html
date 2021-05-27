@@ -3,10 +3,42 @@
 <html>
 
 <head> <!-- probably on all pages -->
-    <!--nav bar with header and tabs-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <!--nav bar with header and tabs-->
+    <!-- nave bar should have click able drop downs-->
+
     <h1>Seattle Community Network </h1>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar w/ text</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Navbar text with an inline element
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!--
     <ul>
         <li><a href="default.asp">Home</a></li>
         <li><a href="news.asp">About Us</a></li>
@@ -15,11 +47,8 @@
         <li><a href="donate.asp">Donate</a></li>
         <li><a href="more.asp">More</a></li>
     </ul>
+    -->
 
-    <!-- nave bar should have click able drop downs-->
-</head>
-
-<body>
     <!-- picture carosel-->
         <!-- with click able links-->
 
