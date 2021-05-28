@@ -3,9 +3,11 @@
 <html>
 
 <head> <!-- probably on all pages -->
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
     <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -14,9 +16,9 @@
 
     <h1>Seattle Community Network </h1>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--NAV BAR CODE-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -26,31 +28,52 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">More</a> <!--dropdown-->
               </li>
             </ul>
-            <span class="navbar-text">
-              Navbar text with an inline element
-            </span>
           </div>
         </div>
       </nav>
-    <!--
-    <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">About Us</a></li>
-        <li><a href="contact.asp">Our Partners</a></li>
-        <li><a href="about.asp">FAQ</a></li>
-        <li><a href="donate.asp">Donate</a></li>
-        <li><a href="more.asp">More</a></li>
-    </ul>
-    -->
 
-    <!-- picture carosel-->
-        <!-- with click able links-->
+    <!--CAROSEL CODE-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="C:\Users\melin\Desktop\spring bird.jpg" class="d-block w-100" alt="spring bird">
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\melin\Desktop\Ostrich Zoom Background.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\melin\Desktop\Melinda UW.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- out volunteers section, with arrows to show more -->
 
