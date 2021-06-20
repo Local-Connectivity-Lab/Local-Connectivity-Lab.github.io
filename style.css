@@ -14,6 +14,10 @@ ul {
   color:#284B63 !important;
 }
 
+.nav-link:hover {
+  font-weight: 500;
+}
+
 .navbar {
   padding-top: 0px;
 }
