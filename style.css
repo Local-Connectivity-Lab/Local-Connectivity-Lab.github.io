@@ -20,6 +20,7 @@ ul {
 
 .navbar {
   padding-top: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #navbarText {
@@ -49,6 +50,7 @@ li a:hover {
   background-color: #111;
 } */
 
+/* TEXT STYLING ***********************************************/
 h1 {
   color: white;
   text-align: left;
@@ -56,10 +58,98 @@ h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #0C7C59;
-  font-size: 25px;
+  font-size: 35px;
+}
+
+h2 {
+  color: #274B63;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 35px;
 }
 
 p {
   font-family: verdana;
   font-size: 20px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+#landing-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* IMAGE STYLING ************************************************/
+.largeImage {
+  /*width: 599px;
+  height: 541px;*/
+  max-width: 600px;
+  max-height: 550px;
+  /*left: 105px;
+  top: 484px;*/
+
+  float: left;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+#banner {
+  max-height: 50%;
+  max-width: 100%;
+  /*mask-image: */
+}
+
+/* FLEX BOXES ****************************************************/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.flex-item-2col {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.flex-image {
+  /*flex-basis: 100%;*/
+  /*text-align: center;*/
+  width: 120px;
+  height: 110px;
+  margin-right: 30px;
+}
+
+.flex-image-large {
+  flex-grow: 0;
+  flex-shrink: 5;
+  flex-basis: 600px;
+  justify-content: unset;
+}
+
+.section-min-sizer{
+  min-height: 600px;
+}
+
+/* SHAPES *********************************************************/
+
+/*
+position: absolute;
+width: 1896px;
+height: 222px;
+left: 1440px;
+top: 833px;
+
+background: #FFFFFF;
+transform: rotate(-180deg);
+*/
+.wave-container {
+  background-image: url("assets/landing\ page\ banner.png");
+}
+.wave-container > svg {
+  display: block;
 }
