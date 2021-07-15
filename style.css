@@ -104,6 +104,25 @@ p {
   max-height: 50%;
   max-width: 100%;
   /*mask-image: */
+
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#mask {
+  max-height: 100%;
+  max-width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .img-logo {
