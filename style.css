@@ -92,6 +92,12 @@ p {
   color: white;
 }
 
+#building-empowering {
+  text-align: left;
+  margin-left: 10%;
+  display: flex;
+}
+
 /* IMAGE STYLING ************************************************/
 .largeImage {
   /*width: 599px;
@@ -219,6 +225,10 @@ p {
   min-height: 600px;
 }
 
+.img-wrapper {
+  position: relative;
+}
+
 /* SHAPES *********************************************************/
 
 /*
@@ -251,9 +261,53 @@ transform: rotate(-180deg);
   padding: 5px 15px;
   margin-top: 50px;
   margin-bottom: 30px;
+} 
+
+#get-involved-button {
+  background-color:#274B63;
+  border-radius: 60px;
+  color: white;
+  border-style: none;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 5px 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display:inline;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+}
+
+.overlay:before {
+  content: ' ';
+  display: block;
+  height: 50%;
 }
 
 #learn-more-button:hover {
+  background-color: #162a37;
+}
+
+#get-involved-button:hover{
   background-color: #162a37;
 }
 
@@ -285,5 +339,33 @@ transform: rotate(-180deg);
 @media only screen and (max-width: 655px) {
   .flex-container-col {
     margin: 0 -30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #get-involved-button {
+    margin-right: 80px;
+    padding: 8px 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #building-empowering {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #building-empowering {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #building-empowering {
+    font-size: 24px;
   }
 }
