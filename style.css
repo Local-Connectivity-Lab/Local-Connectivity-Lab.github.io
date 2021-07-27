@@ -1,9 +1,17 @@
+/* SECTION STYLING *****************************************/
 body {
   background-color: white;
 }
 
 header {
   background-color: #0C7C59;
+}
+
+.landing-tan {
+  background-color: #EAE1D0;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 ul {
@@ -75,7 +83,8 @@ p {
   font-family: verdana;
   font-size: 20px;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
 }
 
 #landing-link {
@@ -95,7 +104,7 @@ p {
   float: left;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -136,12 +145,35 @@ p {
   max-height: 60px;
 }
 
+#calendar {
+  border:solid 1px #777;
+  /*width: 800px; 
+  height: 600px; */ 
+  scroll-behavior: unset;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* FLEX BOXES ****************************************************/
 .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  block-size: initial;
+  margin: 10px 2%;
 }
 
 .flex-item-2col {
@@ -155,6 +187,25 @@ p {
   width: 120px;
   height: 110px;
   margin-right: 30px;
+}
+
+.flex-image-round {
+  max-width: 120px;
+  max-height: 110px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.flex-image-round:hover {
+  filter:grayscale(0.5);
+  max-width: 150px;
+  max-height: 130px;
+}
+
+.flex-image-round-text {
+  text-align: center;
+  align-self: center;
 }
 
 .flex-image-large {
@@ -187,6 +238,30 @@ transform: rotate(-180deg);
   display: block;
 }
 
+/* BUTTON STYLING ************************************************/
+#learn-more-button {
+  background-color:#274B63;
+  border-radius: 60px;
+  color: white;
+  border-style: none;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 5px 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#learn-more-button:hover {
+  background-color: #162a37;
+}
+
+/*.button-text {
+  text-decoration: none;
+  color: white;
+}*/
+
 /* ACTIVITY ******************************************************/
 @media only screen and (max-width: 600px) {
   h1 {
@@ -204,5 +279,11 @@ transform: rotate(-180deg);
     height: 100px;
     display: block;
     float: none;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .flex-container-col {
+    margin: 0 -30px;
   }
 }
