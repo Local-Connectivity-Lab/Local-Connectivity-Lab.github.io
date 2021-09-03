@@ -4,7 +4,15 @@ body {
 }
 
 header {
-  background-color: #0C7C59;
+  background-color: #3C0073;
+  /*#0C7C59*/;
+}
+
+.footer {
+  background-color: #3C0073;
+  padding-top: 4em;
+  margin-top: 3em;
+  padding-bottom: 4em;
 }
 
 .landing-tan {
@@ -25,7 +33,7 @@ ul {
 }
 
 .nav-link:hover {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .navbar {
@@ -68,15 +76,20 @@ h1 {
   /*text-indent: 50px;*/
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #0C7C59;
+  background-color: #3C0073;
   font-size: 35px;
 }
 
 h2 {
-  color: #274B63;
+  color: #3C0073;
   text-align: center;
   padding-top: 40px;
   font-size: 35px;
+}
+
+h3 {
+  text-align: left;
+  color: white;
 }
 
 p {
@@ -85,6 +98,13 @@ p {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #landing-link {
@@ -151,6 +171,11 @@ p {
   max-height: 60px;
 }
 
+.logo {
+  margin-right: 1em;
+  height: 3em;
+}
+
 #calendar {
   border:solid 1px #777;
   /*width: 800px; 
@@ -194,6 +219,12 @@ p {
 .flex-item-2col {
   flex-basis: 100%;
   text-align: center;
+}
+
+.flex-item-left {
+  flex-basis: 100%;
+  text-align: left;
+  padding-left: 50px;
 }
 
 .flex-image {
@@ -259,7 +290,7 @@ transform: rotate(-180deg);
 
 /* BUTTON STYLING ************************************************/
 #learn-more-button {
-  background-color:#274B63;
+  background-color:#3C0073;
   border-radius: 60px;
   color: white;
   border-style: none;
@@ -273,7 +304,7 @@ transform: rotate(-180deg);
 } 
 
 #get-involved-button {
-  background-color:#274B63;
+  background-color:#3C0073;
   border-radius: 60px;
   color: white;
   border-style: none;
@@ -287,7 +318,7 @@ transform: rotate(-180deg);
 }
 
 #network-button {
-  background-color:#274B63;
+  background-color:#3C0073;
   border-radius: 60px;
   color: white;
   border-style: none;
@@ -298,6 +329,14 @@ transform: rotate(-180deg);
   padding: 5px 15px;
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+#subscribe-button {
+  background-color: #7000F4;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
 }
 
 .overlay {
@@ -337,11 +376,15 @@ transform: rotate(-180deg);
 }
 
 #learn-more-button:hover {
-  background-color: #162a37;
+  background-color: #27014b;
 }
 
 #get-involved-button:hover{
-  background-color: #162a37;
+  background-color: #27014b;
+}
+
+#subscribe-button:hover {
+  background-color: #5a00c2;
 }
 
 /* ACTIVITY ******************************************************/
