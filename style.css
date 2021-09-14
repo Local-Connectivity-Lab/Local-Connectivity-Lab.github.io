@@ -176,6 +176,14 @@ p {
   height: 3em;
 }
 
+.logo-centered {
+  margin-right: 1em;
+  height: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #calendar {
   border:solid 1px #777;
   /*width: 800px; 
@@ -243,10 +251,22 @@ p {
   align-self: center;
 }
 
+.flex-logo-round {
+  max-height: 4em;
+  margin-bottom: 0;
+  align-self: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .flex-image-round:hover {
   filter:grayscale(0.5);
   max-width: 150px;
   max-height: 130px;
+}
+
+.flex-logo-round:hover {
+  filter: grayscale(0.5);
 }
 
 .flex-image-round-text {
@@ -339,6 +359,22 @@ transform: rotate(-180deg);
   color: white;
 }
 
+#support-our-mission-button {
+  background-color: #7000F4;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: none;
+  border-radius: 1.5em;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -381,6 +417,10 @@ transform: rotate(-180deg);
 
 #get-involved-button:hover{
   background-color: #27014b;
+}
+
+#support-our-mission-button:hover {
+  background-color: #5a00c2;
 }
 
 #subscribe-button:hover {
