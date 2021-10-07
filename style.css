@@ -11,7 +11,7 @@ header {
 .footer {
   background-color: #3C0073;
   padding-top: 4em;
-  margin-top: 3em;
+  /*margin-top: 3em;*/
   padding-bottom: 4em;
 }
 
@@ -20,6 +20,12 @@ header {
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.donate-tan {
+  background-color: #EAE1D0;
+  padding-bottom: 5em;
+  margin: 0;
 }
 
 ul {
@@ -92,6 +98,21 @@ h3 {
   color: white;
 }
 
+#make-a-donation {
+  text-align: left;
+  font-size: 5em;
+  padding-left: 70px;
+  color: #3C0073;
+  font-weight: bold;
+}
+
+#donation-text {
+  text-align: left;
+  font-size: 2em;
+  padding-left: 70px;
+  color: black;
+}
+
 p {
   font-family: verdana;
   font-size: 20px;
@@ -150,6 +171,11 @@ p {
   margin-bottom: -3em;
   margin-top: -15%;
   position: relative;
+}
+
+#paypal-graphic {
+  width: 4.5em;
+  height: 1.3em;
 }
 
 #mask {
@@ -234,6 +260,12 @@ p {
 .flex-item-2col {
   flex-basis: 100%;
   text-align: center;
+}
+
+.flex-wave {
+  flex-basis: 100%;
+  margin: 0;
+  max-width: 100%;
 }
 
 .flex-item-left {
@@ -382,6 +414,41 @@ transform: rotate(-180deg);
   margin-bottom: 2em;
 }
 
+#donate-button {
+  background-color: #3C0073;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: 25%; 
+}
+
+#paypal-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: none;
+  border-radius: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: 25%; 
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -492,6 +559,10 @@ transform: rotate(-180deg);
 }
 
 /* ACTIVITY *******************************************************************/
+/*#cash-input {
+  margin-left: auto;
+  margin-right: 15%;
+}*/
 
 @media only screen and (max-width: 655px) {
   .flex-container-col {
@@ -524,5 +595,17 @@ transform: rotate(-180deg);
 @media only screen and (max-width: 550px) {
   #building-empowering {
     font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #make-a-donation {
+    font-size: 3em;
+    padding-left: 30px;
+  }
+
+  #donation-text {
+    font-size: 1em;
+    padding-left: 30px;
   }
 }
