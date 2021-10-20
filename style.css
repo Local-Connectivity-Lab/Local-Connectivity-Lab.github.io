@@ -187,6 +187,11 @@ p {
   left: 0;
 }
 
+#partners-image {
+  width: 100%;
+  margin-bottom: -10%;
+}
+
 .parent {
   position: relative;
   top: 0;
