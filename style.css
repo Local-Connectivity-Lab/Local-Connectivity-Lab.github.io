@@ -34,6 +34,15 @@ ul {
   overflow: hidden;
 }
 
+.bulleted-list {
+  list-style-type: disc;
+  text-align: center;
+}
+
+.bulleted-list-point {
+  color: black;
+}
+
 .nav-item {
   /*background-color: #F1F1F1;*/
   padding-left: 15px;
@@ -379,6 +388,32 @@ transform: rotate(-180deg);
 }
 
 /* BUTTON STYLING ************************************************/
+#volunteer-learn-button {
+  background-color: #3C0073;
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+
+  display: inline;
+  margin-right: 5%;
+  margin-left: auto;
+  padding: 15px 15px;
+  font-size: 1.6em;
+}
+
+#get-connected-button {
+  background-color: #3C0073;
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+
+  display: inline;
+  margin-right: auto;
+  margin-left: 5%;
+  padding: 15px 15px;
+  font-size: 1.6em;
+}
+
 #learn-more-button {
   background-color:#3C0073;
   border-radius: 60px;
