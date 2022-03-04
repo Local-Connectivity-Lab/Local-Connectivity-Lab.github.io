@@ -4,10 +4,23 @@
 
 <head> <!-- probably on all pages -->
     
-    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
-    <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="style.css">
-    
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/donate.js"></script>
 </head>
 
 <body>
@@ -71,11 +84,84 @@
           <label for="cash-amount"> $ </label>
           <input type="text" id="cash-amount" name="cash-amount"><br><br>
         </form>-->
-        <h2> (place holder )</h3>
+
+        <section class="price_section layout_padding">
+          <div class="container">
+            <div class="heading_container heading_center">
+            </div>
+            <div class="price_container ">
+                <section class="container">
+                  <div class="row donation">
+                    <div class="col-md-6 col-sm-12 col-lg-6">
+                      <button
+                              class="btn btn-info btn-block preset"
+                              data-checkout-mode="payment"
+                              data-price-id="price_1Hv71qFEZhRaTFJz0IYW1aew"
+                      >
+                        <span class="fa fa-heart"></span> Donate $5.00 once
+                      </button>
+                      <button
+                              class="btn btn-info btn-block preset"
+                              data-checkout-mode="payment"
+                              data-price-id="price_1Hv71rFEZhRaTFJzWPpeXWYM">
+                        <span class="fa fa-heart"></span> Donate $15.00 once
+                      </button>
+                      <button
+                              class="btn btn-info btn-block preset"
+                              data-checkout-mode="payment"
+                              data-price-id="price_1Hv71rFEZhRaTFJzE3hKot7F">
+                        <span class="fa fa-heart"></span> Donate $25.00 once
+                      </button>
+                      <form onsubmit="processCustomDonation()" action="#">
+                          <div class="form-row align-items-center">
+                              <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+                                  <label class="sr-only" for="customAmount">Amount</label>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <div class="input-group-text">$</div>
+                                      </div>
+                                      <input type="number" class="form-control" id="customAmount" placeholder="Amount">
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 my-2">
+                                  <button type="submit" class="btn btn-primary"><span class="fa fa-money"></span> Donate</button>
+                              </div>
+                          </div>
+                      </form>
+      
+                    </div>
+                    
+                  </div>
+                  
+                </section>
+              <div id="error-message"></div>
+            </div>
+          </div>
+        </section>
+
         <button id = "donate-button">Donate </button>
         <button id = "paypal-button">
           <img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">
         </button>
+      </div>
+    </div>
+
+    <div>
+      <div class="row donation">
+        <div class="col-md-6 col-sm-12 col-lg-6 offset-md-3 offset-lg-3">
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <h3>Donate with Paypal</h3>
+            <p>All donations are made to Esther Jang at <code>lcl@seattlecommunitynetwork.org</code></p>
+            <input type="hidden" name="business" value="lcl@seattlecommunitynetwork.org" />
+            <input type="hidden" name="item_name" value="Donations / Fundraising" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </div>
+      </div>
+      <div class="row donation alert alert-warning">
+        <p><i class="fa fa-email"></i> Please <a href="mailto:lcl@seattlecommunitynetwork.org">email us</a> for donation questions or changes to your subscription. All donations will go towards our expenses and are tax deductible. LCL is a 501(c)(3) non-profit organization.</p> 
       </div>
     </div>
     
@@ -111,5 +197,7 @@
         </div>
       </div>
     </div>
+
+
 </body>
 </html>
