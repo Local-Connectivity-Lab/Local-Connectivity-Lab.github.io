@@ -78,13 +78,25 @@
       <div class = "flex-item-2col">
         <h2 id = "make-a-donation"> Make a Donation</h2>
         <h3 id = "donation-text"> We appreciate your support to our mission!</h3>
-      </div>
-      <div class = "flex-item-2col">
+        <br>
+        <button onclick="location.href='https://www.gofundme.com/f/seattle-community-network-internet-access-for-all'" type = "button"id = "donate-button">Donate </button>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="business" value="lcl@seattlecommunitynetwork.org" />
+          <input type="hidden" name="item_name" value="Donations / Fundraising" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <button id = "paypal-button">
+            <!--<img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">-->
+            <input type="image" src="assets/paypal button.png" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          </button>
+          <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+        <p id = "esther-text">All donations are made to Esther Jang at <code>lcl@seattlecommunitynetwork.org</code></p>
+      <!--<div class = "flex-item-2col">-->
         <!--<form id = "cash-input" action="/action_page.php">
           <label for="cash-amount"> $ </label>
           <input type="text" id="cash-amount" name="cash-amount"><br><br>
         </form>-->
-
+        <!--
         <section class="price_section layout_padding">
           <div class="container">
             <div class="heading_container heading_center">
@@ -137,15 +149,12 @@
               <div id="error-message"></div>
             </div>
           </div>
-        </section>
-
-        <button id = "donate-button">Donate </button>
-        <button id = "paypal-button">
-          <img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">
-        </button>
+        </section>-->
+        <!--<button id = "donate-button">Donate </button>-->
+        
       </div>
     </div>
-
+    <!---
     <div>
       <div class="row donation">
         <div class="col-md-6 col-sm-12 col-lg-6 offset-md-3 offset-lg-3">
@@ -164,6 +173,7 @@
         <p><i class="fa fa-email"></i> Please <a href="mailto:lcl@seattlecommunitynetwork.org">email us</a> for donation questions or changes to your subscription. All donations will go towards our expenses and are tax deductible. LCL is a 501(c)(3) non-profit organization.</p> 
       </div>
     </div>
+  -->
     
     <!-- FOOTER -->
     <div class = "footer">
@@ -191,9 +201,15 @@
         </div>
 
         <div class = "flex-item-left">
-          <button onclick="location.href='https://groups.google.com/a/seattlecommunitynetwork.org/g/local-connectivity-lab/'" id = "subscribe-button">
-            Subscribe to Mailing List
-          </button>
+          <div class = "flex-item-left">
+            <button onclick="location.href='https:seattlecommunitynet.slack.com'" id = "subscribe-button">
+              &nbsp; Join our Slack channel&nbsp;
+            </button>
+            <br><br>
+            <button onclick="location.href='https://groups.google.com/a/seattlecommunitynetwork.org/g/local-connectivity-lab/'" id = "subscribe-button">
+              Subscribe to Mailing List
+            </button>
+          </div>
         </div>
       </div>
     </div>

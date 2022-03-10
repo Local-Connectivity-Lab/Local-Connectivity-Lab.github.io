@@ -1,9 +1,11 @@
 // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
-var PUBLISHABLE_KEY = 'pk_live_51HoeyEFEZhRaTFJzOCxa0uXvDUGwTwmBaB2E65NYgpoM9axZq8T81a7xkGJzWgjM1QTpBOadDN9I1CWZmzViFEcO00IBDLBqFv';
+//var PUBLISHABLE_KEY = 'pk_live_51HoeyEFEZhRaTFJzOCxa0uXvDUGwTwmBaB2E65NYgpoM9axZq8T81a7xkGJzWgjM1QTpBOadDN9I1CWZmzViFEcO00IBDLBqFv';
+var PUBLISHABLE_KEY = 'pk_test_51HoeyEFEZhRaTFJzSPYVszW1PKEZUfFL6jwEjjsoya2ZlGAi6rmBRlDcP4eUZ3761XawDVollCX60y9nP6AiPgNh00hehVLUVE';
 // Replace with the domain you want your users to be redirected back to after payment
 var DOMAIN = location.href.replace(/[^/]*$/, '');
 
-if (PUBLISHABLE_KEY === 'pk_test_Tr8olTkdFnnJVywwhNPHwnHK00HkHV4tnP') {
+//pk_test_Tr8olTkdFnnJVywwhNPHwnHK00HkHV4tnP
+if (PUBLISHABLE_KEY === 'pk_test_51HoeyEFEZhRaTFJzSPYVszW1PKEZUfFL6jwEjjsoya2ZlGAi6rmBRlDcP4eUZ3761XawDVollCX60y9nP6AiPgNh00hehVLUVE') {
     console.log(
         'Replace the hardcoded publishable key with your own publishable key: https://dashboard.stripe.com/test/apikeys'
     );

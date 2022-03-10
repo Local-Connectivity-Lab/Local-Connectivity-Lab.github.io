@@ -127,17 +127,23 @@ h3 {
 }
 
 #make-a-donation {
-  text-align: left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   font-size: 5em;
-  padding-left: 70px;
+  /*padding-left: 70px;*/
   color: #3C0073;
   font-weight: bold;
 }
 
 #donation-text {
-  text-align: left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   font-size: 2em;
-  padding-left: 70px;
+  /*padding-left: 70px;*/
   color: black;
 }
 
@@ -167,6 +173,13 @@ p {
   text-align: left;
   margin-left: 10%;
   display: flex;
+}
+
+#esther-text {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 1em;
 }
 
 /* IMAGE STYLING ************************************************/
@@ -436,7 +449,7 @@ transform: rotate(-180deg);
 
   display: block;
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: auto;
   padding: 5px 15px;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -485,7 +498,7 @@ transform: rotate(-180deg);
   color: white;
   font-weight: bold;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   padding-left: 1.5em;
@@ -495,7 +508,7 @@ transform: rotate(-180deg);
   border-radius: 60px;
   display: block;
   margin-left: auto;
-  margin-right: 25%; 
+  margin-right: auto; 
 }
 
 #paypal-button {
@@ -505,24 +518,24 @@ transform: rotate(-180deg);
   text-align: center;
   font-size: 1.5em;
   padding-top: 0.3em;
-  padding-bottom: 0.3em;
+  padding-bottom: 0em;
   padding-left: 1em;
   padding-right: 1em;
   border: none;
   border-radius: 60px;
   display: block;
   margin-left: auto;
-  margin-right: 25%; 
+  margin-right: auto; 
 }
 
 .overlay {
   position: absolute;
   top: 0;
-  bottom: 50%;
+  bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
-  display:inline;
+  display: inline;
 }
 
 .overlay2 {
