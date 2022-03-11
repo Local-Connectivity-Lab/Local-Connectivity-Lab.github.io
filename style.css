@@ -36,7 +36,11 @@ ul {
 
 .bulleted-list {
   list-style-type: disc;
-  text-align: center;
+  list-style-position: inside;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
 }
 
 .bulleted-list-point {
@@ -281,6 +285,20 @@ p {
   width: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#matt-img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.aboutUs-img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* FLEX BOXES ****************************************************/
