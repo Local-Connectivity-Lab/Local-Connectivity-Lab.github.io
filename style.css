@@ -320,7 +320,7 @@ p {
 
 .flex-container-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   block-size: initial;
@@ -620,8 +620,10 @@ transform: rotate(-180deg);
 
 /* "OUR SITES" CARD STYLING *************************************************************/
 .card {
-  max-width: 800px;
-  max-height: 600px;
+  /*max-width: 800px;
+  max-height: 600px;*/
+  width: 40%;
+  height: 10em;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 50px;
@@ -638,14 +640,13 @@ transform: rotate(-180deg);
   margin: 0;
   margin-left: -50px;
   height: 50px;
-  overflow: hidden;
-  font-size: 12px;
-  padding-bottom: 50px;
+  /*overflow: hidden;*/
+  font-size: 0.8em;
 }
 
 .site-name {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.2em;
   margin-bottom: -10px;
   color: #274B63;
 }
@@ -653,6 +654,11 @@ transform: rotate(-180deg);
 .card-body {
   background-color: #F1F1F1;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-img-top {
+  width: 10em;
+  height: 10em;
 }
 
 /* ACTIVITY *******************************************************************/
@@ -711,4 +717,8 @@ transform: rotate(-180deg);
     font-size: 1em;
     padding-left: 30px;
   }
+}
+
+@media only screen and (max-width: 1051px) {
+  
 }
