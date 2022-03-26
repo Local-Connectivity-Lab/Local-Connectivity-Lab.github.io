@@ -309,6 +309,15 @@ p {
   justify-content: center;
 }
 
+.flex-container-row-to-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .flex-container-col {
   display: flex;
   flex-direction: column;
@@ -320,7 +329,7 @@ p {
 
 .flex-container-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   block-size: initial;
@@ -623,11 +632,11 @@ transform: rotate(-180deg);
   /*max-width: 800px;
   max-height: 600px;*/
   width: 40%;
-  height: 10em;
+  height: 25em;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 50px;
-  margin-top: 80px;
+  margin-bottom: 3em;
+  margin-top: 1em;
   filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
 }
 .card-title {
@@ -654,11 +663,17 @@ transform: rotate(-180deg);
 .card-body {
   background-color: #F1F1F1;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  height: 15em;
 }
 
 .card-img-top {
-  width: 10em;
-  height: 10em;
+  /*display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: center;
+  width: 15em;
+  height: 15em;*/
+  height: 100%;
 }
 
 /* ACTIVITY *******************************************************************/
@@ -719,6 +734,48 @@ transform: rotate(-180deg);
   }
 }
 
-@media only screen and (max-width: 1051px) {
-  
+/* 650*/
+@media only screen and (max-width: 830px) {
+  .flex-container-row-to-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .card {
+    /*max-width: 800px;
+    max-height: 600px;*/
+    width: 80%;
+    height: 20em;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+
 }
+
+@media only screen and (max-width: 730px) {
+  .flex-container-row-to-col {
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .card {
+    /*max-width: 800px;
+    max-height: 600px;*/
+    width: 80%;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-name {
+    font-size: 1em;
+  }
+  }
+
+}
+
