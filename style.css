@@ -671,7 +671,7 @@ transform: rotate(-180deg);
 .card-body {
   background-color: #F1F1F1;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-  height: 15em;
+  display: inline-block;
 }
 
 .card-img-top {
