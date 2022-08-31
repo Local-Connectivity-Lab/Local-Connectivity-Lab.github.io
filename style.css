@@ -5,7 +5,8 @@ body {
 
 header {
   background-color: #3C0073;
-  /*#0C7C59*/;
+  /*#0C7C59*/
+  ;
 }
 
 .footer {
@@ -17,9 +18,22 @@ header {
 
 .landing-tan {
   background-color: #EAE1D0;
+  border-radius: 25px;
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.basic-box {
+  background-color: #e8e8e8;
+  border-radius: 25px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .donate-tan {
@@ -55,8 +69,8 @@ ul {
 }
 
 .nav-link {
-  color:#284B63 !important;
-  
+  color: #284B63 !important;
+
 }
 
 .nav-link:hover {
@@ -71,7 +85,8 @@ ul {
 .navbar {
   padding-top: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: block; /* CHANGE */
+  display: block;
+  /* CHANGE */
 }
 
 #navbarText {
@@ -85,8 +100,8 @@ ul {
 }*/
 
 .active {
-  font-weight: 600!important;
-  background-color: #F1F1F1!important;
+  font-weight: 600 !important;
+  background-color: #F1F1F1 !important;
 }
 
 img {
@@ -102,6 +117,7 @@ li {
 li {
   color: #284B63;
 }
+
 /*
 li a:hover {
   background-color: #111;
@@ -274,9 +290,9 @@ p {
 }
 
 #calendar {
-  border:solid 1px #777;
+  border: solid 1px #777;
   /*width: 800px; 
-  height: 600px; */ 
+  height: 600px; */
   scroll-behavior: unset;
   display: block;
   margin-left: auto;
@@ -328,12 +344,13 @@ p {
 }
 
 .flex-container-card {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   block-size: initial;
   margin: 10px 2%;
+  padding-bottom: 200px;
 }
 
 .flex-item-2col {
@@ -349,7 +366,7 @@ p {
 
 .flex-item-left {
   flex-basis: 100%;
-  text-overflow:unset;
+  text-overflow: unset;
   /*padding-left: 50px;*/
   margin-left: 5%;
 }
@@ -379,7 +396,7 @@ p {
 }
 
 .flex-image-round:hover {
-  filter:grayscale(0.5);
+  filter: grayscale(0.5);
   max-width: 150px;
   max-height: 130px;
 }
@@ -400,7 +417,7 @@ p {
   justify-content: unset;
 }
 
-.section-min-sizer{
+.section-min-sizer {
   min-height: 600px;
 }
 
@@ -423,7 +440,8 @@ transform: rotate(-180deg);
 .wave-container {
   background-image: url("assets/landing\ page\ banner.png");
 }
-.wave-container > svg {
+
+.wave-container>svg {
   display: block;
 }
 
@@ -455,7 +473,7 @@ transform: rotate(-180deg);
 }
 
 #learn-more-button {
-  background-color:#3C0073;
+  background-color: #3C0073;
   border-radius: 60px;
   color: white;
   border-style: none;
@@ -466,11 +484,11 @@ transform: rotate(-180deg);
   padding: 5px 15px;
   margin-top: 50px;
   margin-bottom: 30px;
-} 
+}
 
 #get-involved-button {
-  background-color:#3C0073;
-  
+  background-color: #3C0073;
+
   color: white;
   border-style: none;
   font-size: 2em;
@@ -483,7 +501,7 @@ transform: rotate(-180deg);
 }
 
 #network-button {
-  background-color:#3C0073;
+  background-color: #3C0073;
   border-radius: 60px;
   color: white;
   border-style: none;
@@ -535,7 +553,7 @@ transform: rotate(-180deg);
   border-radius: 60px;
   display: block;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 #paypal-button {
@@ -552,7 +570,7 @@ transform: rotate(-180deg);
   border-radius: 60px;
   display: block;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .overlay {
@@ -595,12 +613,12 @@ transform: rotate(-180deg);
   background-color: #27014b;
 }
 
-#get-involved-button:hover{
+#get-involved-button:hover {
   background-color: #27014b;
 }
 
 #volunteer-learn-button:hover {
-  background-color:#27014b
+  background-color: #27014b
 }
 
 #get-connected-button:hover {
@@ -618,7 +636,7 @@ transform: rotate(-180deg);
 /* ACTIVITY ******************************************************/
 @media only screen and (max-width: 600px) {
   h1 {
-      display: none;
+    display: none;
   }
 
   .img-logo {
@@ -647,6 +665,7 @@ transform: rotate(-180deg);
   margin-top: 1em;
   filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
 }
+
 .card-title {
   text-align: left;
   margin-left: 2%;
@@ -671,7 +690,9 @@ transform: rotate(-180deg);
 .card-body {
   background-color: #F1F1F1;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-  height: 15em;
+  height: 225px;
+  display: inline-block;
+
 }
 
 .card-img-top {
