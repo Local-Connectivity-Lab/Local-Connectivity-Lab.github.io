@@ -437,6 +437,16 @@ top: 833px;
 background: #FFFFFF;
 transform: rotate(-180deg);
 */
+.map{
+  width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .wave-container {
   background-image: url("assets/landing\ page\ banner.png");
 }
