@@ -202,6 +202,14 @@ p {
   font-size: 1em;
 }
 
+/*Remove Bootstrap 5 default anchor tag underlines unless hovered*/
+a:not([class*="btn"]) {
+  text-decoration: none;
+}
+a:not([class*="btn"]):hover {
+  text-decoration: underline;
+}
+
 /* IMAGE STYLING ************************************************/
 .largeImage {
   /*width: 599px;
