@@ -51,19 +51,22 @@
                 <a class="nav-link"  href="aboutUs.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/">Learn More</a>
+                <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/">Docs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ourSites.html">Connect</a>
+                <a class="nav-link" href="ourSites.html">Get Connected</a>
               </li>
               <li class="nav-item">
                 <a class = "nav-link" href="https://coverage.seattlecommunitynetwork.org/">Map</a>
               </li>
+	      <li class="nav-item">
+            <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/space/">Visit Our Space</a>
+          </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="donate.html">Donate</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/community/tech-help.html">Get Help</a> <!--dropdown-->
+                <a class="nav-link" href="https://seattlecommunitynetwork.square.site/">Merch!</a>
               </li>
             </ul>
           </div>
@@ -77,20 +80,20 @@
     <div class = "donate-tan flex-container">
       <div class = "flex-item-2col">
         <h2 id = "make-a-donation"> Make a Donation</h2>
-        <h3 id = "donation-text"> We appreciate your support to our mission!</h3>
+        <h3 id = "donation-text"> We appreciate your support of our mission!</h3>
         <br>
-        <button onclick="location.href='https://www.gofundme.com/f/seattle-community-network-internet-access-for-all'" type = "button"id = "donate-button">Donate </button>
         <form action="https://www.paypal.com/donate" method="post" target="_top">
           <input type="hidden" name="business" value="lcl@seattlecommunitynetwork.org" />
           <input type="hidden" name="item_name" value="Donations / Fundraising" />
           <input type="hidden" name="currency_code" value="USD" />
           <button id = "paypal-button">
             <!--<img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">-->
-            <input type="image" src="assets/paypal button.png" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <input type="image" src="assets/paypal button.png" name="submit" title="Paypal donations are made to lcl@seattlecommunitynetwork.org." alt="Donate with PayPal button" />
           </button>
           <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
-        <p id = "esther-text">All donations are made to Esther Jang at <code>lcl@seattlecommunitynetwork.org</code></p>
+        <button onclick="location.href='https://www.gofundme.com/f/seattle-community-network-internet-access-for-all'" type = "button"id = "donate-button">Gofundme</button>
+        <button onclick="location.href='https://seattlecommunitynetwork.square.site'" type = "button"id = "donate-button">Square</button>
       <!--<div class = "flex-item-2col">-->
         <!--<form id = "cash-input" action="/action_page.php">
           <label for="cash-amount"> $ </label>
