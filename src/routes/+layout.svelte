@@ -6,52 +6,19 @@
 
 	let { children } = $props();
 
-	const navItems = [
-		[
-			m["common.nav.0.label"](),
-			m["common.nav.0.href"](),
-		],
-		[
-			m["common.nav.1.label"](),
-			m["common.nav.1.href"](),
-		],
-		[
-			m["common.nav.2.label"](),
-			m["common.nav.2.href"](),
-		],
-		[
-			m["common.nav.3.label"](),
-			m["common.nav.3.href"](),
-		],
-		[
-			m["common.nav.4.label"](),
-			m["common.nav.4.href"](),
-		],
-		[
-			m["common.nav.5.label"](),
-			m["common.nav.5.href"](),
-		],
-		[
-			m["common.nav.6.label"](),
-			m["common.nav.6.href"](),
-		],
-		[
-			m["common.nav.7.label"](),
-			m["common.nav.7.href"](),
-		],
+	const navLength = 8;
 
-	];
 </script>
 
 <h1>{m['common.scn']()}</h1>
 
 <nav>
-	{#each navItems as [label, href]}
-		<a href={href}>{label}</a>
+	{#each Array(navLength).fill(0) as _, i}
+	 	<a href={m[`common.nav.${i}.href`]()}>
+			{m[`common.nav.${i}.label`]()}
+		</a>
 	{/each}
 </nav>
-
-
 
 {@render children()}
 
