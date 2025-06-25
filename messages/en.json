@@ -2,7 +2,9 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"common.scn": "Seattle Community Network",
 	"common.lcl": "Local Connectivity Lab",
-	"common.physical_address": "3800 E Stevens Way NE, Seattle, WA 98195",
+
+	"common.address.title": "Address",
+	"common.address.physical": "3800 E Stevens Way NE, Seattle, WA 98195",
 	"common.email_address": "lcl@seattlecommunitynetwork.org",
 
 	"common.mission.title": "Mission",
@@ -63,6 +65,6 @@
 	"pages.home.events.iframe": "https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=Y19hMWhjOXVwMTBjOWs2YTNnNmYyb20zN2c2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043&showTitle=0&showPrint=0&showCalendars=0",
 
 	"pages.home.partners.title": "Our Partners",
-	"pages.home.partners.paragraphs.0": "The Seattle Community Network is a collaboration between many local organizations, sponsors, and collaborators throughout the Puget Sound area."
-
+	"pages.home.partners.paragraphs.0": "The Seattle Community Network is a collaboration between many local organizations, sponsors, and collaborators throughout the Puget Sound area.",
+	"pages.home.partners.alt": "partners logos"
 }
