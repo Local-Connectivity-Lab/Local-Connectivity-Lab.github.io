@@ -9,7 +9,36 @@
 	const navLength = 8;
 </script>
 
-<h1>{m['common.scn']()}</h1>
+<header
+	class="
+		p-[0.5em]
+		px-[2em]
+	"
+>
+	<a
+		href="/"
+		 class="
+			flex
+			items-center
+			start
+			gap-2
+
+			text-white
+			text-[2em]
+			font-medium
+		"
+	>
+		<img
+			src="/logo.min.png"
+			alt=""
+			class="
+				h-[2em]
+				aspect-square
+			"
+		>
+		<h1>{m['common.scn']()}</h1>
+	</a>
+</header>
 
 <nav>
 	{#each Array(navLength).fill(0) as _, i}
@@ -51,3 +80,10 @@
 
 	<button onclick={() => setLocale('en')}>en</button>
 </div>
+
+<style lang="postcss">
+	header {
+		background-color: var(--color-brand-primary);
+	}
+
+</style>
