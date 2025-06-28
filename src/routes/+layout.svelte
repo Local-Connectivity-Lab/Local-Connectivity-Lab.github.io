@@ -124,6 +124,7 @@
 			&:hover span {
 				padding: 0.5em 2em;
 				margin: 0;
+				text-shadow: 0 0 1px var(--color-nav-text);
 
 				background-color: var(--color-nav-background);
 			}
