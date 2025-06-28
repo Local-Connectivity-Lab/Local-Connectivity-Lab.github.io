@@ -1,3 +1,7 @@
 :root {
     --color-brand-primary: #3C0073;
+
+    --color-nav-background: #F1F1F1;
+    --color-nav-text: #284B63;
+    --color-nav-border: #284B63;
 }
