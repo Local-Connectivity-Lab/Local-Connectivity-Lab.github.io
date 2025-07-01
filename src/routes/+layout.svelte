@@ -107,9 +107,6 @@
 		display: block;
 		padding: 0.5em 2em;
 
-		border-left: var(--nav-border);
-		border-right: var(--nav-border);
-
 		a {
 			display: inline-block;
 
