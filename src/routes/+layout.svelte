@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { m } from '$lib/paraglide/messages.js';
+
+	import { m }         from '$lib/paraglide/messages.js';
 	import { setLocale } from '$lib/paraglide/runtime';
 
 	let currentUrl = $state('');

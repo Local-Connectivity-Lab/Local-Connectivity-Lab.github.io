@@ -33,6 +33,8 @@
 	},
 	"dependencies": {
 		"@inlang/paraglide-js": "^2.0.0",
+		"embla-carousel-autoplay": "^8.6.0",
+		"embla-carousel-svelte": "^8.6.0",
 		"modern-normalize": "^3.0.1"
 	}
 }
