@@ -4,6 +4,8 @@
     import Calendar from '$lib/components/Calendar.svelte';
     import Partners from '$lib/components/Partners.svelte';
     import Carousel from '$lib/components/Carousel.svelte';
+    import Wrapper from '$lib/components/Wrapper.svelte';
+    import Button from '$lib/components/Button.svelte';
 
     const imgs = [
         "/carousel1.min.jpg",
@@ -15,7 +17,14 @@
 
 <Carousel imgs={imgs} />
 
-get involved
+
+<Wrapper>
+    <span class="push-down">
+        <Button href={m['pages.home.hero.href']()}>
+            {m['pages.home.hero.cta']()}
+        </Button>
+    </span>
+</Wrapper>
 
 about us
 
@@ -23,3 +32,9 @@ get involved
 
 <Calendar />
 <Partners />
+
+<style>
+    .push-down {
+        margin-top: 1em;
+    }
+</style>
