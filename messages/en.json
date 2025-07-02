@@ -47,9 +47,14 @@
 	"pages.home.hero.cta" : "Get Involved →",
 	"pages.home.hero.href": "https://docs.seattlecommunitynetwork.org/community/join",
 
+	"pages.home.building.alt" : "Building. Empowering.",
+	"pages.home.building.src" : "/City Graphic.min.png",
+
+	"pages.home.overview.header": "Seattle Community Network",
 	"pages.home.overview.paragraphs.0": "The Seattle Community Network (SCN) is a community-run cellular (4G LTE) Internet access network dedicated to providing fair access to underserved communities all across the Puget Sound.",
 	"pages.home.overview.paragraphs.1": "Our project is firmly grounded in the principles of community empowerment. The network is a participatory construction, where local residents and institutions help each other in a collaborative and community-minded way.",
 	"pages.home.overview.paragraphs.2": "To learn more, visit our <a href='https://docs.seattlecommunitynetwork.org/'>docs site</a>, read our most recent <a href='https://tinyurl.com/scn-blog-2'>blog post</a>, or follow us on social media @SeattleCommNet on Facebook, Twitter, LinkedIn, and Instagram! Refer to our <a href='https://tinyurl.com/SCNbrochureSPS5-4-22'>brochure</a> or <a href='https://tinyurl.com/SCNflyerSPS5-4-22'>flyer</a> for a printable version of our materials!",
+
 	"pages.home.overview.about.cta": "About Us →",
 	"pages.home.overview.about.href": "https://docs.seattlecommunitynetwork.org/",
 

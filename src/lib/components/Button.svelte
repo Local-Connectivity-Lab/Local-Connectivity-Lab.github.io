@@ -1,8 +1,14 @@
 <script lang="ts">
-    let { href, children } = $props();
+    let { href, children, type } = $props();
+
+    let cssClass = $state("button");
+
+    if (type === "small") {
+        cssClass = "button button-small";
+    }
 </script>
 
-<a href={href} class="button">
+<a href={href} class={cssClass}>
     {@render children()}
 </a>
 
@@ -21,7 +27,12 @@
         transition: background-color 200ms;
 
         &:hover {
-            background-color: var(--color-brand-secondary);
+            background-color: var(--color-brand-primary-2);
         }
+    }
+
+    .button-small {
+        font-size: 1em;
+        border-radius: 2em;
     }
 </style>

@@ -6,6 +6,7 @@
     import Carousel from '$lib/components/Carousel.svelte';
     import Wrapper from '$lib/components/Wrapper.svelte';
     import Button from '$lib/components/Button.svelte';
+    import Panel from '$lib/components/Panel.svelte';
 
     const imgs = [
         "/carousel1.min.jpg",
@@ -19,14 +20,42 @@
 
 
 <Wrapper>
-    <span class="push-down">
-        <Button href={m['pages.home.hero.href']()}>
-            {m['pages.home.hero.cta']()}
-        </Button>
-    </span>
+    <Button href={m['pages.home.hero.href']()}>
+        {m['pages.home.hero.cta']()}
+    </Button>
+
+    <img
+        src={m['pages.home.building.src']()}
+        alt={m['pages.home.building.alt']()}
+    />
+
+    <Panel>
+        <h2>
+            {m['pages.home.overview.header']()}
+        </h2>
+
+        <p>
+            {m['pages.home.overview.paragraphs.0']()}
+        </p>
+        <p>
+            {m['pages.home.overview.paragraphs.1']()}
+        </p>
+        <p>
+            {@html m['pages.home.overview.paragraphs.2']()}
+        </p>
+
+        <div class="flex-right">
+            <Button
+                type="small"
+                href={m['pages.home.overview.about.href']()}
+            >
+                {m['pages.home.overview.about.cta']()}
+            </Button>
+        </div>
+    </Panel>
 </Wrapper>
 
-about us
+
 
 get involved
 
@@ -36,5 +65,10 @@ get involved
 <style>
     .push-down {
         margin-top: 1em;
+    }
+
+    .flex-right {
+        display: flex;
+        justify-content: flex-end;
     }
 </style>
