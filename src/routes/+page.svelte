@@ -40,7 +40,7 @@
 
 <Wrapper>
     <section class="center">
-        <Button href={m['pages.home.hero.href']()}>
+        <Button href={m['pages.home.hero.href']()} type="wide">
             {m['pages.home.hero.cta']()}
         </Button>
     </section>

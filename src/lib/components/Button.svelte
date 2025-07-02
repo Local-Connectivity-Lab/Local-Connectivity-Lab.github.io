@@ -7,6 +7,8 @@
         cssClass = "button button-small";
     } else if (type === "medium") {
         cssClass = "button button-medium";
+    } else if (type === "wide") {
+        cssClass = "button button-wide";
     }
 </script>
 
@@ -42,5 +44,9 @@
         font-size: 1em;
         padding: 0.6em 1.6em;
         filter: brightness(2);
+    }
+
+    .button-wide {
+        padding: 0.6em 4em;
     }
 </style>
