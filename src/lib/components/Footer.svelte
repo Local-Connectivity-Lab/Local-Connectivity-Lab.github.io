@@ -1,6 +1,6 @@
 <script>
-	import { m } from '$lib/paraglide/messages.js';
-	import { setLocale } from '$lib/paraglide/runtime';
+    import { m } from '$lib/paraglide/messages.js';
+    import { setLocale } from '$lib/paraglide/runtime';
     import Button from './Button.svelte';
     import Wrapper from './Wrapper.svelte';
 
