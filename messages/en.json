@@ -10,6 +10,8 @@
     "common.mission.header": "Mission",
     "common.mission.desc" : "To facilitate community focused technology development and research in support of low-income, marginalized populations and groups.",
 
+    "common.toggle_nav" : "toggle nav",
+
     "common.nav.0.label" : "Home",
     "common.nav.0.href" : "/",
     "common.nav.1.label" : "About Us",
