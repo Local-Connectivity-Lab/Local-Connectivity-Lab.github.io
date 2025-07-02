@@ -29,4 +29,8 @@
         flex: 0 0 100%;
         min-width: 0;
     }
+
+    img {
+        width: 100%;
+    }
 </style>

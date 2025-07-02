@@ -4,9 +4,15 @@
     import Calendar from '$lib/components/Calendar.svelte';
     import Partners from '$lib/components/Partners.svelte';
     import Carousel from '$lib/components/Carousel.svelte';
-    import Wrapper from '$lib/components/Wrapper.svelte';
-    import Button from '$lib/components/Button.svelte';
-    import Panel from '$lib/components/Panel.svelte';
+    import Wrapper  from '$lib/components/Wrapper.svelte';
+    import Button   from '$lib/components/Button.svelte';
+    import Panel    from '$lib/components/Panel.svelte';
+
+    const overview = [
+        m['pages.home.overview.paragraphs.0'](),
+        m['pages.home.overview.paragraphs.1'](),
+        m['pages.home.overview.paragraphs.2']()
+    ];
 
     const imgs = [
         "/carousel1.min.jpg",
@@ -14,69 +20,94 @@
         "/carousel3.min.jpg",
         "/carousel4.min.jpg"
     ];
+
+    const buttons = [
+        {
+            href : m['pages.home.get_involved.volunteer.href'](),
+            cta : m['pages.home.get_involved.volunteer.cta']()
+        },
+        {
+            href : m['pages.home.get_involved.connect.href'](),
+            cta : m['pages.home.get_involved.connect.cta']()
+        }
+    ]
 </script>
 
-<Carousel imgs={imgs} />
+<section>
+    <Carousel imgs={imgs} />
+</section>
 
 
 <Wrapper>
-    <Button href={m['pages.home.hero.href']()}>
-        {m['pages.home.hero.cta']()}
-    </Button>
+    <section class="center">
+        <Button href={m['pages.home.hero.href']()}>
+            {m['pages.home.hero.cta']()}
+        </Button>
+    </section>
 
-    <img
-        src={m['pages.home.building.src']()}
-        alt={m['pages.home.building.alt']()}
-    />
+    <section>
+        <img
+            src={m['pages.home.building.src']()}
+            alt={m['pages.home.building.alt']()}
+        />
+    </section>
 
-    <Panel>
+    <section>
+        <Panel>
+            <h2>
+                {m['pages.home.overview.header']()}
+            </h2>
+
+            {#each overview as over}
+                <p>{@html over}</p>
+            {/each}
+
+            <div class="flex-right">
+                <Button
+                    type="small"
+                    href={m['pages.home.overview.about.href']()}
+                >
+                    {m['pages.home.overview.about.cta']()}
+                </Button>
+            </div>
+        </Panel>
+    </section>
+
+    <section>
         <h2>
-            {m['pages.home.overview.header']()}
+            {m['pages.home.get_involved.header']()}
         </h2>
+    </section>
 
-        <p>
-            {m['pages.home.overview.paragraphs.0']()}
-        </p>
-        <p>
-            {m['pages.home.overview.paragraphs.1']()}
-        </p>
-        <p>
-            {@html m['pages.home.overview.paragraphs.2']()}
-        </p>
+    <section>
+        <div class="button-row">
 
-        <div class="flex-right">
-            <Button
-                type="small"
-                href={m['pages.home.overview.about.href']()}
-            >
-                {m['pages.home.overview.about.cta']()}
-            </Button>
+            {#each buttons as { href, cta }}
+                <Button href>
+                    {cta}
+                </Button>
+            {/each}
         </div>
-    </Panel>
+    </section>
 
-    <h2>
-        {m['pages.home.get_involved.header']()}
-    </h2>
+    <section>
+        <Calendar />
+    </section>
 
-    <div class="button-row">
-        <Button href={m['pages.home.get_involved.volunteer.href']()}>
-            {m['pages.home.get_involved.volunteer.cta']()}
-        </Button>
-        <Button href={m['pages.home.get_involved.connect.href']()}>
-            {m['pages.home.get_involved.connect.cta']()}
-        </Button>
-    </div>
-
-    <Calendar />
-
-    <Partners />
+    <section>
+        <Partners />
+    </section>
 </Wrapper>
 
 <style>
-    .push-down {
-        margin-top: 1em;
+    section {
+        margin-bottom: var(--layout-section-vertical);
     }
 
+    .center {
+        display: flex;
+        justify-content: center;
+    }
     .flex-right {
         display: flex;
         justify-content: flex-end;
