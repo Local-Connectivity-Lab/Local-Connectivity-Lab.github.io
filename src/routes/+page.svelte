@@ -77,9 +77,7 @@
         <h2>
             {m['pages.home.get_involved.header']()}
         </h2>
-    </section>
 
-    <section>
         <div class="button-row">
 
             {#each buttons as { href, cta }}
