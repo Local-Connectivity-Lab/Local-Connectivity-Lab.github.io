@@ -8,8 +8,12 @@
 
 <style>
     .panel {
-        padding: 2em 3em;
+        padding: 1em 2em;
         border-radius: 1em;
         background-color: var(--color-brand-tertiary);
+
+        @media screen and (width >= 1024px) {
+            padding: 2em 3em;
+        }
     }
 </style>

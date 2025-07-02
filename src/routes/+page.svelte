@@ -79,7 +79,6 @@
         </h2>
 
         <div class="button-row">
-
             {#each buttons as { href, cta }}
                 <Button href>
                     {cta}
@@ -114,7 +113,13 @@
     .button-row {
         margin: 2em 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 4em;
+        gap: 2em;
+
+        @media screen and (width >= 1024px) {
+            flex-direction: unset;
+            gap: 4em;
+        }
     }
 </style>

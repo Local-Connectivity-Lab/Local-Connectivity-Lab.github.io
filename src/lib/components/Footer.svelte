@@ -85,10 +85,17 @@
         }
     }
     footer {
-        padding: 2em 0;
-        display: grid;
-        grid-template-columns: repeat(2, 3fr) 2fr;
+        display: flex;
+        flex-direction: column;
         gap: 2em;
+
+        padding: 2em 0;
+
+        @media screen and (width >= 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 3fr) 2fr;
+            gap: 2em;
+        }
     }
 
     .socials {

@@ -12,6 +12,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 4%;
+
+        @media screen and (width: 1024px) {
+            padding: 0;
+        }
     }
 
     .content {

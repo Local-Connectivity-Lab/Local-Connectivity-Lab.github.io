@@ -24,8 +24,10 @@
         font-size: 1.6em;
         color: white;
         text-decoration: none;
-        border-radius: 0.2em;
+        text-align: center;
+        white-space: nowrap;
 
+        border-radius: 0.2em;
         background-color: var(--color-brand-primary);
 
         transition: background-color 200ms;

@@ -65,8 +65,12 @@
             margin: 0;
 
             color: white;
-            font-size: 2.2em;
+            font-size: 1.6em;
             font-weight: 500;
+
+            @media screen and (width >= 1024px) {
+                font-size: 2.2em;
+            }
         }
         img {
             height: 4em;
@@ -89,7 +93,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 2em;
+        width: 3em;
         aspect-ratio: 1;
         padding: 0.2em;
 
