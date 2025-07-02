@@ -5,10 +5,12 @@
 
     if (type === "small") {
         cssClass = "button button-small";
+    } else if (type === "medium") {
+        cssClass = "button button-medium";
     }
 </script>
 
-<a href={href} class={cssClass}>
+<a {href} class={cssClass}>
     {@render children()}
 </a>
 
@@ -34,5 +36,11 @@
     .button-small {
         font-size: 1em;
         border-radius: 2em;
+    }
+
+    .button-medium {
+        font-size: 1em;
+        padding: 0.6em 1.6em;
+        filter: brightness(2);
     }
 </style>

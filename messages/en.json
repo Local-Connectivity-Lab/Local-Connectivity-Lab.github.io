@@ -5,7 +5,7 @@
 
 	"common.address.header": "Address",
 	"common.address.physical": "3800 E Stevens Way NE, Seattle, WA 98195",
-	"common.email_address": "lcl@seattlecommunitynetwork.org",
+	"common.address.email": "lcl@seattlecommunitynetwork.org",
 
 	"common.mission.header": "Mission",
 	"common.mission.desc" : "To facilitate community focused technology development and research in support of low-income, marginalized populations and groups.",
