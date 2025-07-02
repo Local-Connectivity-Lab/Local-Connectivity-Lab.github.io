@@ -48,7 +48,7 @@
     "pages.home.hero.href": "https://docs.seattlecommunitynetwork.org/community/join",
 
     "pages.home.building.alt" : "Building. Empowering.",
-    "pages.home.building.src" : "/City Graphic.min.png",
+    "pages.home.building.src" : "/pages/home/City Graphic.min.png",
 
     "pages.home.overview.header": "Seattle Community Network",
     "pages.home.overview.paragraphs.0": "The Seattle Community Network (SCN) is a community-run cellular (4G LTE) Internet access network dedicated to providing fair access to underserved communities all across the Puget Sound.",

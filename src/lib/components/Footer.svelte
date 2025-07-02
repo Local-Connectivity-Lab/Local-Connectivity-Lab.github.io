@@ -8,17 +8,17 @@
         {
             href : m['socials.instagram.href'](),
             cta : m['socials.instagram.cta'](),
-            src : "/IG_icon_circle.png"
+            src : "/layout/footer/IG_icon_circle.png"
         },
         {
             href : m['socials.twitter.href'](),
             cta : m['socials.twitter.cta'](),
-            src : "/twitter_icon_circle.png"
+            src : "/layout/footer/twitter_icon_circle.png"
         },
         {
             href : m['socials.facebook.href'](),
             cta : m['socials.facebook.cta'](),
-            src : "/facebook_icon_circle.png"
+            src : "/layout/footer/facebook_icon_circle.png"
         }
     ];
 

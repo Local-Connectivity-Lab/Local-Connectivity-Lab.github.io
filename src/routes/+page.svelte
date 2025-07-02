@@ -15,10 +15,10 @@
     ];
 
     const imgs = [
-        "/carousel1.min.jpg",
-        "/carousel2.min.jpg",
-        "/carousel3.min.jpg",
-        "/carousel4.min.jpg"
+        "/pages/home/carousel1.min.jpg",
+        "/pages/home/carousel2.min.jpg",
+        "/pages/home/carousel3.min.jpg",
+        "/pages/home/carousel4.min.jpg"
     ];
 
     const buttons = [
