@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { href, children, type } = $props();
+    let { href, children, type = null } = $props();
 
     let cssClass = $state("button");
 

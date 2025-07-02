@@ -3,11 +3,11 @@
 	"common.scn": "Seattle Community Network",
 	"common.lcl": "Local Connectivity Lab",
 
-	"common.address.title": "Address",
+	"common.address.header": "Address",
 	"common.address.physical": "3800 E Stevens Way NE, Seattle, WA 98195",
 	"common.email_address": "lcl@seattlecommunitynetwork.org",
 
-	"common.mission.title": "Mission",
+	"common.mission.header": "Mission",
 	"common.mission.desc" : "To facilitate community focused technology development and research in support of low-income, marginalized populations and groups.",
 
 	"common.nav.0.label" : "Home",
@@ -42,8 +42,6 @@
 	"socials.facebook.cta": "Facebook",
 	"socials.facebook.href": "https://www.facebook.com/SeattleCommNet",
 
-	"pages.home.overview.title": "Seattle Community Network",
-
 	"pages.home.hero.cta" : "Get Involved →",
 	"pages.home.hero.href": "https://docs.seattlecommunitynetwork.org/community/join",
 
@@ -58,7 +56,7 @@
 	"pages.home.overview.about.cta": "About Us →",
 	"pages.home.overview.about.href": "https://docs.seattlecommunitynetwork.org/",
 
-	"pages.home.get_involved.title": "Get Involved",
+	"pages.home.get_involved.header": "Get Involved",
 
 	"pages.home.get_involved.volunteer.cta": "Volunteer & Learn →",
 	"pages.home.get_involved.volunteer.href": "https://docs.seattlecommunitynetwork.org/community/join",
@@ -66,10 +64,10 @@
 	"pages.home.get_involved.connect.cta": "Get Connected →",
 	"pages.home.get_involved.connect.href": "/our-sites",
 
-	"pages.home.events.title": "Upcoming Events",
+	"pages.home.events.header": "Upcoming Events",
 	"pages.home.events.iframe": "https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=Y19hMWhjOXVwMTBjOWs2YTNnNmYyb20zN2c2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043&showTitle=0&showPrint=0&showCalendars=0",
 
-	"pages.home.partners.title": "Our Partners",
+	"pages.home.partners.header": "Our Partners",
 	"pages.home.partners.paragraphs.0": "The Seattle Community Network is a collaboration between many local organizations, sponsors, and collaborators throughout the Puget Sound area.",
 	"pages.home.partners.alt": "partners logos"
 }

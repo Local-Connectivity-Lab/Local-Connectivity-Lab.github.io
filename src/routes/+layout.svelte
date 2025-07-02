@@ -44,7 +44,7 @@
 
 <div>
 	<div>
-		<h5>{m['common.address.title']()}</h5>
+		<h5>{m['common.address.header']()}</h5>
 		<p>{m['common.address.physical']()}</p>
 
 		<a href={m['socials.instagram.href']()}>
@@ -58,7 +58,7 @@
 		</a>
 	</div>
 	<div>
-		<h5>{m['common.mission.title']()}</h5>
+		<h5>{m['common.mission.header']()}</h5>
 		<p>{m['common.mission.desc']()}</p>
 	</div>
 	<div>

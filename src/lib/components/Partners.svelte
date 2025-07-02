@@ -3,7 +3,7 @@
 </script>
 
 <h2>
-    {m['pages.home.partners.title']()}
+    {m['pages.home.partners.header']()}
 </h2>
 
 <p>

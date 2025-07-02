@@ -53,14 +53,24 @@
             </Button>
         </div>
     </Panel>
+
+    <h2>
+        {m['pages.home.get_involved.header']()}
+    </h2>
+
+    <div class="button-row">
+        <Button href={m['pages.home.get_involved.volunteer.href']()}>
+            {m['pages.home.get_involved.volunteer.cta']()}
+        </Button>
+        <Button href={m['pages.home.get_involved.connect.href']()}>
+            {m['pages.home.get_involved.connect.cta']()}
+        </Button>
+    </div>
+
+    <Calendar />
+
+    <Partners />
 </Wrapper>
-
-
-
-get involved
-
-<Calendar />
-<Partners />
 
 <style>
     .push-down {
@@ -70,5 +80,12 @@ get involved
     .flex-right {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .button-row {
+        margin: 2em 0;
+        display: flex;
+        justify-content: center;
+        gap: 4em;
     }
 </style>
