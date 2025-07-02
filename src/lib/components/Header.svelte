@@ -79,7 +79,10 @@
         --nav-border: solid 1px var(--color-nav-border);
 
         display: block;
-        padding: 0.5em 2em;
+
+        @media screen and (width >= 1024px) {
+            padding: 0.5em 2em;
+        }
     }
 
     .nav-toggle {
@@ -97,6 +100,8 @@
 
     .nav-items {
         display: none;
+        padding: 1em 0.5em;
+        border: var(--nav-border);
 
         &.show-nav {
             display: flex;
@@ -110,6 +115,7 @@
 
         @media screen and (width >= 1024px) {
             display: inline-block;
+            padding: 0;
             position: unset;
             background: unset;
         }
