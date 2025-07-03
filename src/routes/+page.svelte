@@ -33,6 +33,10 @@
     ]
 </script>
 
+<svelte:head>
+    <title>{m['common.scn']()}</title>
+</svelte:head>
+
 <section>
     <Carousel imgs={imgs} />
 </section>

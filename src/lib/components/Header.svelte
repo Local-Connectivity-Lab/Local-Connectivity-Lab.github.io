@@ -122,6 +122,7 @@
             padding: 0;
             position: unset;
             background: unset;
+            border: none;
         }
 
         a {

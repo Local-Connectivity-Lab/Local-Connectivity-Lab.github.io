@@ -10,4 +10,4 @@
     {m['pages.home.partners.paragraphs.0']()}
 </p>
 
-<img src="/pages/home/scn-partner-logos.png" alt={m['pages.home.partners.alt']()} />
+<img src="/pages/home/scn-partner-logos.min.png" alt={m['pages.home.partners.alt']()} />

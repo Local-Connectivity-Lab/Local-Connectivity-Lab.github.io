@@ -1,5 +1,6 @@
 {
     "$schema": "https://inlang.com/schema/inlang-message-format",
+
     "common.scn": "Seattle Community Network",
     "common.lcl": "Local Connectivity Lab",
 
