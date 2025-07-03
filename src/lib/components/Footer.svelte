@@ -2,25 +2,8 @@
     import { m } from '$lib/paraglide/messages.js';
     import { setLocale } from '$lib/paraglide/runtime';
     import Button from './Button.svelte';
+    import Socials from './Socials.svelte';
     import Wrapper from './Wrapper.svelte';
-
-    const socials = [
-        {
-            href : m['socials.instagram.href'](),
-            cta : m['socials.instagram.cta'](),
-            src : "/layout/footer/IG_icon_circle.png"
-        },
-        {
-            href : m['socials.twitter.href'](),
-            cta : m['socials.twitter.cta'](),
-            src : "/layout/footer/twitter_icon_circle.png"
-        },
-        {
-            href : m['socials.facebook.href'](),
-            cta : m['socials.facebook.cta'](),
-            src : "/layout/footer/facebook_icon_circle.png"
-        }
-    ];
 
     const buttons = [
         {
@@ -42,14 +25,7 @@
                 <p>{m['common.address.physical']()}</p>
                 <p>{m['common.address.email']()}</p>
 
-
-                <div class="socials">
-                    {#each socials as { href, cta, src }}
-                        <a {href} class={`social ${cta.toLowerCase()}`}>
-                            <img {src} alt={cta} />
-                        </a>
-                    {/each}
-                </div>
+                <Socials />
             </div>
             <div>
                 <h3>{m['common.mission.header']()}</h3>
@@ -95,17 +71,6 @@
             display: grid;
             grid-template-columns: repeat(2, 3fr) 2fr;
             gap: 2em;
-        }
-    }
-
-    .socials {
-        margin-top: 1em;
-        display: flex;
-        gap: 1em;
-
-        img {
-            height: 3em;
-            aspect-ratio: 1;
         }
     }
 

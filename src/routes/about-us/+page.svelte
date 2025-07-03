@@ -5,9 +5,99 @@
     import Button   from '$lib/components/Button.svelte';
     import Panel    from '$lib/components/Panel.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
+    import Socials from '$lib/components/Socials.svelte';
+
+    const sections = [
+        {
+            header : m['pages.about.lcl.header'](),
+            paragraphs : [
+                m['pages.about.lcl.paragraphs.0']()
+            ],
+            img : {
+                src : m['pages.about.lcl.img.src'](),
+                alt : m['pages.about.lcl.img.alt']()
+            }
+        },
+        {
+            header : m['pages.about.mission.header'](),
+            paragraphs : [
+                m['pages.about.mission.paragraphs.0']()
+            ],
+            img : {
+                src : m['pages.about.mission.img.src'](),
+                alt : m['pages.about.mission.img.alt']()
+            }
+        },
+        {
+            header : m['pages.about.vision.header'](),
+            paragraphs : [
+                m['pages.about.vision.paragraphs.0']()
+            ],
+            img : {
+                src : m['pages.about.vision.img.src'](),
+                alt : m['pages.about.vision.img.alt']()
+            }
+        }
+    ];
+
+    const listLength = 8;
 
 </script>
 
 <PageTitle title={m['pages.about.title']()} />
 
-About us
+<Wrapper>
+    {#each sections as section}
+        <section>
+            <Panel type="plain">
+                <h2>{section.header}</h2>
+                {#each section.paragraphs as paragraph}
+                    <p>{@html paragraph}</p>
+                {/each}
+                <img
+                    src={section.img.src}
+                    alt={section.img.alt}
+                />
+            </Panel>
+        </section>
+    {/each}
+
+    <section>
+        <Panel type="plain">
+            <h2>{m['pages.about.values.header']()}</h2>
+            <p>{m['pages.about.values.paragraphs.0']()}</p>
+            <ul class="values-list">
+                {#each Array(listLength).fill(0) as _, i}
+                    <li>{m[`pages.about.values.list.${i}`]()}</li>
+                {/each}
+            </ul>
+        </Panel>
+    </section>
+
+    <section>
+        <Panel>
+            <h2>{m['pages.about.sm.header']()}</h2>
+
+            <div class="center">
+                <Socials type="dark" size="medium"/>
+
+                <Button
+                    href={m['pages.about.sm.donate.href']}
+                    arrow={true}
+                >
+                    {m['pages.about.sm.donate.cta']()}
+                </Button>
+            </div>
+        </Panel>
+    </section>
+</Wrapper>
+
+<style>
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+</style>

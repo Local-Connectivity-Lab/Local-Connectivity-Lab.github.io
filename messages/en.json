@@ -45,7 +45,10 @@
     "socials.facebook.cta": "Facebook",
     "socials.facebook.href": "https://www.facebook.com/SeattleCommNet",
 
-    "pages.home.hero.cta" : "Get Involved →",
+
+    "=== PAGES HOME ===" : "comment",
+
+    "pages.home.hero.cta" : "Get Involved",
     "pages.home.hero.href": "https://docs.seattlecommunitynetwork.org/community/join",
 
     "pages.home.building.alt" : "Building. Empowering.",
@@ -56,15 +59,15 @@
     "pages.home.overview.paragraphs.1": "Our project is firmly grounded in the principles of community empowerment. The network is a participatory construction, where local residents and institutions help each other in a collaborative and community-minded way.",
     "pages.home.overview.paragraphs.2": "To learn more, visit our <a href='https://docs.seattlecommunitynetwork.org/'>docs site</a>, read our most recent <a href='https://tinyurl.com/scn-blog-2'>blog post</a>, or follow us on social media @SeattleCommNet on Facebook, Twitter, LinkedIn, and Instagram! Refer to our <a href='https://tinyurl.com/SCNbrochureSPS5-4-22'>brochure</a> or <a href='https://tinyurl.com/SCNflyerSPS5-4-22'>flyer</a> for a printable version of our materials!",
 
-    "pages.home.overview.about.cta": "About Us →",
+    "pages.home.overview.about.cta": "About Us",
     "pages.home.overview.about.href": "https://docs.seattlecommunitynetwork.org/",
 
     "pages.home.get_involved.header": "Get Involved",
 
-    "pages.home.get_involved.volunteer.cta": "Volunteer & Learn →",
+    "pages.home.get_involved.volunteer.cta": "Volunteer & Learn",
     "pages.home.get_involved.volunteer.href": "https://docs.seattlecommunitynetwork.org/community/join",
 
-    "pages.home.get_involved.connect.cta": "Get Connected →",
+    "pages.home.get_involved.connect.cta": "Get Connected",
     "pages.home.get_involved.connect.href": "/our-sites",
 
     "pages.home.events.header": "Upcoming Events",
@@ -74,5 +77,39 @@
     "pages.home.partners.paragraphs.0": "The Seattle Community Network is a collaboration between many local organizations, sponsors, and collaborators throughout the Puget Sound area.",
     "pages.home.partners.alt": "partners logos",
 
-    "pages.about.title": "About Us"
+
+
+    "=== PAGES ABOUT ===" : "comment",
+
+    "pages.about.title": "About Us",
+
+    "pages.about.lcl.header": "Local Connectivity Lab",
+    "pages.about.lcl.paragraphs.0": "The Seattle Community Network began in 2019 as a project of the Local Connectivity Lab (LCL), a 501(c)(3) registered non-profit that develops and deploys open source cellular network technologies to help people run their own community networks. LCL works in partnership with the University of Washington (UW) to share free or low-cost broadband access in higher-need areas throughout the city, making use of existing city network infrastructure such as buildings and fiber-optic cables to extend coverage to more people. Our mission is to facilitate community focused technology development and research in support of low-income, marginalized populations and groups. See our most recent <a href='https://tinyurl.com/scn-blog-2'>blog post</a> for the latest updates!",
+    "pages.about.lcl.img.src": "/pages/about-us/about-us-1.min.jpg",
+    "pages.about.lcl.img.alt": "LCL",
+
+    "pages.about.mission.header": "Mission",
+    "pages.about.mission.paragraphs.0": "LCL seeks to democratize knowledge, skills, and resources to enable people to establish and run their own local, community-centered, and community-owned Internet access networks and digital infrastructure.",
+    "pages.about.mission.img.src": "/pages/about-us/about-us-2.min.jpg",
+    "pages.about.mission.img.alt": "working on a roof",
+
+    "pages.about.vision.header": "Mission",
+    "pages.about.vision.paragraphs.0": "We envision a world where no one is excluded from access to the Internet, and where anyone can achieve the expertise and capability to bring communications infrastructure to their community and improve their quality of life.",
+    "pages.about.vision.img.src": "/pages/about-us/about-us-3.min.jpg",
+    "pages.about.vision.img.alt": "lunch meeting",
+
+    "pages.about.values.header": "Values",
+    "pages.about.values.paragraphs.0": "We value the ability to access the Internet and all public information and digital resources therein as a human right.",
+    "pages.about.values.list.0": "Digital privacy of our users and partner organizations",
+    "pages.about.values.list.1": "Collaboration, especially with the communities and organizations we work with",
+    "pages.about.values.list.2": "Care, consideration, allyship, and peer mentorship between individuals within our organization",
+    "pages.about.values.list.3": "Education, sharing, and capacity-building- emphasize teaching and dissemination of information and skills",
+    "pages.about.values.list.4": "Openness, transparency, and accountability of our organization and its processes",
+    "pages.about.values.list.5": "Democratization and inclusiveness of decision processes among stakeholders",
+    "pages.about.values.list.6": "Long-term sustainability of our technology deployments and community structures",
+    "pages.about.values.list.7": "Equity in planning for resource allocation, programming, and contribution",
+
+    "pages.about.sm.header": "Follow us on social media!",
+    "pages.about.sm.donate.href": "/donate",
+    "pages.about.sm.donate.cta": "Donate to Support our Mission"
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { href, children, type = null } = $props();
+    let { href, children, type = null, arrow = null } = $props();
 
     let cssClass = $state("button");
 
@@ -14,6 +14,9 @@
 
 <a {href} class={cssClass}>
     {@render children()}
+    {#if arrow}
+        →
+    {/if}
 </a>
 
 <style>

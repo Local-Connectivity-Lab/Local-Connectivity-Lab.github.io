@@ -36,14 +36,14 @@
 
 <PageTitle />
 
-<section>
+<section class="carousel-wrapper">
     <Carousel imgs={imgs} />
 </section>
 
 
 <Wrapper>
     <section class="center">
-        <Button href={m['pages.home.hero.href']()} type="wide">
+        <Button href={m['pages.home.hero.href']()} type="wide" arrow={true}>
             {m['pages.home.hero.cta']()}
         </Button>
     </section>
@@ -69,6 +69,7 @@
                 <Button
                     type="small"
                     href={m['pages.home.overview.about.href']()}
+                    arrow={true}
                 >
                     {m['pages.home.overview.about.cta']()}
                 </Button>
@@ -83,7 +84,7 @@
 
         <div class="button-row">
             {#each buttons as { href, cta }}
-                <Button href>
+                <Button href arrow={true}>
                     {cta}
                 </Button>
             {/each}
@@ -100,10 +101,9 @@
 </Wrapper>
 
 <style>
-    section {
-        margin-bottom: var(--layout-section-vertical);
+    .carousel-wrapper {
+        margin: 0;
     }
-
     .center {
         display: flex;
         justify-content: center;
