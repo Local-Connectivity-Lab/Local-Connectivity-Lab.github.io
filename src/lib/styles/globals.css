@@ -2,6 +2,20 @@
     --layout-section-vertical: 4em;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1;
+    }
+}
+
 h2 {
     margin: 0.4em 0;
 

@@ -13,9 +13,12 @@
 
 <Header />
 
-{@render children()}
+<main>
+    {@render children()}
+</main>
 
 <Footer/>
 
 <style lang="postcss">
+
 </style>

@@ -7,6 +7,7 @@
     import Wrapper  from '$lib/components/Wrapper.svelte';
     import Button   from '$lib/components/Button.svelte';
     import Panel    from '$lib/components/Panel.svelte';
+    import PageTitle from '$lib/components/Page-Title.svelte';
 
     const overview = [
         m['pages.home.overview.paragraphs.0'](),
@@ -30,12 +31,10 @@
             href : m['pages.home.get_involved.connect.href'](),
             cta : m['pages.home.get_involved.connect.cta']()
         }
-    ]
+    ];
 </script>
 
-<svelte:head>
-    <title>{m['common.scn']()}</title>
-</svelte:head>
+<PageTitle />
 
 <section>
     <Carousel imgs={imgs} />
