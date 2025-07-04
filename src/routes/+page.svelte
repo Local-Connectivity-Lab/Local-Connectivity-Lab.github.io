@@ -84,7 +84,7 @@
 
         <div class="button-row">
             {#each buttons as { href, cta }}
-                <Button href arrow={true}>
+                <Button {href} arrow={true}>
                     {cta}
                 </Button>
             {/each}
