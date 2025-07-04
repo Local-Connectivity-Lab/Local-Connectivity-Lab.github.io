@@ -11,17 +11,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v2
+      - uses: npm/action-setup@v2
         with:
           version: 8
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build project
         env:
           BASE_PATH: /Local-Connectivity-Lab.github.io
-        run: pnpm run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
