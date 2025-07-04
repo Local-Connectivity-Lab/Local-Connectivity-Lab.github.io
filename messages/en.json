@@ -79,7 +79,7 @@
 
 
 
-    "=== PAGES ABOUT ===" : "comment",
+    "=== PAGES ABOUT US ===" : "comment",
 
     "pages.about.title": "About Us",
 
@@ -111,5 +111,101 @@
 
     "pages.about.sm.header": "Follow us on social media!",
     "pages.about.sm.donate.href": "/donate",
-    "pages.about.sm.donate.cta": "Donate to Support our Mission"
+    "pages.about.sm.donate.cta": "Donate to Support our Mission",
+
+
+
+    "=== PAGES OUR SITES ===" : "comment",
+
+    "pages.sites.title": "Get Connected",
+
+    "pages.sites.overview.header": "Overview",
+    "pages.sites.overview.paragraphs.0": "Through our volunteer efforts and community partnerships, we strive to provide low-income and in-need users with free or low-cost Internet service as reliably as possible. Our service is best-effort and will not necessarily match the performance of paid or commercial Internet service.",
+    "pages.sites.overview.paragraphs.1": "Our network includes site locations throughout King County and Tacoma, where we are able to provide coverage within specific neighborhoods near the sites. Please refer to the list of locations below to see if your neighborhood is covered.",
+    "pages.sites.overview.paragraphs.2": "Within these coverage areas, we can offer either home-based WiFi or mobile (phone-based) Internet access options.",
+
+    "pages.sites.details.header": "Details",
+    "pages.sites.details.paragraphs.0": "You will need to register with us and receive our SIM card to connect to the network. You may also need to receive a compatible mobile phone or stationary home hotspot from us that supports our wireless frequencies.",
+    "pages.sites.details.img.src": "/pages/our-sites/mattCPE2.min.jpg",
+    "pages.sites.details.img.alt": "photo of Matt holding CPE",
+    "pages.sites.details.paragraphs.1": "We expect that speeds would typically range from 30-90 Mbps download/2-14 Mbps upload. Part of the purpose of this pilot project is to determine the technology’s real performance and suitability for our use case.",
+    "pages.sites.details.paragraphs.2": "The speed of your service will depend roughly on:",
+    "pages.sites.details.list.0": "how many other users are currently using the network",
+    "pages.sites.details.list.1": "how close your location is to the access point",
+    "pages.sites.details.list.2": "whether you are using the mobile phone-based or home-based service (home-based is usually faster)",
+
+    "pages.sites.eligibility.header": "Eligibility",
+    "pages.sites.eligibility.paragraphs.0": "For the first round of our installations, which have been funded this past year by King County and the City of Seattle IT, we will prioritize serving the following groups:",
+    "pages.sites.eligibility.list.0": "low-income families of students",
+    "pages.sites.eligibility.list.1": "unemployed adults (looking for work)",
+    "pages.sites.eligibility.list.2": "majority non-English speaking adults/families",
+    "pages.sites.eligibility.list.3": "seniors",
+    "pages.sites.eligibility.paragraphs.1": "If you are eligible and interested in participating, please email lcl@seattlecommunitynetwork.org or leave a voice message or text at (253) 655-7221. You may also drop in at our in-person Technology Help Desk Hours (details <a href='https://docs.seattlecommunitynetwork.org/community/tech-help'>here</a>).",
+
+    "pages.sites.locations.header": "Locations (Listed N to S)",
+    "pages.sites.locations.labels.address": "Address:",
+    "pages.sites.locations.labels.description": "Description:",
+    "pages.sites.locations.suffix": "See green portions of the <a href='{image}'>image</a> and the <a href='{map}'>map</a> for more details.",
+
+    "pages.sites.locations.locations.garfield.src" : "/pages/our-sites/static-maps/garfield.min.jpg",
+    "pages.sites.locations.locations.garfield.alt" : "Garfield",
+    "pages.sites.locations.locations.garfield.href" : "https://garfieldhs.seattleschools.org/",
+    "pages.sites.locations.locations.garfield.header" : "Garfield High School",
+    "pages.sites.locations.locations.garfield.address" : "400 23rd Ave, Seattle, WA 98122",
+    "pages.sites.locations.locations.garfield.description" : "Estimated coverage area lies to the east of highway I-5, and to the north of E Yesler Way. Coverage extends east as far as 34th Ave, but east of 23rd Ave it has a northern boundary at E Union St. To the west of 23rd Ave, the northern boundary is E John St. and E Thomas St.",
+    "pages.sites.locations.locations.garfield.image" : "https://drive.google.com/file/d/1uzo6_0qQoQbPqGSrWemU61mHuoEpWOGW/view?usp=sharing",
+    "pages.sites.locations.locations.garfield.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.franklin.src" : "/pages/our-sites/static-maps/franklin.min.jpg",
+    "pages.sites.locations.locations.franklin.alt" : "Franklin",
+    "pages.sites.locations.locations.franklin.href" : "https://franklinhs.seattleschools.org/",
+    "pages.sites.locations.locations.franklin.header" : "Franklin High School",
+    "pages.sites.locations.locations.franklin.address" : "3013 S Mt Baker Blvd, Seattle, WA 98144",
+    "pages.sites.locations.locations.franklin.description" : "Estimated coverage area lies to the south of S Mt. Baker Blvd and to the north of S Orcas St. Going east to west, it lies between 24th Ave S and 42nd Ave S to the north of Rainier Playfield, and between 28th Ave S and Wilson Ave S to the south of Rainier Playfield.",
+    "pages.sites.locations.locations.franklin.image" : "https://drive.google.com/file/d/1SabotFa2dgXj_7VPG9uwBkWalih5spe1/view?usp=sharing",
+    "pages.sites.locations.locations.franklin.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.fcv.src" : "/pages/our-sites/static-maps/fcv.min.jpg",
+    "pages.sites.locations.locations.fcv.alt" : "FCV",
+    "pages.sites.locations.locations.fcv.href" : "https://www.filcommsea.org/",
+    "pages.sites.locations.locations.fcv.header" : "Filipino Community Center",
+    "pages.sites.locations.locations.fcv.address" : "5740 Martin Luther King Jr Way S, Seattle, WA 98118",
+    "pages.sites.locations.locations.fcv.description" : "Estimated coverage area currently lies between 32nd Ave S and 39th Ave S going west to east, and between S Dawson St and S Holly St going north to south.",
+    "pages.sites.locations.locations.fcv.image" : "https://drive.google.com/file/d/1QB4IakU_JYDLWO5WIBrbLmi1xPhryF1x/view?usp=sharing",
+    "pages.sites.locations.locations.fcv.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.occ.src" : "/pages/our-sites/static-maps/occ.min.jpg",
+    "pages.sites.locations.locations.occ.alt" : "OCC",
+    "pages.sites.locations.locations.occ.href" : "https://www.facebook.com/OromoCC/",
+    "pages.sites.locations.locations.occ.header" : "Oromo Cultural Center",
+    "pages.sites.locations.locations.occ.address" : ": 8819 Renton Ave S, Seattle, WA 98118",
+    "pages.sites.locations.locations.occ.description" : "Estimated coverage area lies to the south of S Cloverdale St, east of MLK Jr. Way S, west of Rainier Ave S, and north of S Fletcher St.",
+    "pages.sites.locations.locations.occ.image" : "https://drive.google.com/file/d/1Nqps9n1p8t75xgnO1vNpXkzwFo1Q2HQN/view?usp=sharing",
+    "pages.sites.locations.locations.occ.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.skyway.src" : "/pages/our-sites/static-maps/skyway.min.jpg",
+    "pages.sites.locations.locations.skyway.alt" : "SkywayLibrary",
+    "pages.sites.locations.locations.skyway.href" : "https://kcls.org/locations/skyway/",
+    "pages.sites.locations.locations.skyway.header" : "KCLS Skyway Library",
+    "pages.sites.locations.locations.skyway.address" : "12601 76th Ave S, Seattle, WA 98178",
+    "pages.sites.locations.locations.skyway.description" : "Estimated coverage area currently lies between 42nd Ave S and Rainier Ave S going west to east, and between S Cloverdale St and S Fletcher St going north to south.",
+    "pages.sites.locations.locations.skyway.image" : "https://drive.google.com/file/d/1u0-d55ELyP3Ipz7Urp6GHr3aNGYnvcbZ/view?usp=sharing",
+    "pages.sites.locations.locations.skyway.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.surge.src" : "/pages/our-sites/static-maps/surge.min.jpg",
+    "pages.sites.locations.locations.surge.alt" : "SurgeTacoma",
+    "pages.sites.locations.locations.surge.href" : "https://surgecoworking.com/surge-tacoma/",
+    "pages.sites.locations.locations.surge.header" : "Surge Tacoma",
+    "pages.sites.locations.locations.surge.address" : "2367 Tacoma Ave S, Tacoma, WA 98402",
+    "pages.sites.locations.locations.surge.description" : "Estimated coverage area lies to the south of S 11th St, east of MLK Jr. Way, west of the 705 highway, and north of Center St.",
+    "pages.sites.locations.locations.surge.image" : "https://drive.google.com/file/d/10gZMUKZadWmA7aQxm8aeai2XcCS0YGqe/view?usp=sharing",
+    "pages.sites.locations.locations.surge.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.sites.header": "Sites and Estimated LTE Coverage Map",
+    "pages.sites.sites.paragraphs.0": "Use the expand icon {image} to search",
+    "pages.sites.sites.iframe.src": "https://www.google.com/maps/d/u/0/embed?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ll=47.44462381949524%2C-122.33688819999999&z=10",
+    "pages.sites.sites.iframe.title": "Sites and Estimated LTE Coverage Map",
+    "pages.sites.sites.paragraphs.1": "For more specific information on signal strength, upload speed, and more:",
+    "pages.sites.sites.cta": "Visit Our Map Page",
+    "pages.sites.sites.href": "https://coverage.seattlecommunitynetwork.org/"
 }

@@ -59,3 +59,14 @@ a {
 section {
     margin: var(--layout-section-vertical) 0;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+}
