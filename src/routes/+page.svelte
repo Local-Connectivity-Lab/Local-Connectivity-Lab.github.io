@@ -55,7 +55,7 @@
 
     <section>
         <img
-            src={m['pages.home.building.src']()}
+            src={addBase(m['pages.home.building.src']())}
             alt={m['pages.home.building.alt']()}
         />
     </section>

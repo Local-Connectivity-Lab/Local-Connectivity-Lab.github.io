@@ -1,6 +1,7 @@
 <script lang="ts">
     import emblaCarouselSvelte from 'embla-carousel-svelte';
   import Autoplay from 'embla-carousel-autoplay'
+    import { addBase } from '$lib';
 
   let options = { loop: false }
   let plugins = [Autoplay()]
@@ -12,7 +13,7 @@
     <div class="embla__container">
         {#each imgs as img}
             <div class="embla__slide">
-                <img src={img} alt="Carousel" />
+                <img src={addBase(img)} alt="Carousel" />
             </div>
         {/each}
     </div>

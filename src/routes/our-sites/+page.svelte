@@ -48,7 +48,7 @@
             <h2>{m['pages.sites.details.header']()}</h2>
             <p>{m['pages.sites.details.paragraphs.0']()}</p>
             <img
-                src={m['pages.sites.details.img.src']()}
+                src={addBase(m['pages.sites.details.img.src']())}
                 alt={m['pages.sites.details.img.alt']()}
                 class="img-center"
             />
@@ -84,7 +84,7 @@
                 {#each locations as location}
                     <div class="location">
                         <img
-                            src={m[`pages.sites.locations.locations.${location}.src`]()}
+                            src={addBase(m[`pages.sites.locations.locations.${location}.src`]())}
                             alt={m[`pages.sites.locations.locations.${location}.alt`]()}
                         />
 

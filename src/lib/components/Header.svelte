@@ -17,7 +17,7 @@
 
 <header>
     <a href={addBase('/')} class="logo-link">
-        <img src="/layout/header/logo.min.png" alt="">
+        <img src={addBase("/layout/header/logo.min.png")} alt="">
         <h1>{m['common.scn']()}</h1>
     </a>
 
@@ -26,7 +26,7 @@
 
         showNav = !showNav;
     }}>
-        <img src="/layout/nav-hamburger.svg" alt={m['common.toggle_nav']()}>
+        <img src={addBase("/layout/nav-hamburger.svg")} alt={m['common.toggle_nav']()}>
     </button>
 </header>
 

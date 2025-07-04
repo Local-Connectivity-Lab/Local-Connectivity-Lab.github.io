@@ -1,5 +1,6 @@
 <script lang="ts">
     import { m } from '$lib/paraglide/messages.js';
+    import { addBase } from '$lib';
 
     let { type = "light", size = undefined} = $props();
 
@@ -41,7 +42,7 @@
 <div class="{cssClass}">
     {#each socials as { href, cta, src }}
         <a {href}>
-            <img src={src[type]} alt={cta} />
+            <img src={addBase(src[type])} alt={cta} />
         </a>
     {/each}
 </div>
