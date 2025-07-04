@@ -8,6 +8,9 @@
     import Header from '$lib/components/Header.svelte';
     import Footer from '$lib/components/Footer.svelte';
 
+    export const prerender = true;
+    export const trailingSlash = "always";
+
     let { children } = $props();
 </script>
 
