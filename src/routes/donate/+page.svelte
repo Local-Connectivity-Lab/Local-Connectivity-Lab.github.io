@@ -37,7 +37,7 @@
                     <input type="hidden" name="currency_code" value="USD" />
                     <button class="paypal-button">
                         <!--<img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">-->
-                        <input type="image" src="/layout/paypal button.png" name="submit" title="Paypal donations are made to lcl@seattlecommunitynetwork.org." alt="Donate with PayPal button" />
+                        <input type="image" src={addBase("/layout/paypal-button.png")} name="submit" title="Paypal donations are made to lcl@seattlecommunitynetwork.org." alt="Donate with PayPal button" />
                     </button>
                     <img alt="" src={addBase("https://www.paypal.com/en_US/i/scr/pixel.gif")} width="1" height="1" />
                 </form>
