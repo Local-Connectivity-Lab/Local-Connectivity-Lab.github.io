@@ -1,11 +1,11 @@
 <script lang="ts">
     import { m } from '$lib/paraglide/messages.js';
 
-    import Wrapper  from '$lib/components/Wrapper.svelte';
-    import Button   from '$lib/components/Button.svelte';
-    import Panel    from '$lib/components/Panel.svelte';
+    import Wrapper   from '$lib/components/Wrapper.svelte';
+    import Button    from '$lib/components/Button.svelte';
+    import Panel     from '$lib/components/Panel.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
-    import Socials from '$lib/components/Socials.svelte';
+    import Socials   from '$lib/components/Socials.svelte';
 
     const sections = [
         {
@@ -40,7 +40,16 @@
         }
     ];
 
-    const listLength = 8;
+    const valuesList = [
+        m['pages.about.values.list.0'](),
+        m['pages.about.values.list.1'](),
+        m['pages.about.values.list.2'](),
+        m['pages.about.values.list.3'](),
+        m['pages.about.values.list.4'](),
+        m['pages.about.values.list.5'](),
+        m['pages.about.values.list.6'](),
+        m['pages.about.values.list.7']()
+    ]
 
 </script>
 
@@ -67,8 +76,8 @@
             <h2>{m['pages.about.values.header']()}</h2>
             <p>{m['pages.about.values.paragraphs.0']()}</p>
             <ul class="values-list">
-                {#each Array(listLength).fill(0) as _, i}
-                    <li>{m[`pages.about.values.list.${i}`]()}</li>
+                {#each valuesList as value}
+                    <li>{value}</li>
                 {/each}
             </ul>
         </Panel>
@@ -79,10 +88,10 @@
             <h2>{m['pages.about.sm.header']()}</h2>
 
             <div class="center">
-                <Socials type="dark" size="medium"/>
+                <Socials type="dark" size="medium" />
 
                 <Button
-                    href={m['pages.about.sm.donate.href']}
+                    href={m['pages.about.sm.donate.href']()}
                     arrow={true}
                 >
                     {m['pages.about.sm.donate.cta']()}
