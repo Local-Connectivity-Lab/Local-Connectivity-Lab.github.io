@@ -8,6 +8,7 @@
     import Button   from '$lib/components/Button.svelte';
     import Panel    from '$lib/components/Panel.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
+    import { addBase } from '$lib';
 
     const overview = [
         m['pages.home.overview.paragraphs.0'](),
@@ -43,7 +44,11 @@
 
 <Wrapper>
     <section class="center">
-        <Button href={m['pages.home.hero.href']()} type="wide" arrow={true}>
+        <Button
+            href={addBase(m['pages.home.hero.href']())}
+            type="wide"
+            arrow={true}
+        >
             {m['pages.home.hero.cta']()}
         </Button>
     </section>
@@ -68,7 +73,7 @@
             <div class="flex-right">
                 <Button
                     type="small"
-                    href={m['pages.home.overview.about.href']()}
+                    href={addBase(m['pages.home.overview.about.href']())}
                     arrow={true}
                 >
                     {m['pages.home.overview.about.cta']()}
@@ -84,7 +89,7 @@
 
         <div class="button-row">
             {#each buttons as { href, cta }}
-                <Button {href} arrow={true}>
+                <Button href={addBase(href)} arrow={true}>
                     {cta}
                 </Button>
             {/each}

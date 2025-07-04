@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from '$app/stores';
+    import { addBase } from '$lib';
 
     import { m } from '$lib/paraglide/messages.js';
     // import { desktop } from '$lib/syles/breakpoints.ts'; // todo: how to use this in
@@ -15,7 +16,7 @@
 </script>
 
 <header>
-    <a href="/" class="logo-link">
+    <a href={addBase('/')} class="logo-link">
         <img src="/layout/header/logo.min.png" alt="">
         <h1>{m['common.scn']()}</h1>
     </a>
@@ -33,7 +34,7 @@
     <div class="nav-items" class:show-nav={showNav}>
         {#each Array(navLength).fill(0) as _, i}
             <a
-                href={m[`common.nav.${i}.href`]()}
+                href={addBase(m[`common.nav.${i}.href`]())}
                 class="nav-link"
                 class:active={m[`common.nav.${i}.href`]() === currentUrl}
             >

@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { addBase } from '$lib/index.ts';
+
     let { href, children, type = null, arrow = null } = $props();
 
     let cssClass = $state("button");
@@ -14,7 +16,7 @@
     }
 </script>
 
-<a {href} class={cssClass}>
+<a href={addBase(href)} class={cssClass}>
     {@render children()}
     {#if arrow}
         →

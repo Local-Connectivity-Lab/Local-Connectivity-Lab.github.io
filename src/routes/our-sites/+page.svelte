@@ -5,6 +5,7 @@
     import Panel     from '$lib/components/Panel.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
     import Button from '$lib/components/Button.svelte';
+    import { addBase } from '$lib';
 
     const detailsList = [
         m['pages.sites.details.list.0'](),
