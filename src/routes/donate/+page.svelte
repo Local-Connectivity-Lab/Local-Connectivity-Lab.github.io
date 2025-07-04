@@ -61,7 +61,7 @@
     .wave {
         height: 100%;
         padding-top: 200px;
-        background: var(--color-panel) var(--wave-url) no-repeat center 0/100% auto;
+        background: var(--color-panel) var(--wave-url) repeat-x center 0;
     }
 
     .buttons {
