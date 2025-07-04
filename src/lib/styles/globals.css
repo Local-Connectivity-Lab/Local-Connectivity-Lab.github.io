@@ -16,6 +16,11 @@ body {
     }
 }
 
+h1 {
+    font-size: 5em;
+    color: var(--color-brand-primary);
+}
+
 h2 {
     margin: 0 0 0.4em;
 

@@ -9,6 +9,8 @@
         cssClass = "button button-medium";
     } else if (type === "wide") {
         cssClass = "button button-wide";
+    } else if (type === "donate") {
+        cssClass = "button button-donate";
     }
 </script>
 
@@ -53,5 +55,11 @@
 
     .button-wide {
         padding: 0.6em 4em;
+    }
+
+    .button-donate {
+        border-radius: 3em;
+        font-size: 1.8em;
+        font-weight: bold;
     }
 </style>

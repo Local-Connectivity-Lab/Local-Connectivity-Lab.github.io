@@ -3,7 +3,7 @@
 
     let { title = undefined } = $props();
 
-    const pageTitle = title ? `${m['pages.about.title']()} - ${m['common.scn']()}` : m['common.scn']();
+    const pageTitle = title ? `${title} - ${m['common.scn']()}` : m['common.scn']();
 </script>
 
 <svelte:head>
