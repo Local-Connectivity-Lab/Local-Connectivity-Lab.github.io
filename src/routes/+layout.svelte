@@ -1,8 +1,4 @@
 <script lang="ts">
-    import { page } from '$app/stores';
-
-    import { m } from '$lib/paraglide/messages.js';
-
     import '../app.css';
 
     import Header from '$lib/components/Header.svelte';
