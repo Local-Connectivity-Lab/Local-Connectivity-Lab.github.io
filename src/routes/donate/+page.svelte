@@ -53,15 +53,28 @@
 <style>
     h1 {
         margin-bottom: 0;
+
+        @media screen and (width < 1024px) {
+            font-size: 3em;
+        }
     }
     p {
         font-size: 2em;
         margin-top: 0.4em;
     }
     .wave {
+        --wave-offset: 50px;
+        --gradient-offset: calc(var(--wave-offset) + 5px);
         height: 100%;
-        padding-top: 200px;
-        background: var(--color-panel) var(--wave-url) repeat-x center 0;
+        padding-top: 100px;
+        background:
+            var(--wave-url) no-repeat center var(--wave-offset)/100% auto,
+            linear-gradient(white var(--gradient-offset), var(--color-panel) var(--gradient-offset));
+
+        @media screen and (width >= 1024px) {
+            padding-top: 200px;
+            background: var(--color-panel) var(--wave-url) repeat-x center 0;
+        }
     }
 
     .buttons {
