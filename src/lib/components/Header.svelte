@@ -3,7 +3,6 @@
     import { addBase } from '$lib';
 
     import { m } from '$lib/paraglide/messages.js';
-    // import { desktop } from '$lib/syles/breakpoints.ts'; // todo: how to use this in
 
     let currentUrl = $state('');
     let showNav = $state(false);
@@ -37,6 +36,9 @@
                 href={addBase(m[`common.nav.${i}.href`]())}
                 class="nav-link"
                 class:active={m[`common.nav.${i}.href`]() === currentUrl}
+                onclick={(e) => {
+                    showNav = false; // close nav on click
+                }}
             >
                 <span>
                     {m[`common.nav.${i}.label`]()}

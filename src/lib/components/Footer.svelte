@@ -50,6 +50,7 @@
 
         h3,
         p {
+            text-align: left;
             color: var(--color-text2);
         }
 

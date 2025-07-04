@@ -142,7 +142,8 @@
     "pages.sites.eligibility.list.3": "seniors",
     "pages.sites.eligibility.paragraphs.1": "If you are eligible and interested in participating, please email lcl@seattlecommunitynetwork.org or leave a voice message or text at (253) 655-7221. You may also drop in at our in-person Technology Help Desk Hours (details <a href='https://docs.seattlecommunitynetwork.org/community/tech-help'>here</a>).",
 
-    "pages.sites.locations.header": "Locations (Listed N to S)",
+    "pages.sites.locations.header": "Locations",
+    "pages.sites.locations.subheader": "(Listed N to S)",
     "pages.sites.locations.labels.address": "Address:",
     "pages.sites.locations.labels.description": "Description:",
     "pages.sites.locations.suffix": "See green portions of the <a href='{image}'>image</a> and the <a href='{map}'>map</a> for more details.",

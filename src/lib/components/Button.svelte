@@ -42,6 +42,11 @@
         &:hover {
             background-color: var(--color-brand-primary-2);
         }
+
+        @media screen and (width < 1024px) {
+            font-size: 1.4em;
+            white-space: normal;
+        }
     }
 
     .button-small {

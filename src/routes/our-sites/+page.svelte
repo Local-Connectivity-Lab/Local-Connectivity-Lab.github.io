@@ -28,7 +28,6 @@
         "skyway",
         "surge"
     ];
-
 </script>
 
 <PageTitle title={m['pages.about.title']()} />
@@ -72,13 +71,14 @@
                     <li>{eligibility}</li>
                 {/each}
             </ul>
-            <p>{m['pages.sites.eligibility.paragraphs.1']()}</p>
+            <p>{@html m['pages.sites.eligibility.paragraphs.1']()}</p>
         </Panel>
     </section>
 
     <section>
         <Panel>
             <h2>{m['pages.sites.locations.header']()}</h2>
+            <h3>{m['pages.sites.locations.subheader']()}</h3>
 
             <div class="locations">
                 {#each locations as location}
@@ -151,6 +151,16 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 3em 6em;
         margin: 3em 8em 2em;
+
+        @media screen and (width < 1024px) {
+            margin: 3em 2em 2em;
+            gap: 2em 4em;
+        }
+
+        @media screen and (width < 768px) {
+            grid-template-columns: 1fr;
+            margin: 3em 0 2em;
+        }
     }
 
     .location {
@@ -187,6 +197,8 @@
         display: block;
         width: 1000px;
         aspect-ratio: 2;
-        margin: 0 auto
+        margin: 0 auto;
+
+        max-width: 100%;
     }
 </style>

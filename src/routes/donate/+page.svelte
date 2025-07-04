@@ -53,10 +53,6 @@
 <style>
     h1 {
         margin-bottom: 0;
-
-        @media screen and (width < 1024px) {
-            font-size: 3em;
-        }
     }
     p {
         font-size: 2em;
