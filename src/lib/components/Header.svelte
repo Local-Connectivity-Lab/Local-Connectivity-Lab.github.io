@@ -11,7 +11,40 @@
         currentUrl = $page.url.pathname;
     });
 
-    const navLength = 8;
+    const navItems = [
+        {
+            href: m['common.nav.0.href'](),
+            label: m['common.nav.0.label']()
+        },
+        {
+            href: m['common.nav.1.href'](),
+            label: m['common.nav.1.label']()
+        },
+        {
+            href: m['common.nav.2.href'](),
+            label: m['common.nav.2.label']()
+        },
+        {
+            href: m['common.nav.3.href'](),
+            label: m['common.nav.3.label']()
+        },
+        {
+            href: m['common.nav.4.href'](),
+            label: m['common.nav.4.label']()
+        },
+        {
+            href: m['common.nav.5.href'](),
+            label: m['common.nav.5.label']()
+        },
+        {
+            href: m['common.nav.6.href'](),
+            label: m['common.nav.6.label']()
+        },
+        {
+            href: m['common.nav.7.href'](),
+            label: m['common.nav.7.label']()
+        }
+    ];
 </script>
 
 <header>
@@ -21,7 +54,7 @@
     </a>
 
     <button class="nav-toggle" onclick={(e) => {
-        e.preventDefault(); // todo: the correct svelte5  way to preventDefault
+        e.preventDefault();
 
         showNav = !showNav;
     }}>
@@ -31,18 +64,16 @@
 
 <nav>
     <div class="nav-items" class:show-nav={showNav}>
-        {#each Array(navLength).fill(0) as _, i}
+        {#each navItems as {href, label}}
             <a
-                href={addBase(m[`common.nav.${i}.href`]())}
+                href={addBase(href)}
                 class="nav-link"
-                class:active={m[`common.nav.${i}.href`]() === currentUrl}
+                class:active={href === currentUrl}
                 onclick={(e) => {
                     showNav = false; // close nav on click
                 }}
             >
-                <span>
-                    {m[`common.nav.${i}.label`]()}
-                </span>
+                <span>{label}</span>
             </a>
         {/each}
     </div>
