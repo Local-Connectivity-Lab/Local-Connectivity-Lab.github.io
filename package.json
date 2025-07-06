@@ -13,7 +13,8 @@
         "lint": "eslint .",
         "test:e2e": "playwright test",
         "test": "npm run test:e2e",
-        "deploy": "npm run build && gh-pages -d build -t"
+        "deploy": "npm run build && gh-pages -d build -t",
+        "redirects": "node create-redirects.js"
     },
     "devDependencies": {
         "@eslint/compat": "^1.2.5",
