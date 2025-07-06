@@ -16,6 +16,14 @@ npm run dev
 npm run dev -- --open
 ```
 
+
+## Redirects
+
+No good way to do this with GitHub pages, need to create stub sveltekit pages that do a client side redirect.
+
+See `./create-redirect.js`.
+
+
 ## Building
 
 To create a production version of your app:
@@ -25,5 +33,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-test
