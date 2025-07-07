@@ -8,22 +8,38 @@ const redirects = [
 ];
 
 const template =
-`// This file is auto-generated. Do not edit directly.
-// see: ./create-redirects.js
-<script lang="ts">
+`<script lang="ts">
+    // This file is auto-generated. Do not edit directly.
+    // see: ./create-redirects.js
+
+    import Wrapper from '$lib/components/Wrapper.svelte';
+
     if (typeof window !== 'undefined') {
-        window.location.href = "{to}";
+        window.location.href = window.location.href.replace("{from}", "{to}");
     }
 </script>
+
+<Wrapper>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, please click <a href="{to}">here</a>.</p>
+</Wrapper>
+
+<style>
+    h1 {
+        font-size: 2em;
+        font-weight: normal;
+        margin-top: 2em;
+    }
+</style>
 `;
 
 /**
- * @param {string} page - The page to redirect from.
- * @param {string} redirect - The path to redirect to.
+ * @param {string} from - The page to redirect from.
+ * @param {string} to - The path to redirect to.
  * @returns {Promise<void>} - A promise that resolves when the file is written.
  */
 function createRedirect(from, to) {
-    const content = template.replace('{to}', to);
+    const content = template.replaceAll('{to}', to).replaceAll('{from}', from);
     const filePath = `src/routes${from}/+page.svelte`;
 
     // Ensure the directory exists
