@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
-    import { m } from '$lib/paraglide/messages.js';
-    import Wrapper from '$lib/components/Wrapper.svelte';
-    import PageTitle from '$lib/components/Page-Title.svelte';
+
     import { addBase } from '$lib';
+
+    import { m }     from '$lib/paraglide/messages.js';
+    import Wrapper   from '$lib/components/Wrapper.svelte';
+    import PageTitle from '$lib/components/Page-Title.svelte';
 
     // written out instead of programmatically to avoid blowing up tree-shaking
     const errors = {

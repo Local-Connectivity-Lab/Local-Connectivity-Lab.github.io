@@ -12,6 +12,7 @@ const template =
     // This file is auto-generated. Do not edit directly.
     // see: ./create-redirects.js
 
+    import { addBase } from '$lib';
     import Wrapper from '$lib/components/Wrapper.svelte';
 
     if (typeof window !== 'undefined') {
@@ -21,7 +22,7 @@ const template =
 
 <Wrapper>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, please click <a href="{to}">here</a>.</p>
+    <p>If you are not redirected automatically, please click <a href={addBase("{to}")}>here</a>.</p>
 </Wrapper>
 
 <style>
