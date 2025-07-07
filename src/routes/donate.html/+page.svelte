@@ -2,6 +2,7 @@
     // This file is auto-generated. Do not edit directly.
     // see: ./create-redirects.js
 
+    import { addBase } from '$lib';
     import Wrapper from '$lib/components/Wrapper.svelte';
 
     if (typeof window !== 'undefined') {
@@ -11,7 +12,7 @@
 
 <Wrapper>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, please click <a href="/donate">here</a>.</p>
+    <p>If you are not redirected automatically, please click <a href={addBase("/donate")}>here</a>.</p>
 </Wrapper>
 
 <style>
