@@ -216,6 +216,17 @@
 
     "pages.donate.title": "Donate",
     "pages.donate.header": "Make a Donation",
-    "pages.donate.paragraphs.0": "We appreciate your support of our mission!"
+    "pages.donate.paragraphs.0": "We appreciate your support of our mission!",
+
+
+
+    "=== ERROR MESSAGES ===" : "comment",
+    "pages.error.404.title": "Page Not Found",
+    "pages.error.404.description": "The page you are looking for does not exist or has been moved.",
+    "pages.error.404.cta": "Go to Home Page",
+
+    "pages.error.500.title": "Internal Server Error",
+    "pages.error.500.description": "An unexpected error has occurred. Please try again later.",
+    "pages.error.500.cta": "Go to Home Page"
 
 }
