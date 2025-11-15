@@ -107,8 +107,8 @@
             }
         }
         img {
-            height: 4em;
-            aspect-ratio: 1 / 1;
+            width: 4em;
+            aspect-ratio: 1;
             object-fit: contain;
         }
     }

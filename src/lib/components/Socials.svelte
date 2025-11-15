@@ -54,7 +54,7 @@
         gap: 1em;
 
         img {
-            height: 3em;
+            width: 3em;
             aspect-ratio: 1;
         }
     }
