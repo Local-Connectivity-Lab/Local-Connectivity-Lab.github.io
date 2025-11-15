@@ -2,7 +2,12 @@
     import { m } from '$lib/paraglide/messages.js';
     import { addBase } from '$lib';
 
-    let { type = "light", size = undefined} = $props();
+    // type can be "light" or "dark"
+
+    let {
+        type = "light" as "light" | "dark",
+        size = undefined
+    } = $props();
 
     let cssClass = $state("socials");
 
