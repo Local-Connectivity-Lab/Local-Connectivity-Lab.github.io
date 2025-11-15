@@ -11,4 +11,4 @@
     {m['pages.home.partners.paragraphs.0']()}
 </p>
 
-<img src={addBase("/pages/home/scn-partner-logos.min.jpg")} alt={m['pages.home.partners.alt']()} />
+<img src={addBase("/pages/home/scn-partner-logos.min.png")} loading="lazy" alt={m['pages.home.partners.alt']()} />
