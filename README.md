@@ -36,14 +36,6 @@ See `./.nvmrc` for the version of NodeJS to install
 Open your browser to http://localhost:5173
 
 
-## Tests
-
-There are automated tests using Playwright.
-
-- run this the first time, to install Playwright dependencies: `npx playwright install`
-- `npm run test` to run tests
-
-
 ### Update text
 
 All website text is in `./messages/en.json`.
@@ -62,15 +54,21 @@ There's 1 layout template used for all pages - `./src/routes/+layout.ts`.
 There is a variety of reusable components in `./src/lib/components/*.svelte`
 
 
-## Production Build
+## Tests
 
-To create a production version of your app:
+There are automated tests using Playwright.
 
-```bash
-npm run build
-```
+- run this the first time, to install Playwright dependencies: `npx playwright install`
+- `npm run test` to run tests
 
-You can preview the production build with `npm run preview`.
+
+## Production build
+
+To create a *local* production version of your app:
+
+1. `npm run build`
+1. `npm run preview`
+1. open http://localhost:4137
 
 
 ## Redirects
