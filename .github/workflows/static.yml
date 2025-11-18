@@ -9,23 +9,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Check out the repo code
       - uses: actions/checkout@v4
 
+      # Use the Node version defined in .nvmrc
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: npm
+          cache: npm # cache node_modules for faster builds
 
+      # Install dependencies exactly as in package-lock.json
       - name: Install dependencies
         run: npm ci
 
+      # Build the SvelteKit project
       - name: Build project
         env:
           BASE_PATH: /Local-Connectivity-Lab.github.io
         run: npm run build
 
+      # Upload the build output to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./build          # SvelteKit static output folder
