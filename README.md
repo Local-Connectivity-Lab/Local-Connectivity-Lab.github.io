@@ -11,6 +11,11 @@ The website is hosted on GitHub pages. See `./.github/workflows/static.yml` for 
 
 You'll want to run the site locally so you can preview your changes. It's fairly simple to setup if you have any programming experience.
 
+Make your changes and confirm them in your locally running site. Commit change to a feature Branch, and create a pull request in GitHub.
+
+The changes will then need to be reviewed and merged. After merging, a GitHub Action will kick off to build and deploy the site. This should only take 5 mins, after which your changes will be live!
+
+
 ### Local setup
 
 **Install NodeJS** - two options:
@@ -29,6 +34,14 @@ See `./.nvmrc` for the version of NodeJS to install
 1. Start a development server `npm run dev`
 
 Open your browser to http://localhost:5173
+
+
+## Tests
+
+There are automated tests using Playwright.
+
+- run this the first time, to install Playwright dependencies: `npx playwright install`
+- `npm run test` to run tests
 
 
 ### Update text
