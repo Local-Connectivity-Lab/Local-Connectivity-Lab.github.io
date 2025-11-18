@@ -25,7 +25,7 @@ jobs:
       # Build the SvelteKit project
       - name: Build project
         env:
-          BASE_PATH: /Local-Connectivity-Lab.github.io
+          BASE_PATH: /Local-Connectivity-Lab.github.io # THIS WILL NEED TO CHANGE BEFORE IT CAN BE MERGED
         run: npm run build
 
       # Upload the build output to GitHub Pages
