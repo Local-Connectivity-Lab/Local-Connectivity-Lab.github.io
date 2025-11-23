@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { m } from "$lib/paraglide/messages.js";
+    import { m }       from "$lib/paraglide/messages.js";
     import { addBase } from "$lib";
 
-    import Wrapper from "$lib/components/Wrapper.svelte";
-    import Button from "$lib/components/Button.svelte";
-    import Panel from "$lib/components/Panel.svelte";
+    import Wrapper   from "$lib/components/Wrapper.svelte";
+    import Button    from "$lib/components/Button.svelte";
+    import Panel     from "$lib/components/Panel.svelte";
     import PageTitle from "$lib/components/Page-Title.svelte";
-    import Socials from "$lib/components/Socials.svelte";
+    import Socials   from "$lib/components/Socials.svelte";
 
     const sections = [
         {
@@ -56,14 +56,12 @@
     {#each sections as section, index}
         <section data-test={`about-us-${section.key}`}>
             <Panel type="plain">
-                {#if index === 0}
-                    <h1>{section.header}</h1>
-                {:else}
-                    <h2>{section.header}</h2>
-                {/if}
+                <h1 class="h2">{section.header}</h1>
+
                 {#each section.paragraphs as paragraph}
                     <p>{@html paragraph}</p>
                 {/each}
+
                 <img src={addBase(section.img.src)} alt={section.img.alt} />
             </Panel>
         </section>
@@ -72,7 +70,9 @@
     <section data-test="about-values">
         <Panel type="plain">
             <h2>{m["pages.about.values.header"]()}</h2>
+
             <p>{m["pages.about.values.paragraphs.0"]()}</p>
+
             <ul class="values-list">
                 {#each valuesList as value}
                     <li>{value}</li>
