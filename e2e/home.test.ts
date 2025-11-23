@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('/');
 });
 
-test.describe('Home Page', () => {
+test.describe('Home', () => {
     test('has expected content', async ({ page }) => {
         await expectSections({
             page,
