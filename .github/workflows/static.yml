@@ -2,10 +2,16 @@ name: Deploy SvelteKit to GitHub Pages
 
 on:
   push:
-    branches: [svelte-ssg]
+    branches: [main]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 2 jobs: build the SvelteKit static site, and deploy the built site to GitHub Pages
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,17 +24,26 @@ jobs:
           node-version-file: .nvmrc
           cache: npm # cache node_modules for faster builds
 
-      # Install dependencies exactly as in package-lock.json
       - name: Install dependencies
-        run: npm ci
+        run: npm ci # ci (not install) to install exact versions from package-lock.json
 
       # Build the SvelteKit project
       - name: Build project
         run: npm run build
 
-      # Upload the build output to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      # Upload build output as artifact
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build          # SvelteKit static output folder
+          path: ./build # SvelteKit static output folder
+
+  deploy:
+    needs: build # make the build artifact available here in deploy job
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }} # just a convenience, adds page url to action summary page
+
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
