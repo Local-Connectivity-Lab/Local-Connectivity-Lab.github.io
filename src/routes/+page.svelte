@@ -26,10 +26,12 @@
 
     const buttons = [
         {
+            dataTest : 'home-involved-volunteer-cta',
             href : m['pages.home.get_involved.volunteer.href'](),
             cta : m['pages.home.get_involved.volunteer.cta']()
         },
         {
+            dataTest : 'home-involved-connect-cta',
             href : m['pages.home.get_involved.connect.href'](),
             cta : m['pages.home.get_involved.connect.cta']()
         }
@@ -49,7 +51,7 @@
             href={addBase(m['pages.home.hero.href']())}
             type="wide"
             arrow={true}
-            dataTest="home-hero-cta-button"
+            dataTest="home-hero-cta"
         >
             {m['pages.home.hero.cta']()}
         </Button>
@@ -77,7 +79,7 @@
                     type="small"
                     href={addBase(m['pages.home.overview.about.href']())}
                     arrow={true}
-                    dataTest="home-overview-about-button"
+                    dataTest="home-overview-cta"
                 >
                     {m['pages.home.overview.about.cta']()}
                 </Button>
@@ -91,8 +93,8 @@
         </h2>
 
         <div class="button-row">
-            {#each buttons as { href, cta }}
-                <Button href={addBase(href)} arrow={true}>
+            {#each buttons as { href, cta, dataTest } }
+                <Button href={addBase(href)} arrow={true} dataTest={dataTest}>
                     {cta}
                 </Button>
             {/each}
