@@ -1,8 +1,8 @@
 <script lang="ts">
-    let { children } = $props();
+    let { children, dataTest = "" } = $props();
 </script>
 
-<div class="wrapper">
+<div class="wrapper" data-test={dataTest}>
     <div class="content">
         {@render children()}
     </div>

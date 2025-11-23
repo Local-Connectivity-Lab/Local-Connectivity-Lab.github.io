@@ -47,8 +47,8 @@
     ];
 </script>
 
-<header>
-    <a href={addBase('/')} class="logo-link">
+<header data-test="site-header">
+    <a href={addBase('/')} class="logo-link" data-test="site-logo-link">
         <img src={addBase("/layout/header/logo.min.png")} alt="">
         <h1>{m['common.scn']()}</h1>
     </a>
@@ -63,7 +63,7 @@
 </header>
 
 <nav>
-    <div class="nav-items" class:show-nav={showNav}>
+    <div class="nav-items" class:show-nav={showNav} data-test="site-nav">
         {#each navItems as {href, label}}
             <a
                 href={addBase(href)}

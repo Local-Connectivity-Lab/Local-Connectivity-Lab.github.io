@@ -1,13 +1,10 @@
 <script lang="ts">
-    import { m } from '$lib/paraglide/messages.js';
-    import { addBase } from '$lib';
+    import { m } from "$lib/paraglide/messages.js";
+    import { addBase } from "$lib";
 
     // type can be "light" or "dark"
 
-    let {
-        type = "light" as "light" | "dark",
-        size = undefined
-    } = $props();
+    let { type = "light" as "light" | "dark", size = undefined } = $props();
 
     let cssClass = $state("socials");
 
@@ -17,36 +14,35 @@
 
     const socials = [
         {
-            href : m['socials.instagram.href'](),
-            cta : m['socials.instagram.cta'](),
-            src : {
-                light : "/layout/socials/instagram-icon.png",
-                dark : "/layout/socials/instagram-icon-dark.png"
-            }
+            href: m["socials.instagram.href"](),
+            cta: m["socials.instagram.cta"](),
+            src: {
+                light: "/layout/socials/instagram-icon.png",
+                dark: "/layout/socials/instagram-icon-dark.png",
+            },
         },
         {
-            href : m['socials.twitter.href'](),
-            cta : m['socials.twitter.cta'](),
-            src : {
-                light : "/layout/socials/twitter-icon.png",
-                dark : "/layout/socials/twitter-icon-dark.png"
-            }
+            href: m["socials.twitter.href"](),
+            cta: m["socials.twitter.cta"](),
+            src: {
+                light: "/layout/socials/twitter-icon.png",
+                dark: "/layout/socials/twitter-icon-dark.png",
+            },
         },
         {
-            href : m['socials.facebook.href'](),
-            cta : m['socials.facebook.cta'](),
-            src : {
-                light : "/layout/socials/facebook-icon.png",
-                dark : "/layout/socials/facebook-icon-dark.png"
-            }
-        }
+            href: m["socials.facebook.href"](),
+            cta: m["socials.facebook.cta"](),
+            src: {
+                light: "/layout/socials/facebook-icon.png",
+                dark: "/layout/socials/facebook-icon-dark.png",
+            },
+        },
     ];
 </script>
 
-
-<div class="{cssClass}">
+<div class={cssClass}>
     {#each socials as { href, cta, src }}
-        <a {href}>
+        <a {href} data-test={`social-${cta.toLowerCase()}`}>
             <img src={addBase(src[type])} alt={cta} />
         </a>
     {/each}
