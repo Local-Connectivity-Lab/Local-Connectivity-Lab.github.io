@@ -16,8 +16,9 @@ body {
     }
 }
 
-h1 {
-    font-size: 5em;
+h1,
+.h1 {
+    font-size: 3em;
     color: var(--color-brand-primary);
 
     @media screen and (width < 1024px) {
@@ -25,7 +26,8 @@ h1 {
     }
 }
 
-h2 {
+h2,
+.h2 {
     margin: 0 0 0.4em;
 
     text-align: center;
@@ -42,7 +44,8 @@ h2 {
     }
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 2em;
     font-weight: 500;
     text-align: center;
