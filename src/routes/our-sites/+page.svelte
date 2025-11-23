@@ -26,7 +26,7 @@
 <PageTitle title={m["pages.sites.title"]()} />
 
 <Wrapper dataTest="our-sites-page">
-    <section>
+    <section data-test="our-sites-overview">
         <h1>{m["pages.sites.overview.header"]()}</h1>
 
         <Panel>
@@ -36,7 +36,7 @@
         </Panel>
     </section>
 
-    <section>
+    <section data-test="our-sites-details">
         <Panel type="plain">
             <h2>{m["pages.sites.details.header"]()}</h2>
             <p>{m["pages.sites.details.paragraphs.0"]()}</p>
@@ -56,7 +56,7 @@
         </Panel>
     </section>
 
-    <section>
+    <section data-test="our-sites-eligibility">
         <Panel type="plain">
             <h2>{m["pages.sites.eligibility.header"]()}</h2>
             <p>{m["pages.sites.eligibility.paragraphs.0"]()}</p>
@@ -69,7 +69,7 @@
         </Panel>
     </section>
 
-    <section>
+    <section data-test="our-sites-locations">
         <Panel>
             <h2>{m["pages.sites.locations.header"]()}</h2>
             <h3>{m["pages.sites.locations.subheader"]()}</h3>
@@ -79,49 +79,31 @@
                     <div class="location">
                         <img
                             src={addBase(
-                                m[
-                                    `pages.sites.locations.locations.${location}.src`
-                                ](),
+                                m[`pages.sites.locations.locations.${location}.src`](),
                             )}
-                            alt={m[
-                                `pages.sites.locations.locations.${location}.alt`
-                            ]()}
+                            alt={m[`pages.sites.locations.locations.${location}.alt`]()}
                         />
 
                         <div class="content">
                             <a
-                                href={m[
-                                    `pages.sites.locations.locations.${location}.href`
-                                ]()}
+                                href={m[`pages.sites.locations.locations.${location}.href`]()}
                                 class="header-link"
                             >
                                 <h3>
-                                    {m[
-                                        `pages.sites.locations.locations.${location}.header`
-                                    ]()}
+                                    {m[`pages.sites.locations.locations.${location}.header`]()}
                                 </h3>
                             </a>
 
                             <p>
                                 {m["pages.sites.locations.labels.address"]()}
-                                {m[
-                                    `pages.sites.locations.locations.${location}.address`
-                                ]()}
+                                {m[`pages.sites.locations.locations.${location}.address`]()}
                             </p>
                             <p>
-                                {m[
-                                    "pages.sites.locations.labels.description"
-                                ]()}
-                                {m[
-                                    `pages.sites.locations.locations.${location}.description`
-                                ]()}
+                                {m["pages.sites.locations.labels.description"]()}
+                                {m[`pages.sites.locations.locations.${location}.description`]()}
                                 {@html m["pages.sites.locations.suffix"]({
-                                    image: m[
-                                        `pages.sites.locations.locations.${location}.image`
-                                    ](),
-                                    map: m[
-                                        `pages.sites.locations.locations.${location}.map`
-                                    ](),
+                                    image: m[`pages.sites.locations.locations.${location}.image`](),
+                                    map: m[`pages.sites.locations.locations.${location}.map`](),
                                 })}
                             </p>
                         </div>
@@ -131,7 +113,7 @@
         </Panel>
     </section>
 
-    <section class="text-center">
+    <section class="text-center" data-test="our-sites-map">
         <Panel type="plain">
             <h2>{m["pages.sites.sites.header"]()}</h2>
             <p class="row-center">
@@ -148,7 +130,7 @@
 
             <p>{m["pages.sites.sites.paragraphs.1"]()}</p>
 
-            <Button href={m["pages.sites.sites.href"]()} arrow={true}>
+            <Button href={m["pages.sites.sites.href"]()} arrow={true} dataTest="our-sites-map-cta">
                 {m["pages.sites.sites.cta"]()}
             </Button>
         </Panel>
