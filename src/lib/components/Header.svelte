@@ -49,8 +49,13 @@
 
 <header data-test="site-header">
     <a href={addBase('/')} class="logo-link" data-test="site-logo-link">
-        <img src={addBase("/layout/header/logo.min.png")} alt="">
-        <h1>{m['common.scn']()}</h1>
+        <img class="logo" src={addBase("/layout/header/logo.min.png")} alt="">
+
+        {#if currentUrl === '/'}
+            <h1 class="logotype">{m['common.scn']()}</h1>
+        {:else}
+            <div class="logotype">{m['common.scn']()}</div>
+        {/if}
     </a>
 
     <button class="nav-toggle" onclick={(e) => {
@@ -62,8 +67,8 @@
     </button>
 </header>
 
-<nav>
-    <div class="nav-items" class:show-nav={showNav} data-test="site-nav">
+<nav class="nav" data-test="site-nav">
+    <div class="nav-items" class:show-nav={showNav}>
         {#each navItems as {href, label}}
             <a
                 href={addBase(href)}
@@ -94,26 +99,27 @@
         gap: 0.5em;
 
         text-decoration: none;
+    }
 
-        h1 {
-            margin: 0;
+    .logo {
+        width: 4em;
+        aspect-ratio: 1;
+        object-fit: contain;
+    }
 
-            color: white;
-            font-size: 1.6em;
-            font-weight: 500;
+    .logotype {
+        margin: 0;
 
-            @media screen and (width >= 1024px) {
-                font-size: 2.2em;
-            }
-        }
-        img {
-            width: 4em;
-            aspect-ratio: 1;
-            object-fit: contain;
+        color: white;
+        font-size: 1.6em;
+        font-weight: 500;
+
+        @media screen and (width >= 1024px) {
+            font-size: 2.2em;
         }
     }
 
-    nav {
+    .nav {
         --nav-border: solid 1px var(--color-nav-border);
 
         display: block;
@@ -161,39 +167,39 @@
             border: none;
         }
 
-        a {
-            display: inline-block;
-
-            color: var(--color-nav-text);
-            text-decoration: none;
-
-            @media screen and (width >= 1024px) {
-                border-right: var(--nav-border);
-
-                &:first-child {
-                    border-left: var(--nav-border);
-                }
-            }
-
-            &:hover span {
-                padding: 0.5em 2em;
-                margin: 0;
-                text-shadow: 0 0 1px var(--color-nav-text);
-
-                background-color: var(--color-nav-background);
-            }
-
-            &.active span {
-                background-color: var(--color-nav-background);
-            }
-        }
-
         span {
             display: inline-block;
             padding: 0.5em 1em;
             margin: 0 1em;
 
             transition: margin 200ms, padding 200ms;
+        }
+    }
+
+    .nav-link {
+        display: inline-block;
+
+        color: var(--color-nav-text);
+        text-decoration: none;
+
+        @media screen and (width >= 1024px) {
+            border-right: var(--nav-border);
+
+            &:first-child {
+                border-left: var(--nav-border);
+            }
+        }
+
+        &:hover span {
+            padding: 0.5em 2em;
+            margin: 0;
+            text-shadow: 0 0 1px var(--color-nav-text);
+
+            background-color: var(--color-nav-background);
+        }
+
+        &.active span {
+            background-color: var(--color-nav-background);
         }
     }
 </style>
