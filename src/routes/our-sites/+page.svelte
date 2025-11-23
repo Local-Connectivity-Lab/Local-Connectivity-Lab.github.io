@@ -1,6 +1,12 @@
 <script lang="ts">
     import { m } from "$lib/paraglide/messages.js";
+    import { m } from "$lib/paraglide/messages.js";
 
+    import Wrapper from "$lib/components/Wrapper.svelte";
+    import Panel from "$lib/components/Panel.svelte";
+    import PageTitle from "$lib/components/Page-Title.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import { addBase } from "$lib";
     import Wrapper from "$lib/components/Wrapper.svelte";
     import Panel from "$lib/components/Panel.svelte";
     import PageTitle from "$lib/components/Page-Title.svelte";
@@ -11,6 +17,9 @@
         m["pages.sites.details.list.0"](),
         m["pages.sites.details.list.1"](),
         m["pages.sites.details.list.2"](),
+        m["pages.sites.details.list.0"](),
+        m["pages.sites.details.list.1"](),
+        m["pages.sites.details.list.2"](),
     ];
 
     const eligibilityList = [
@@ -18,11 +27,17 @@
         m["pages.sites.eligibility.list.1"](),
         m["pages.sites.eligibility.list.2"](),
         m["pages.sites.eligibility.list.3"](),
+        m["pages.sites.eligibility.list.0"](),
+        m["pages.sites.eligibility.list.1"](),
+        m["pages.sites.eligibility.list.2"](),
+        m["pages.sites.eligibility.list.3"](),
     ];
 
     const locations = ["garfield", "franklin", "fcv", "occ", "skyway", "surge"];
+    const locations = ["garfield", "franklin", "fcv", "occ", "skyway", "surge"];
 </script>
 
+<PageTitle title={m["pages.sites.title"]()} />
 <PageTitle title={m["pages.sites.title"]()} />
 
 <Wrapper dataTest="our-sites-page">
@@ -40,11 +55,17 @@
         <Panel type="plain">
             <h2>{m["pages.sites.details.header"]()}</h2>
             <p>{m["pages.sites.details.paragraphs.0"]()}</p>
+            <h2>{m["pages.sites.details.header"]()}</h2>
+            <p>{m["pages.sites.details.paragraphs.0"]()}</p>
             <img
+                src={addBase(m["pages.sites.details.img.src"]())}
+                alt={m["pages.sites.details.img.alt"]()}
                 src={addBase(m["pages.sites.details.img.src"]())}
                 alt={m["pages.sites.details.img.alt"]()}
                 class="img-center"
             />
+            <p>{m["pages.sites.details.paragraphs.1"]()}</p>
+            <p>{m["pages.sites.details.paragraphs.2"]()}</p>
             <p>{m["pages.sites.details.paragraphs.1"]()}</p>
             <p>{m["pages.sites.details.paragraphs.2"]()}</p>
 
@@ -60,17 +81,22 @@
         <Panel type="plain">
             <h2>{m["pages.sites.eligibility.header"]()}</h2>
             <p>{m["pages.sites.eligibility.paragraphs.0"]()}</p>
+            <h2>{m["pages.sites.eligibility.header"]()}</h2>
+            <p>{m["pages.sites.eligibility.paragraphs.0"]()}</p>
             <ul>
                 {#each eligibilityList as eligibility}
                     <li>{eligibility}</li>
                 {/each}
             </ul>
             <p>{@html m["pages.sites.eligibility.paragraphs.1"]()}</p>
+            <p>{@html m["pages.sites.eligibility.paragraphs.1"]()}</p>
         </Panel>
     </section>
 
     <section data-test="our-sites-locations">
         <Panel>
+            <h2>{m["pages.sites.locations.header"]()}</h2>
+            <h3>{m["pages.sites.locations.subheader"]()}</h3>
             <h2>{m["pages.sites.locations.header"]()}</h2>
             <h3>{m["pages.sites.locations.subheader"]()}</h3>
 
@@ -86,7 +112,9 @@
 
                         <div class="content">
                             <a
-                                href={m[`pages.sites.locations.locations.${location}.href`]()}
+                                href={m[
+                                    `pages.sites.locations.locations.${location}.href`
+                                ]()}
                                 class="header-link"
                             >
                                 <h3>
@@ -121,13 +149,22 @@
                     image: `<img src='https://lh3.googleusercontent.com/rB9Ziqi8m-AMvnUCCzMZdzmP4js_cqNksYuXIDiYgJdYl4pMaTh3FLqJC9_RhnzL4joiymQz-3Ctnsbz4DEWnzAuY_mWH8w2wPTu7ApdcCx6xoBCNpCMNUZ3zffoKgGAUzSEUGYGFQ=w2400' />`,
                 })}
             </p>
+            <h2>{m["pages.sites.sites.header"]()}</h2>
+            <p class="row-center">
+                {@html m["pages.sites.sites.paragraphs.0"]({
+                    image: `<img src='https://lh3.googleusercontent.com/rB9Ziqi8m-AMvnUCCzMZdzmP4js_cqNksYuXIDiYgJdYl4pMaTh3FLqJC9_RhnzL4joiymQz-3Ctnsbz4DEWnzAuY_mWH8w2wPTu7ApdcCx6xoBCNpCMNUZ3zffoKgGAUzSEUGYGFQ=w2400' />`,
+                })}
+            </p>
 
             <iframe
                 class="sites-iframe"
                 src={m["pages.sites.sites.iframe.src"]()}
                 title={m["pages.sites.sites.iframe.title"]()}
+                src={m["pages.sites.sites.iframe.src"]()}
+                title={m["pages.sites.sites.iframe.title"]()}
             ></iframe>
 
+            <p>{m["pages.sites.sites.paragraphs.1"]()}</p>
             <p>{m["pages.sites.sites.paragraphs.1"]()}</p>
 
             <Button href={m["pages.sites.sites.href"]()} arrow={true} dataTest="our-sites-map-cta">
@@ -161,6 +198,7 @@
     }
 
     .location {
+        background-color: #ffffff;
         background-color: #ffffff;
         box-shadow: 0 0.3em 2em #0004;
 
@@ -199,3 +237,4 @@
         max-width: 100%;
     }
 </style>
+
