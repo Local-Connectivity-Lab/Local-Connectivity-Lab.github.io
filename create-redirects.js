@@ -15,10 +15,12 @@ const template =
     import { addBase } from '$lib';
     import Wrapper from '$lib/components/Wrapper.svelte';
 
-    if (typeof window !== 'undefined') {
-        window.location.href = window.location.href.replace("{from}", "{to}");
-    }
 </script>
+
+<svelte:head>
+    <meta http-equiv="refresh" content="0; url={addBase('{to}')}" />
+    <title>Redirecting...</title>
+</svelte:head>
 
 <Wrapper>
     <h1>Redirecting...</h1>

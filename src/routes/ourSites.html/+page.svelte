@@ -5,10 +5,12 @@
     import { addBase } from '$lib';
     import Wrapper from '$lib/components/Wrapper.svelte';
 
-    if (typeof window !== 'undefined') {
-        window.location.href = window.location.href.replace("/ourSites.html", "/our-sites");
-    }
 </script>
+
+<svelte:head>
+    <meta http-equiv="refresh" content="0; url={addBase('/our-sites')}" />
+    <title>Redirecting...</title>
+</svelte:head>
 
 <Wrapper>
     <h1>Redirecting...</h1>
