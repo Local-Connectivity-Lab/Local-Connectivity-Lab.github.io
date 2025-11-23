@@ -17,7 +17,7 @@
     ];
 </script>
 
-<div class="footer">
+<div class="footer" data-test="site-footer">
     <Wrapper>
         <footer>
             <div>
