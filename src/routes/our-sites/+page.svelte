@@ -27,8 +27,9 @@
 
 <Wrapper dataTest="our-sites-page">
     <section>
+        <h1>{m["pages.sites.overview.header"]()}</h1>
+
         <Panel>
-            <h1>{m["pages.sites.overview.header"]()}</h1>
             <p>{m["pages.sites.overview.paragraphs.0"]()}</p>
             <p>{m["pages.sites.overview.paragraphs.1"]()}</p>
             <p>{m["pages.sites.overview.paragraphs.2"]()}</p>
