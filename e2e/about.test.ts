@@ -1,34 +1,42 @@
-import { expect, test } from '@playwright/test';
+import { test } from '@playwright/test';
+import { expectH1AndTitle, expectSections, expectLinks } from './lib/lib';
 
 test.beforeEach(async ({ page }) => {
     await page.goto('/about-us');
 });
 
-test.describe('About Page', () => {
-    test('about page has expected content', async ({ page }) => {
-        const locators = [
-            'data-test=about-us-lcl',
-            'data-test=about-us-mission',
-            'data-test=about-us-vision',
-        ];
+test.describe('About', () => {
+    test('has expected content', async ({ page }) => {
+        await expectH1AndTitle({
+            page,
+            h1 : "Local Connectivity Lab",
+            title: "About Us - Seattle Community Network"
+        });
 
-        await expect(page.locator('main h1')).toBeVisible();
-        await expect(page).toHaveTitle(/about/i);
-
-        for (const locator of locators) {
-            await expect(page.locator(locator)).toBeVisible();
-        }
+        await expectSections({
+            page,
+            pageName: 'about-us',
+            sections: [
+                "lcl",
+                'mission',
+                'vision',
+                'values',
+                'social'
+            ]
+        });
     });
 
-    test('social media links', async ({ page }) => {
-        const locators = [
-            '[data-test=about-social] [data-test=social-facebook]',
-            '[data-test=about-social] [data-test=social-twitter]',
-            '[data-test=about-social] [data-test=social-instagram]',
-        ];
-
-        for (const locator of locators) {
-            await expect(page.locator(locator)).toBeVisible();
-        }
+    test('main CTAs link correctly', async ({ page }) => {
+        await expectLinks({
+            page,
+            pageName: 'about-us',
+            links: [
+                {
+                    linkLocator: 'donate-cta',
+                    destLocator: 'h1',
+                    destText : "Make a Donation"
+                }
+            ]
+        });
     });
 });
