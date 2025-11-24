@@ -35,9 +35,8 @@
 
 <Wrapper dataTest="our-sites-page">
     <section data-test="our-sites-overview">
-        <h1>{m["pages.sites.overview.header"]()}</h1>
-
         <Panel>
+            <h1 class="h2">{m["pages.sites.overview.header"]()}</h1>
             <p>{m["pages.sites.overview.paragraphs.0"]()}</p>
             <p>{m["pages.sites.overview.paragraphs.1"]()}</p>
             <p>{m["pages.sites.overview.paragraphs.2"]()}</p>
@@ -94,9 +93,7 @@
 
                         <div class="content">
                             <a
-                                href={m[
-                                    `pages.sites.locations.locations.${location}.href`
-                                ]()}
+                                href={m[`pages.sites.locations.locations.${location}.href`]()}
                                 class="header-link"
                             >
                                 <h3>
