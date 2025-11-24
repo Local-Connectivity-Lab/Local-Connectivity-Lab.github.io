@@ -1,24 +1,43 @@
 import { expect, test } from '@playwright/test';
+import { expectH1AndTitle } from './lib/lib';
 
 test.beforeEach(async ({ page }) => {
     await page.goto('/donate/');
 });
 
-test.describe('Donate Page', () => {
-    test('donate page has expected content', async ({ page }) => {
-        await expect(page.locator('main h1')).toBeVisible();
-        await expect(page).toHaveTitle(/donate/i);
+test.describe('Donate', () => {
+    test('has expected content', async ({ page }) => {
+        await expectH1AndTitle({
+            page,
+            h1 : "Make a Donation",
+            title: "Donate - Seattle Community Network"
+        });
     });
 
-    test('donation buttons are present', async ({ page }) => {
+    test('donation CTAs work', async ({ page }) => {
         const buttonLocators = [
-            'data-test=donate-paypal',
-            'data-test=donate-gofundme',
-            'data-test=donate-square',
+            {
+                linkLocator : 'data-test=donate-paypal',
+                destLocator : 'Local Connectivity Lab'
+            },
+            {
+                linkLocator : 'data-test=donate-gofundme',
+                destLocator : 'Local Connectivity Lab'
+            },
+            {
+                linkLocator : 'data-test=donate-square',
+                destLocator : 'Seattle Community Network'
+            },
         ];
 
-        for (const locator of buttonLocators) {
-            await expect(page.locator(locator)).toBeVisible();
+        for (const {linkLocator, destLocator} of buttonLocators) {
+            const cta = page.locator(linkLocator);
+
+            await expect(page.locator(linkLocator)).toBeVisible();
+            await cta.click();
+            await expect(page.locator('body')).toContainText(destLocator);
+
+            await page.goBack();
         }
     });
 });
