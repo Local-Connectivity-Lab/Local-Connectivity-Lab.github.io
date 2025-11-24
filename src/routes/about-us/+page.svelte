@@ -56,7 +56,11 @@
     {#each sections as section, index}
         <section data-test={`about-us-${section.key}`}>
             <Panel type="plain">
-                <h1 class="h2">{section.header}</h1>
+                {#if index === 0}
+                    <h1 class="h2">{section.header}</h1>
+                {:else}
+                    <h2>{section.header}</h2>
+                {/if}
 
                 {#each section.paragraphs as paragraph}
                     <p>{@html paragraph}</p>
@@ -67,7 +71,7 @@
         </section>
     {/each}
 
-    <section data-test="about-values">
+    <section data-test="about-us-values">
         <Panel type="plain">
             <h2>{m["pages.about.values.header"]()}</h2>
 
@@ -81,14 +85,14 @@
         </Panel>
     </section>
 
-    <section data-test="about-social">
+    <section data-test="about-us-social">
         <Panel>
             <h2>{m["pages.about.sm.header"]()}</h2>
 
             <div class="center">
                 <Socials type="dark" size="medium" />
 
-                <Button href={m["pages.about.sm.donate.href"]()} arrow={true}>
+                <Button href={m["pages.about.sm.donate.href"]()} arrow={true} dataTest="about-us-donate-cta">
                     {m["pages.about.sm.donate.cta"]()}
                 </Button>
             </div>
