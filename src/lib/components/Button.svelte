@@ -1,7 +1,13 @@
 <script lang="ts">
-    import { addBase } from '$lib/index.ts';
+    import { addBase } from "$lib/index.ts";
 
-    let { href, children, type = null, arrow = null } = $props();
+    let {
+        href,
+        children,
+        type = null,
+        arrow = null,
+        dataTest = null,
+    } = $props();
 
     let cssClass = $state("button");
 
@@ -16,7 +22,7 @@
     }
 </script>
 
-<a href={addBase(href)} class={cssClass}>
+<a href={addBase(href)} class={cssClass} data-test={dataTest}>
     {@render children()}
     {#if arrow}
         →

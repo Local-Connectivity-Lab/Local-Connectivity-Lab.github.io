@@ -1,13 +1,14 @@
 <script lang="ts">
     import { m } from '$lib/paraglide/messages.js';
 
-    import Calendar from '$lib/components/Calendar.svelte';
-    import Partners from '$lib/components/Partners.svelte';
-    import Carousel from '$lib/components/Carousel.svelte';
-    import Wrapper  from '$lib/components/Wrapper.svelte';
-    import Button   from '$lib/components/Button.svelte';
-    import Panel    from '$lib/components/Panel.svelte';
+    import Calendar  from '$lib/components/Calendar.svelte';
+    import Partners  from '$lib/components/Partners.svelte';
+    import Carousel  from '$lib/components/Carousel.svelte';
+    import Wrapper   from '$lib/components/Wrapper.svelte';
+    import Button    from '$lib/components/Button.svelte';
+    import Panel     from '$lib/components/Panel.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
+
     import { addBase } from '$lib';
 
     const overview = [
@@ -25,10 +26,12 @@
 
     const buttons = [
         {
+            dataTest : 'home-involved-volunteer-cta',
             href : m['pages.home.get_involved.volunteer.href'](),
             cta : m['pages.home.get_involved.volunteer.cta']()
         },
         {
+            dataTest : 'home-involved-connect-cta',
             href : m['pages.home.get_involved.connect.href'](),
             cta : m['pages.home.get_involved.connect.cta']()
         }
@@ -37,30 +40,31 @@
 
 <PageTitle />
 
-<section class="carousel-wrapper">
+<section class="carousel-wrapper" data-test="home-carousel">
     <Carousel imgs={imgs} />
 </section>
 
 
 <Wrapper>
-    <section class="center">
+    <section class="center" data-test="home-hero">
         <Button
             href={addBase(m['pages.home.hero.href']())}
             type="wide"
             arrow={true}
+            dataTest="home-hero-cta"
         >
             {m['pages.home.hero.cta']()}
         </Button>
     </section>
 
-    <section>
+    <section data-test="home-building-image">
         <img
             src={addBase(m['pages.home.building.src']())}
             alt={m['pages.home.building.alt']()}
         />
     </section>
 
-    <section>
+    <section data-test="home-overview">
         <Panel>
             <h2>
                 {m['pages.home.overview.header']()}
@@ -75,6 +79,7 @@
                     type="small"
                     href={addBase(m['pages.home.overview.about.href']())}
                     arrow={true}
+                    dataTest="home-overview-cta"
                 >
                     {m['pages.home.overview.about.cta']()}
                 </Button>
@@ -82,25 +87,25 @@
         </Panel>
     </section>
 
-    <section>
+    <section data-test="home-get-involved">
         <h2>
             {m['pages.home.get_involved.header']()}
         </h2>
 
         <div class="button-row">
-            {#each buttons as { href, cta }}
-                <Button href={addBase(href)} arrow={true}>
+            {#each buttons as { href, cta, dataTest } }
+                <Button href={addBase(href)} arrow={true} dataTest={dataTest}>
                     {cta}
                 </Button>
             {/each}
         </div>
     </section>
 
-    <section>
+    <section data-test="home-calendar">
         <Calendar />
     </section>
 
-    <section>
+    <section data-test="home-partners">
         <Partners />
     </section>
 </Wrapper>

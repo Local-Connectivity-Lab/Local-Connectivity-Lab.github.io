@@ -1,81 +1,82 @@
 <script lang="ts">
-    import { m } from '$lib/paraglide/messages.js';
-    import { addBase } from '$lib';
+    import { m }       from "$lib/paraglide/messages.js";
+    import { addBase } from "$lib";
 
-    import Wrapper   from '$lib/components/Wrapper.svelte';
-    import Button    from '$lib/components/Button.svelte';
-    import Panel     from '$lib/components/Panel.svelte';
-    import PageTitle from '$lib/components/Page-Title.svelte';
-    import Socials   from '$lib/components/Socials.svelte';
+    import Wrapper   from "$lib/components/Wrapper.svelte";
+    import Button    from "$lib/components/Button.svelte";
+    import Panel     from "$lib/components/Panel.svelte";
+    import PageTitle from "$lib/components/Page-Title.svelte";
+    import Socials   from "$lib/components/Socials.svelte";
 
     const sections = [
         {
-            header : m['pages.about.lcl.header'](),
-            paragraphs : [
-                m['pages.about.lcl.paragraphs.0']()
-            ],
-            img : {
-                src : m['pages.about.lcl.img.src'](),
-                alt : m['pages.about.lcl.img.alt']()
-            }
+            key: "lcl",
+            header: m["pages.about.lcl.header"](),
+            paragraphs: [m["pages.about.lcl.paragraphs.0"]()],
+            img: {
+                src: m["pages.about.lcl.img.src"](),
+                alt: m["pages.about.lcl.img.alt"](),
+            },
         },
         {
-            header : m['pages.about.mission.header'](),
-            paragraphs : [
-                m['pages.about.mission.paragraphs.0']()
-            ],
-            img : {
-                src : m['pages.about.mission.img.src'](),
-                alt : m['pages.about.mission.img.alt']()
-            }
+            key: "mission",
+            header: m["pages.about.mission.header"](),
+            paragraphs: [m["pages.about.mission.paragraphs.0"]()],
+            img: {
+                src: m["pages.about.mission.img.src"](),
+                alt: m["pages.about.mission.img.alt"](),
+            },
         },
         {
-            header : m['pages.about.vision.header'](),
-            paragraphs : [
-                m['pages.about.vision.paragraphs.0']()
-            ],
-            img : {
-                src : m['pages.about.vision.img.src'](),
-                alt : m['pages.about.vision.img.alt']()
-            }
-        }
+            key: "vision",
+            header: m["pages.about.vision.header"](),
+            paragraphs: [m["pages.about.vision.paragraphs.0"]()],
+            img: {
+                src: m["pages.about.vision.img.src"](),
+                alt: m["pages.about.vision.img.alt"](),
+            },
+        },
     ];
 
     const valuesList = [
-        m['pages.about.values.list.0'](),
-        m['pages.about.values.list.1'](),
-        m['pages.about.values.list.2'](),
-        m['pages.about.values.list.3'](),
-        m['pages.about.values.list.4'](),
-        m['pages.about.values.list.5'](),
-        m['pages.about.values.list.6'](),
-        m['pages.about.values.list.7']()
-    ]
-
+        m["pages.about.values.list.0"](),
+        m["pages.about.values.list.1"](),
+        m["pages.about.values.list.2"](),
+        m["pages.about.values.list.3"](),
+        m["pages.about.values.list.4"](),
+        m["pages.about.values.list.5"](),
+        m["pages.about.values.list.6"](),
+        m["pages.about.values.list.7"](),
+    ];
 </script>
 
-<PageTitle title={m['pages.about.title']()} />
+<PageTitle title={m["pages.about.title"]()} />
 
-<Wrapper>
-    {#each sections as section}
-        <section>
+<Wrapper dataTest="about-page">
+    {#each sections as section, index}
+        <section data-test={`about-us-${section.key}`}>
             <Panel type="plain">
-                <h2>{section.header}</h2>
+                {#if index === 0}
+                    <h1 class="h2">{section.header}</h1>
+                {:else}
+                    <h2>{section.header}</h2>
+                {/if}
+
                 {#each section.paragraphs as paragraph}
                     <p>{@html paragraph}</p>
                 {/each}
-                <img
-                    src={addBase(section.img.src)}
-                    alt={section.img.alt}
-                />
+
+                <img src={addBase(section.img.src)} alt={section.img.alt} />
             </Panel>
         </section>
     {/each}
 
-    <section>
+    <section data-test="about-us-values">
         <Panel type="plain">
-            <h2>{m['pages.about.values.header']()}</h2>
-            <p>{m['pages.about.values.paragraphs.0']()}</p>
+            <h2>{m["pages.about.values.header"]()}</h2>
+
+            <p>{m["pages.about.values.paragraphs.0"]()}</p>
+
             <ul class="values-list">
                 {#each valuesList as value}
                     <li>{value}</li>
@@ -84,18 +85,15 @@
         </Panel>
     </section>
 
-    <section>
+    <section data-test="about-us-social">
         <Panel>
-            <h2>{m['pages.about.sm.header']()}</h2>
+            <h2>{m["pages.about.sm.header"]()}</h2>
 
             <div class="center">
                 <Socials type="dark" size="medium" />
 
-                <Button
-                    href={m['pages.about.sm.donate.href']()}
-                    arrow={true}
-                >
-                    {m['pages.about.sm.donate.cta']()}
+                <Button href={m["pages.about.sm.donate.href"]()} arrow={true} dataTest="about-us-donate-cta">
+                    {m["pages.about.sm.donate.cta"]()}
                 </Button>
             </div>
         </Panel>

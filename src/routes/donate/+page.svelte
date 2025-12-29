@@ -24,14 +24,14 @@
 <PageTitle title={m['pages.donate.title']()} />
 
 <div class="wave" style="--wave-url: url({`${base}/pages/donate/upsidedown-wave.min.png`})">
-    <Wrapper>
-        <section class="text-center">
+    <Wrapper dataTest="donate-page">
+        <section class="text-center" data-test="donate">
             <h1>{m['pages.donate.header']()}</h1>
             <p>{m['pages.donate.paragraphs.0']()}</p>
 
             <div class="buttons">
                 <!-- copied from existing site -->
-                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <form action="https://www.paypal.com/donate" method="post" target="_top" data-test="donate-paypal">
                     <input type="hidden" name="business" value="lcl@seattlecommunitynetwork.org" />
                     <input type="hidden" name="item_name" value="Donations / Fundraising" />
                     <input type="hidden" name="currency_code" value="USD" />
@@ -43,7 +43,7 @@
                 </form>
 
                 {#each buttons as { href, cta }}
-                    <Button {href} type="donate">{cta}</Button>
+                    <Button {href} type="donate" dataTest={`donate-${cta.toLowerCase()}`}>{cta}</Button>
                 {/each}
             </div>
         </section>
