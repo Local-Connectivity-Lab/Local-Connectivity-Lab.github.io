@@ -8,6 +8,8 @@ node_modules
 .wrangler
 /.svelte-kit
 /build
+/.vscode
+/project.inlang/cache
 
 # OS
 .DS_Store
