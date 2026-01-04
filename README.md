@@ -13,7 +13,7 @@ You'll want to run the site locally so you can preview your changes. It's fairly
 
 Make your changes and confirm them in your locally running site. Commit change to a feature Branch, and create a pull request in GitHub.
 
-The changes will then need to be reviewed and merged. After merging, a GitHub Action will kick off to build and deploy the site. This should only take 5 mins, after which your changes will be live!
+The changes will then need to be reviewed and merged. After merging, a GitHub Action (`./.github/workflows/static.yml`) will kick off to build and deploy the site. This should only take 5 mins, after which your changes will be live!
 
 
 ### Local setup
