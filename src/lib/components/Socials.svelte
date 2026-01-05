@@ -1,6 +1,5 @@
 <script lang="ts">
     import { m } from "$lib/paraglide/messages.js";
-    import { addBase } from "$lib";
 
     // type can be "light" or "dark"
 
@@ -43,7 +42,7 @@
 <div class={cssClass}>
     {#each socials as { href, cta, src }}
         <a {href} data-test={`social-${cta.toLowerCase()}`}>
-            <img src={addBase(src[type])} alt={cta} />
+            <img src={src[type]} alt={cta} />
         </a>
     {/each}
 </div>

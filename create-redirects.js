@@ -12,19 +12,18 @@ const template =
     // This file is auto-generated. Do not edit directly.
     // see: ./create-redirects.js
 
-    import { addBase } from '$lib';
     import Wrapper from '$lib/components/Wrapper.svelte';
 
 </script>
 
 <svelte:head>
-    <meta http-equiv="refresh" content="0; url={addBase('{to}')}" />
+    <meta http-equiv="refresh" content="0; url={to}" />
     <title>Redirecting...</title>
 </svelte:head>
 
 <Wrapper>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, please click <a href={addBase("{to}")}>here</a>.</p>
+    <p>If you are not redirected automatically, please click <a href={to}>here</a>.</p>
 </Wrapper>
 
 <style>

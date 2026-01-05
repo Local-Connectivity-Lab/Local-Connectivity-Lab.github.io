@@ -9,8 +9,6 @@
     import Panel     from '$lib/components/Panel.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
 
-    import { addBase } from '$lib';
-
     const overview = [
         m['pages.home.overview.paragraphs.0'](),
         m['pages.home.overview.paragraphs.1'](),
@@ -48,7 +46,7 @@
 <Wrapper>
     <section class="center" data-test="home-hero">
         <Button
-            href={addBase(m['pages.home.hero.href']())}
+            href={m['pages.home.hero.href']()}
             type="wide"
             arrow={true}
             dataTest="home-hero-cta"
@@ -59,7 +57,7 @@
 
     <section data-test="home-building-image">
         <img
-            src={addBase(m['pages.home.building.src']())}
+            src={m['pages.home.building.src']()}
             alt={m['pages.home.building.alt']()}
         />
     </section>
@@ -77,7 +75,7 @@
             <div class="flex-right">
                 <Button
                     type="small"
-                    href={addBase(m['pages.home.overview.about.href']())}
+                    href={m['pages.home.overview.about.href']()}
                     arrow={true}
                     dataTest="home-overview-cta"
                 >
@@ -94,7 +92,7 @@
 
         <div class="button-row">
             {#each buttons as { href, cta, dataTest } }
-                <Button href={addBase(href)} arrow={true} dataTest={dataTest}>
+                <Button href={href} arrow={true} dataTest={dataTest}>
                     {cta}
                 </Button>
             {/each}

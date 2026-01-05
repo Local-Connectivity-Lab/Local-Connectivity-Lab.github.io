@@ -1,8 +1,5 @@
 <script lang="ts">
-    import { base } from '$app/paths';
-
     import { m } from '$lib/paraglide/messages.js';
-    import { addBase } from '$lib';
 
     import Button    from '$lib/components/Button.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
@@ -23,7 +20,7 @@
 
 <PageTitle title={m['pages.donate.title']()} />
 
-<div class="wave" style="--wave-url: url({`${base}/pages/donate/upsidedown-wave.min.png`})">
+<div class="wave" style="--wave-url: url(/pages/donate/upsidedown-wave.min.png)">
     <Wrapper dataTest="donate-page">
         <section class="text-center" data-test="donate">
             <h1>{m['pages.donate.header']()}</h1>
@@ -37,9 +34,9 @@
                     <input type="hidden" name="currency_code" value="USD" />
                     <button class="paypal-button">
                         <!--<img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">-->
-                        <input type="image" src={addBase("/layout/paypal-button.png")} name="submit" title="Paypal donations are made to lcl@seattlecommunitynetwork.org." alt="Donate with PayPal button" />
+                        <input type="image" src={"/layout/paypal-button.png"} name="submit" title="Paypal donations are made to lcl@seattlecommunitynetwork.org." alt="Donate with PayPal button" />
                     </button>
-                    <img alt="" src={addBase("https://www.paypal.com/en_US/i/scr/pixel.gif")} width="1" height="1" />
+                    <img alt="" src={"https://www.paypal.com/en_US/i/scr/pixel.gif"} width="1" height="1" />
                 </form>
 
                 {#each buttons as { href, cta }}
