@@ -39,7 +39,7 @@
 <PageTitle />
 
 <section class="carousel-wrapper" data-test="home-carousel">
-    <Carousel imgs={imgs} />
+    <Carousel {imgs} />
 </section>
 
 
@@ -68,7 +68,7 @@
                 {m['pages.home.overview.header']()}
             </h2>
 
-            {#each overview as over}
+            {#each overview as over (over)}
                 <p>{@html over}</p>
             {/each}
 
@@ -91,8 +91,8 @@
         </h2>
 
         <div class="button-row">
-            {#each buttons as { href, cta, dataTest } }
-                <Button href={href} arrow={true} dataTest={dataTest}>
+            {#each buttons as { href, cta, dataTest } (href)}
+                <Button {href} arrow={true} dataTest={dataTest}>
                     {cta}
                 </Button>
             {/each}

@@ -32,7 +32,7 @@
                 <p>{m['common.mission.desc']()}</p>
             </div>
             <div class="ctas">
-                {#each buttons as { href, cta}}
+                {#each buttons as { href, cta} (href)}
                     <div>
                         <Button {href} type="medium">{cta}</Button>
                     </div>
