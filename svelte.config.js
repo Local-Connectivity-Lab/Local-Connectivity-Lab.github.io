@@ -8,6 +8,15 @@ const config = {
             fallback: '404.html'
         }),
         paths: {
+        },
+        prerender: {
+            entries: [
+                '*',
+                '/donate',
+                '/about-us',
+                '/our-sites'
+            ],
+            handleUnseenRoutes: 'warn'
         }
     }
 };
