@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { addBase } from "$lib/index.ts";
-
     let {
         href,
         children,
@@ -22,7 +20,7 @@
     }
 </script>
 
-<a href={addBase(href)} class={cssClass} data-test={dataTest}>
+<a href={href} class={cssClass} data-test={dataTest}>
     {@render children()}
     {#if arrow}
         →

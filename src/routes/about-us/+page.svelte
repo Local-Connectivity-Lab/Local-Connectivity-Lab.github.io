@@ -1,6 +1,5 @@
 <script lang="ts">
-    import { m }       from "$lib/paraglide/messages.js";
-    import { addBase } from "$lib";
+    import { m } from "$lib/paraglide/messages.js";
 
     import Wrapper   from "$lib/components/Wrapper.svelte";
     import Button    from "$lib/components/Button.svelte";
@@ -66,7 +65,7 @@
                     <p>{@html paragraph}</p>
                 {/each}
 
-                <img src={addBase(section.img.src)} alt={section.img.alt} />
+                <img src={section.img.src} alt={section.img.alt} />
             </Panel>
         </section>
     {/each}
