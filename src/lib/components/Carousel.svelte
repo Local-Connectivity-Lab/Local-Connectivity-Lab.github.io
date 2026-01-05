@@ -10,7 +10,7 @@
 
 <div class="embla" use:emblaCarouselSvelte="{{ options, plugins }}">
     <div class="embla__container">
-        {#each imgs as img}
+        {#each imgs as img (img) }
             <div class="embla__slide">
                 <img src={img} alt="Carousel" />
             </div>

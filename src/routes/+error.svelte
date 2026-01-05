@@ -1,6 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/state';
-
+    import { page } from '$app/state';
     import { m }     from '$lib/paraglide/messages.js';
     import Wrapper   from '$lib/components/Wrapper.svelte';
     import PageTitle from '$lib/components/Page-Title.svelte';
@@ -19,7 +18,7 @@
         }
     };
 
-    let { status = 404 as 404 | 500 } = $props();
+    const {status = 404 as 404 | 500} = page;
 </script>
 
 <PageTitle title={errors[status].title} />
@@ -32,7 +31,7 @@
         {errors[status].description}
     </p>
     <p>
-        <a href={'/'} class="button">
+        <a href='/' class="button">
             {errors[status].cta}
         </a>
     </p>

@@ -47,8 +47,8 @@
 </script>
 
 <header data-test="site-header">
-    <a href={'/'} class="logo-link" data-test="site-logo-link">
-        <img class="logo" src={"/layout/header/logo.min.png"} alt="">
+    <a href='/' class="logo-link" data-test="site-logo-link">
+        <img class="logo" src="/layout/header/logo.min.png" alt="">
 
         {#if currentUrl === '/'}
             <h1 class="logotype">{m['common.scn']()}</h1>
@@ -62,18 +62,18 @@
 
         showNav = !showNav;
     }}>
-        <img src={"/layout/nav-hamburger.svg"} alt={m['common.toggle_nav']()}>
+        <img src="/layout/nav-hamburger.svg" alt={m['common.toggle_nav']()}>
     </button>
 </header>
 
 <nav class="nav" data-test="site-nav">
     <div class="nav-items" class:show-nav={showNav}>
-        {#each navItems as {href, label}}
+        {#each navItems as {href, label} (href)}
             <a
                 href={href}
                 class="nav-link"
                 class:active={href === currentUrl}
-                onclick={(e) => {
+                onclick={() => {
                     showNav = false; // close nav on click
                 }}
             >
