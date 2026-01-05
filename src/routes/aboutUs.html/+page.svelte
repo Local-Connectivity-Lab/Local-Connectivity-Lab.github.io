@@ -13,7 +13,7 @@
 
 <Wrapper>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, please click <a href=/about-us>here</a>.</p>
+    <p>If you are not redirected automatically, please click <a href="/about-us">here</a>.</p>
 </Wrapper>
 
 <style>

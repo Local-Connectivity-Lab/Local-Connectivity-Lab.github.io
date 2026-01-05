@@ -23,7 +23,7 @@ const template =
 
 <Wrapper>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, please click <a href={to}>here</a>.</p>
+    <p>If you are not redirected automatically, please click <a href="{to}">here</a>.</p>
 </Wrapper>
 
 <style>
