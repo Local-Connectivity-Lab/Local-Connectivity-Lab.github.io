@@ -1,0 +1,232 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+
+    "common.scn": "Seattle Community Network",
+    "common.lcl": "Local Connectivity Lab",
+
+    "common.address.header": "Address",
+    "common.address.physical": "3800 E Stevens Way NE, Seattle, WA 98195",
+    "common.address.email": "lcl@seattlecommunitynetwork.org",
+
+    "common.mission.header": "Mission",
+    "common.mission.desc" : "To facilitate community focused technology development and research in support of low-income, marginalized populations and groups.",
+
+    "common.toggle_nav" : "toggle nav",
+
+    "common.nav.0.label" : "Home",
+    "common.nav.0.href" : "/",
+    "common.nav.1.label" : "About Us",
+    "common.nav.1.href" : "/about-us",
+    "common.nav.2.label" : "Docs",
+    "common.nav.2.href" : "https://docs.seattlecommunitynetwork.org/",
+    "common.nav.3.label" : "Get Connected",
+    "common.nav.3.href" : "/our-sites",
+    "common.nav.4.label" : "Map",
+    "common.nav.4.href" : "https://www.google.com/maps/d/u/1/edit?mid=1xgICuEkAjJC35H_GXArqbcNVdcopq6k&amp;usp=sharing",
+    "common.nav.5.label" : "Visit Our Space",
+    "common.nav.5.href" : "https://docs.seattlecommunitynetwork.org/community/space/",
+    "common.nav.6.label" : "Donate",
+    "common.nav.6.href" : "/donate",
+    "common.nav.7.label" : "Merch!",
+    "common.nav.7.href" : "https://seattlecommunitynetwork.square.site/",
+
+    "buttons.discord.cta": "Join our Discord server",
+    "buttons.discord.href": "https://discord.gg/gn4DKF83bP",
+
+    "buttons.mailing_list.cta": "Subscribe to Mailing List",
+    "buttons.mailing_list.href": "https://groups.google.com/a/seattlecommunitynetwork.org/g/local-connectivity-lab/",
+
+    "socials.instagram.cta": "Instagram",
+    "socials.instagram.href": "https://www.instagram.com/seattlecommnet/",
+
+    "socials.twitter.cta": "Twitter",
+    "socials.twitter.href": "https://twitter.com/SeattleCommNet",
+
+    "socials.facebook.cta": "Facebook",
+    "socials.facebook.href": "https://www.facebook.com/SeattleCommNet",
+
+
+    "=== PAGES HOME ===" : "comment",
+
+    "pages.home.hero.cta" : "Get Involved",
+    "pages.home.hero.href": "https://docs.seattlecommunitynetwork.org/community/join",
+
+    "pages.home.building.alt" : "Building. Empowering.",
+    "pages.home.building.src" : "/pages/home/City Graphic.min.png",
+
+    "pages.home.overview.header": "Seattle Community Network",
+    "pages.home.overview.paragraphs.0": "The Seattle Community Network (SCN) is a community-run cellular (4G LTE) Internet access network dedicated to providing fair access to underserved communities all across the Puget Sound.",
+    "pages.home.overview.paragraphs.1": "Our project is firmly grounded in the principles of community empowerment. The network is a participatory construction, where local residents and institutions help each other in a collaborative and community-minded way.",
+    "pages.home.overview.paragraphs.2": "To learn more, visit our <a href='https://docs.seattlecommunitynetwork.org/'>docs site</a>, read our most recent <a href='https://tinyurl.com/scn-blog-2'>blog post</a>, or follow us on social media @SeattleCommNet on Facebook, Twitter, LinkedIn, and Instagram! Refer to our <a href='https://tinyurl.com/SCNbrochureSPS5-4-22'>brochure</a> or <a href='https://tinyurl.com/SCNflyerSPS5-4-22'>flyer</a> for a printable version of our materials!",
+
+    "pages.home.overview.about.cta": "About Us",
+    "pages.home.overview.about.href": "https://docs.seattlecommunitynetwork.org/",
+
+    "pages.home.get_involved.header": "Get Involved",
+
+    "pages.home.get_involved.volunteer.cta": "Volunteer & Learn",
+    "pages.home.get_involved.volunteer.href": "https://docs.seattlecommunitynetwork.org/community/join",
+
+    "pages.home.get_involved.connect.cta": "Get Connected",
+    "pages.home.get_involved.connect.href": "/our-sites",
+
+    "pages.home.events.header": "Upcoming Events",
+    "pages.home.events.iframe": "https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&src=Y19hMWhjOXVwMTBjOWs2YTNnNmYyb20zN2c2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043&showTitle=0&showPrint=0&showCalendars=0",
+
+    "pages.home.partners.header": "Our Partners",
+    "pages.home.partners.paragraphs.0": "The Seattle Community Network is a collaboration between many local organizations, sponsors, and collaborators throughout the Puget Sound area.",
+    "pages.home.partners.alt": "partners logos",
+
+
+
+    "=== PAGES ABOUT US ===" : "comment",
+
+    "pages.about.title": "About Us",
+
+    "pages.about.lcl.header": "Local Connectivity Lab",
+    "pages.about.lcl.paragraphs.0": "The Seattle Community Network began in 2019 as a project of the Local Connectivity Lab (LCL), a 501(c)(3) registered non-profit that develops and deploys open source cellular network technologies to help people run their own community networks. LCL works in partnership with the University of Washington (UW) to share free or low-cost broadband access in higher-need areas throughout the city, making use of existing city network infrastructure such as buildings and fiber-optic cables to extend coverage to more people. Our mission is to facilitate community focused technology development and research in support of low-income, marginalized populations and groups. See our most recent <a href='https://tinyurl.com/scn-blog-2'>blog post</a> for the latest updates!",
+    "pages.about.lcl.img.src": "/pages/about-us/about-us-1.min.jpg",
+    "pages.about.lcl.img.alt": "LCL",
+
+    "pages.about.mission.header": "Mission",
+    "pages.about.mission.paragraphs.0": "LCL seeks to democratize knowledge, skills, and resources to enable people to establish and run their own local, community-centered, and community-owned Internet access networks and digital infrastructure.",
+    "pages.about.mission.img.src": "/pages/about-us/about-us-2.min.jpg",
+    "pages.about.mission.img.alt": "working on a roof",
+
+    "pages.about.vision.header": "Mission",
+    "pages.about.vision.paragraphs.0": "We envision a world where no one is excluded from access to the Internet, and where anyone can achieve the expertise and capability to bring communications infrastructure to their community and improve their quality of life.",
+    "pages.about.vision.img.src": "/pages/about-us/about-us-3.min.jpg",
+    "pages.about.vision.img.alt": "lunch meeting",
+
+    "pages.about.values.header": "Values",
+    "pages.about.values.paragraphs.0": "We value the ability to access the Internet and all public information and digital resources therein as a human right.",
+    "pages.about.values.list.0": "Digital privacy of our users and partner organizations",
+    "pages.about.values.list.1": "Collaboration, especially with the communities and organizations we work with",
+    "pages.about.values.list.2": "Care, consideration, allyship, and peer mentorship between individuals within our organization",
+    "pages.about.values.list.3": "Education, sharing, and capacity-building- emphasize teaching and dissemination of information and skills",
+    "pages.about.values.list.4": "Openness, transparency, and accountability of our organization and its processes",
+    "pages.about.values.list.5": "Democratization and inclusiveness of decision processes among stakeholders",
+    "pages.about.values.list.6": "Long-term sustainability of our technology deployments and community structures",
+    "pages.about.values.list.7": "Equity in planning for resource allocation, programming, and contribution",
+
+    "pages.about.sm.header": "Follow us on social media!",
+    "pages.about.sm.donate.href": "/donate",
+    "pages.about.sm.donate.cta": "Donate to Support our Mission",
+
+
+
+    "=== PAGES OUR SITES ===" : "comment",
+
+    "pages.sites.title": "Get Connected",
+
+    "pages.sites.overview.header": "Get Connected",
+    "pages.sites.overview.paragraphs.0": "Through our volunteer efforts and community partnerships, we strive to provide low-income and in-need users with free or low-cost Internet service as reliably as possible. Our service is best-effort and will not necessarily match the performance of paid or commercial Internet service.",
+    "pages.sites.overview.paragraphs.1": "Our network includes site locations throughout King County and Tacoma, where we are able to provide coverage within specific neighborhoods near the sites. Please refer to the list of locations below to see if your neighborhood is covered.",
+    "pages.sites.overview.paragraphs.2": "Within these coverage areas, we can offer either home-based WiFi or mobile (phone-based) Internet access options.",
+
+    "pages.sites.details.header": "Details",
+    "pages.sites.details.paragraphs.0": "You will need to register with us and receive our SIM card to connect to the network. You may also need to receive a compatible mobile phone or stationary home hotspot from us that supports our wireless frequencies.",
+    "pages.sites.details.img.src": "/pages/our-sites/mattCPE2.min.jpg",
+    "pages.sites.details.img.alt": "photo of Matt holding CPE",
+    "pages.sites.details.paragraphs.1": "We expect that speeds would typically range from 30-90 Mbps download/2-14 Mbps upload. Part of the purpose of this pilot project is to determine the technology’s real performance and suitability for our use case.",
+    "pages.sites.details.paragraphs.2": "The speed of your service will depend roughly on:",
+    "pages.sites.details.list.0": "how many other users are currently using the network",
+    "pages.sites.details.list.1": "how close your location is to the access point",
+    "pages.sites.details.list.2": "whether you are using the mobile phone-based or home-based service (home-based is usually faster)",
+
+    "pages.sites.eligibility.header": "Eligibility",
+    "pages.sites.eligibility.paragraphs.0": "For the first round of our installations, which have been funded this past year by King County and the City of Seattle IT, we will prioritize serving the following groups:",
+    "pages.sites.eligibility.list.0": "low-income families of students",
+    "pages.sites.eligibility.list.1": "unemployed adults (looking for work)",
+    "pages.sites.eligibility.list.2": "majority non-English speaking adults/families",
+    "pages.sites.eligibility.list.3": "seniors",
+    "pages.sites.eligibility.paragraphs.1": "If you are eligible and interested in participating, please email lcl@seattlecommunitynetwork.org or leave a voice message or text at (253) 655-7221. You may also drop in at our in-person Technology Help Desk Hours (details <a href='https://docs.seattlecommunitynetwork.org/community/tech-help'>here</a>).",
+
+    "pages.sites.locations.header": "Locations",
+    "pages.sites.locations.subheader": "(Listed N to S)",
+    "pages.sites.locations.labels.address": "Address:",
+    "pages.sites.locations.labels.description": "Description:",
+    "pages.sites.locations.suffix": "See green portions of the <a href='{image}'>image</a> and the <a href='{map}'>map</a> for more details.",
+
+    "pages.sites.locations.locations.garfield.src" : "/pages/our-sites/static-maps/garfield.min.jpg",
+    "pages.sites.locations.locations.garfield.alt" : "Garfield",
+    "pages.sites.locations.locations.garfield.href" : "https://garfieldhs.seattleschools.org/",
+    "pages.sites.locations.locations.garfield.header" : "Garfield High School",
+    "pages.sites.locations.locations.garfield.address" : "400 23rd Ave, Seattle, WA 98122",
+    "pages.sites.locations.locations.garfield.description" : "Estimated coverage area lies to the east of highway I-5, and to the north of E Yesler Way. Coverage extends east as far as 34th Ave, but east of 23rd Ave it has a northern boundary at E Union St. To the west of 23rd Ave, the northern boundary is E John St. and E Thomas St.",
+    "pages.sites.locations.locations.garfield.image" : "https://drive.google.com/file/d/1uzo6_0qQoQbPqGSrWemU61mHuoEpWOGW/view?usp=sharing",
+    "pages.sites.locations.locations.garfield.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.franklin.src" : "/pages/our-sites/static-maps/franklin.min.jpg",
+    "pages.sites.locations.locations.franklin.alt" : "Franklin",
+    "pages.sites.locations.locations.franklin.href" : "https://franklinhs.seattleschools.org/",
+    "pages.sites.locations.locations.franklin.header" : "Franklin High School",
+    "pages.sites.locations.locations.franklin.address" : "3013 S Mt Baker Blvd, Seattle, WA 98144",
+    "pages.sites.locations.locations.franklin.description" : "Estimated coverage area lies to the south of S Mt. Baker Blvd and to the north of S Orcas St. Going east to west, it lies between 24th Ave S and 42nd Ave S to the north of Rainier Playfield, and between 28th Ave S and Wilson Ave S to the south of Rainier Playfield.",
+    "pages.sites.locations.locations.franklin.image" : "https://drive.google.com/file/d/1SabotFa2dgXj_7VPG9uwBkWalih5spe1/view?usp=sharing",
+    "pages.sites.locations.locations.franklin.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.fcv.src" : "/pages/our-sites/static-maps/fcv.min.jpg",
+    "pages.sites.locations.locations.fcv.alt" : "FCV",
+    "pages.sites.locations.locations.fcv.href" : "https://www.filcommsea.org/",
+    "pages.sites.locations.locations.fcv.header" : "Filipino Community Center",
+    "pages.sites.locations.locations.fcv.address" : "5740 Martin Luther King Jr Way S, Seattle, WA 98118",
+    "pages.sites.locations.locations.fcv.description" : "Estimated coverage area currently lies between 32nd Ave S and 39th Ave S going west to east, and between S Dawson St and S Holly St going north to south.",
+    "pages.sites.locations.locations.fcv.image" : "https://drive.google.com/file/d/1QB4IakU_JYDLWO5WIBrbLmi1xPhryF1x/view?usp=sharing",
+    "pages.sites.locations.locations.fcv.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.occ.src" : "/pages/our-sites/static-maps/occ.min.jpg",
+    "pages.sites.locations.locations.occ.alt" : "OCC",
+    "pages.sites.locations.locations.occ.href" : "https://www.facebook.com/OromoCC/",
+    "pages.sites.locations.locations.occ.header" : "Oromo Cultural Center",
+    "pages.sites.locations.locations.occ.address" : ": 8819 Renton Ave S, Seattle, WA 98118",
+    "pages.sites.locations.locations.occ.description" : "Estimated coverage area lies to the south of S Cloverdale St, east of MLK Jr. Way S, west of Rainier Ave S, and north of S Fletcher St.",
+    "pages.sites.locations.locations.occ.image" : "https://drive.google.com/file/d/1Nqps9n1p8t75xgnO1vNpXkzwFo1Q2HQN/view?usp=sharing",
+    "pages.sites.locations.locations.occ.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.skyway.src" : "/pages/our-sites/static-maps/skyway.min.jpg",
+    "pages.sites.locations.locations.skyway.alt" : "SkywayLibrary",
+    "pages.sites.locations.locations.skyway.href" : "https://kcls.org/locations/skyway/",
+    "pages.sites.locations.locations.skyway.header" : "KCLS Skyway Library",
+    "pages.sites.locations.locations.skyway.address" : "12601 76th Ave S, Seattle, WA 98178",
+    "pages.sites.locations.locations.skyway.description" : "Estimated coverage area currently lies between 42nd Ave S and Rainier Ave S going west to east, and between S Cloverdale St and S Fletcher St going north to south.",
+    "pages.sites.locations.locations.skyway.image" : "https://drive.google.com/file/d/1u0-d55ELyP3Ipz7Urp6GHr3aNGYnvcbZ/view?usp=sharing",
+    "pages.sites.locations.locations.skyway.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.locations.locations.surge.src" : "/pages/our-sites/static-maps/surge.min.jpg",
+    "pages.sites.locations.locations.surge.alt" : "SurgeTacoma",
+    "pages.sites.locations.locations.surge.href" : "https://surgecoworking.com/surge-tacoma/",
+    "pages.sites.locations.locations.surge.header" : "Surge Tacoma",
+    "pages.sites.locations.locations.surge.address" : "2367 Tacoma Ave S, Tacoma, WA 98402",
+    "pages.sites.locations.locations.surge.description" : "Estimated coverage area lies to the south of S 11th St, east of MLK Jr. Way, west of the 705 highway, and north of Center St.",
+    "pages.sites.locations.locations.surge.image" : "https://drive.google.com/file/d/10gZMUKZadWmA7aQxm8aeai2XcCS0YGqe/view?usp=sharing",
+    "pages.sites.locations.locations.surge.map" : "https://www.google.com/maps/d/u/0/viewer?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ehbc=2E312F",
+
+    "pages.sites.sites.header": "Sites and Estimated LTE Coverage Map",
+    "pages.sites.sites.paragraphs.0": "Use the expand icon {image} to search",
+    "pages.sites.sites.iframe.src": "https://www.google.com/maps/d/u/0/embed?mid=1T0TIZ7GL1eXlABPLaSM4DS9hW7-BoGhs&ll=47.44462381949524%2C-122.33688819999999&z=10",
+    "pages.sites.sites.iframe.title": "Sites and Estimated LTE Coverage Map",
+    "pages.sites.sites.paragraphs.1": "For more specific information on signal strength, upload speed, and more:",
+    "pages.sites.sites.cta": "Visit Our Map Page",
+    "pages.sites.sites.href": "https://coverage.seattlecommunitynetwork.org/",
+
+
+
+    "=== PAGES DONATE ===" : "comment",
+
+    "pages.donate.title": "Donate",
+    "pages.donate.header": "Make a Donation",
+    "pages.donate.paragraphs.0": "We appreciate your support of our mission!",
+
+
+
+    "=== ERROR MESSAGES ===" : "comment",
+    "pages.error.404.title": "Page Not Found",
+    "pages.error.404.description": "The page you are looking for does not exist or has been moved.",
+    "pages.error.404.cta": "Go to Home Page",
+
+    "pages.error.500.title": "Internal Server Error",
+    "pages.error.500.description": "An unexpected error has occurred. Please try again later.",
+    "pages.error.500.cta": "Go to Home Page"
+
+}

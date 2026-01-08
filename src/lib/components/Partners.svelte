@@ -1,0 +1,13 @@
+<script lang="ts">
+    import { m } from '$lib/paraglide/messages.js';
+</script>
+
+<h2>
+    {m['pages.home.partners.header']()}
+</h2>
+
+<p>
+    {m['pages.home.partners.paragraphs.0']()}
+</p>
+
+<img src="/pages/home/scn-partner-logos.min.png" loading="lazy" alt={m['pages.home.partners.alt']()} />

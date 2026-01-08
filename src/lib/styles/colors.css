@@ -1,0 +1,17 @@
+:root {
+    --color-brand-primary: #3C0073;
+    --color-brand-primary-2: #27014b;
+
+    --color-panel: #EAE1D0;
+    --color-panel-plain: #E8E8E8;
+
+    --color-nav-background: #F1F1F1;
+    --color-nav-text: #284B63;
+    --color-nav-border: #284B63;
+
+    --color-link: #0D6EFD;
+    --color-link-header: #274B63;
+
+    --color-text: #212529;
+    --color-text2: #FFFFFF;
+}
