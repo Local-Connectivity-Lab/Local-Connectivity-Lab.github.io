@@ -26,8 +26,7 @@ test.describe('Our Sites', () => {
         });
     });
 
-    // skip for now, destination page is down
-    test.skip('main CTAs link correctly', async ({ page }) => {
+    test('main CTAs link correctly', async ({ page }) => {
         await expectLinks({
             page,
             pageName: 'our-sites',
