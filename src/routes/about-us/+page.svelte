@@ -52,7 +52,7 @@
 <PageTitle title={m["pages.about.title"]()} />
 
 <Wrapper dataTest="about-page">
-    {#each sections as section, index (section.key)}
+    {#each sections as section, index}
         <section data-test={`about-us-${section.key}`}>
             <Panel type="plain">
                 {#if index === 0}
@@ -61,7 +61,7 @@
                     <h2>{section.header}</h2>
                 {/if}
 
-                {#each section.paragraphs as paragraph (paragraph) }
+                {#each section.paragraphs as paragraph}
                     <p>{@html paragraph}</p>
                 {/each}
 

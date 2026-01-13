@@ -54,7 +54,7 @@
             <p>{m["pages.sites.details.paragraphs.2"]()}</p>
 
             <ul>
-                {#each detailsList as detail (detail)}
+                {#each detailsList as detail}
                     <li>{detail}</li>
                 {/each}
             </ul>
@@ -66,7 +66,7 @@
             <h2>{m["pages.sites.eligibility.header"]()}</h2>
             <p>{m["pages.sites.eligibility.paragraphs.0"]()}</p>
             <ul>
-                {#each eligibilityList as eligibility (eligibility)}
+                {#each eligibilityList as eligibility}
                     <li>{eligibility}</li>
                 {/each}
             </ul>
@@ -80,7 +80,7 @@
             <h3>{m["pages.sites.locations.subheader"]()}</h3>
 
             <div class="locations">
-                {#each locations as location (location)}
+                {#each locations as location}
                     <div class="location">
                         <img
                             src={m[`pages.sites.locations.locations.${location}.src`]()}

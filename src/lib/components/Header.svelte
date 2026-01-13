@@ -68,7 +68,7 @@
 
 <nav class="nav" data-test="site-nav">
     <div class="nav-items" class:show-nav={showNav}>
-        {#each navItems as {href, label} (href)}
+        {#each navItems as {href, label}}
             <a
                 href={href}
                 class="nav-link"

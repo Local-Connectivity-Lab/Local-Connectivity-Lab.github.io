@@ -39,7 +39,7 @@
                     <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
                 </form>
 
-                {#each buttons as { href, cta } (href)}
+                {#each buttons as { href, cta }}
                     <Button {href} type="donate" dataTest={`donate-${cta.toLowerCase()}`}>{cta}</Button>
                 {/each}
             </div>
