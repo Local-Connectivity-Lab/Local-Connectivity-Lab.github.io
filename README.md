@@ -1,6 +1,6 @@
 # SCN website (operated by LCL)
 
-Code repo for the seattlecommunitynetwork.org website.
+Code repo for the https://seattlecommunitynetwork.org website.
 
 This site is built using [SvelteKit](https://svelte.dev/docs/kit/introduction). SvelteKit supports building fully static sites - which is how this site is built. SvelteKit uses NodeJS to run the static site build.
 
