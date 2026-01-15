@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from '$app/state';
     import { m } from '$lib/paraglide/messages.js';
 
     import Button    from '$lib/components/Button.svelte';
@@ -17,6 +18,14 @@
     ];
 
 </script>
+
+
+<svelte:head>
+     {#if page.url.pathname.endsWith('.html')}
+        <meta http-equiv="refresh" content="0; url='/donate'" />
+        <title>Redirecting...</title>
+    {/if}
+</svelte:head>
 
 <PageTitle title={m['pages.donate.title']()} />
 
