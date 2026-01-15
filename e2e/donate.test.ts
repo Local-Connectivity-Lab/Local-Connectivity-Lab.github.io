@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { expectH1AndTitle } from './lib/lib';
 
 test.beforeEach(async ({ page }) => {
-    await page.goto('/donate/');
+    await page.goto('/donate');
 });
 
 test.describe('Donate', () => {
