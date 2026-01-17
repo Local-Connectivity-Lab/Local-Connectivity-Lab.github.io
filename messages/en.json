@@ -11,6 +11,11 @@
     "common.mission.header": "Mission",
     "common.mission.desc" : "To facilitate community focused technology development and research in support of low-income, marginalized populations and groups.",
 
+    "meta.title" : "Seattle Community Network",
+    "meta.description" : "The Seattle Community Network (SCN) is a community-run cellular (4G LTE) Internet access network dedicated to providing fair access to underserved communities all across the Puget Sound.",
+    "meta.url" : "https://seattlecommunitynetwork.org",
+    "meta.type" : "website",
+
     "common.toggle_nav" : "toggle nav",
 
     "common.nav.0.label" : "Home",
