@@ -27,6 +27,15 @@ jobs:
       - name: Install dependencies
         run: npm ci # install dependencies using lock file
 
+      - name: Security audit
+        run: npm audit --audit-level=high # low and moderate vulnerabilities wont fail CI
+
+      - name: Install Playwright browsers for e2e tests
+        run: npx playwright install --with-deps
+
+      - name: Run tests
+        run: npm test
+
       # Build the SvelteKit project
       - name: Build project
         run: npm run build

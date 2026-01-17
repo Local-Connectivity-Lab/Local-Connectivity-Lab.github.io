@@ -58,8 +58,10 @@ There is a variety of reusable components in `./src/lib/components/*.svelte`
 
 There are automated tests using Playwright.
 
-- run this the first time, to install Playwright dependencies: `npx playwright install`
-- `npm run test` to run tests
+Don't run local stack (`npm run dev`), the test runner will start a dev server.
+
+- **first time only** install Playwright dependencies: `npx playwright install`
+- `npm run test`
 
 
 ## Production build
