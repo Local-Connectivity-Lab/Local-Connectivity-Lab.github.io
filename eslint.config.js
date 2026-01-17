@@ -27,6 +27,7 @@ export default ts.config(
 
             // https://github.com/sveltejs/eslint-plugin-svelte/issues/1353
             'svelte/no-navigation-without-resolve': 'off',
+            'svelte/require-each-key': 'off'
 
         }
     },

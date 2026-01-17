@@ -68,7 +68,7 @@
                 {m['pages.home.overview.header']()}
             </h2>
 
-            {#each overview as over (over)}
+            {#each overview as over}
                 <p>{@html over}</p>
             {/each}
 
@@ -91,7 +91,7 @@
         </h2>
 
         <div class="button-row">
-            {#each buttons as { href, cta, dataTest } (href)}
+            {#each buttons as { href, cta, dataTest }}
                 <Button {href} arrow={true} dataTest={dataTest}>
                     {cta}
                 </Button>

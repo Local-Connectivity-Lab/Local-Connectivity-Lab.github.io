@@ -3,8 +3,7 @@ import { existsSync, mkdirSync } from 'fs';
 
 const redirects = [
     ['/aboutUs.html', "/about-us"],
-    ['/ourSites.html', "/our-sites"],
-    ['/donate.html', "/donate"]
+    ['/ourSites.html', "/our-sites"]
 ];
 
 const template =

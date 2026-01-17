@@ -40,7 +40,7 @@
 </script>
 
 <div class={cssClass}>
-    {#each socials as { href, cta, src } (href)}
+    {#each socials as { href, cta, src }}
         <a {href} data-test={`social-${cta.toLowerCase()}`}>
             <img src={src[type]} alt={cta} />
         </a>
