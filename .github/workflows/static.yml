@@ -1,7 +1,8 @@
 name: Deploy SvelteKit to GitHub Pages
 
 on:
-  workflow_dispatch: # allows manual trigger
+  push:
+    branches: [main]
 
 permissions:
   contents: read
@@ -21,9 +22,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+          cache: npm # cache node_modules for faster builds
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       # Build the SvelteKit project
       - name: Build project
