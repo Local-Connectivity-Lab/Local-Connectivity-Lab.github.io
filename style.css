@@ -1,0 +1,872 @@
+/* SECTION STYLING *****************************************/
+body {
+  background-color: white;
+}
+
+header {
+  background-color: #3C0073;
+  /*#0C7C59*/
+  ;
+}
+
+.footer {
+  background-color: #3C0073;
+  padding-top: 4em;
+  /*margin-top: 3em;*/
+  padding-bottom: 4em;
+}
+
+.landing-tan {
+  background-color: #EAE1D0;
+  border-radius: 25px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.basic-box {
+  background-color: #e8e8e8;
+  border-radius: 25px;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.allign-box {
+  
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+
+}
+
+.donate-tan {
+  background-color: #EAE1D0;
+  padding-bottom: 5em;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bulleted-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+}
+
+.bulleted-list-point {
+  color: black;
+}
+
+.nav-item {
+  /*background-color: #F1F1F1;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #000000;
+}
+
+.nav-link {
+  color: #284B63 !important;
+
+}
+
+.nav-link:hover {
+  font-weight: 600;
+  background-color: #F1F1F1;
+}
+
+.nav-item:hover {
+  background-color: #F1F1F1;
+}
+
+.navbar {
+  padding-top: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: block;
+  /* CHANGE */
+}
+
+#navbarText {
+  margin-left: 40px;
+  border-left: 1px solid #000000;
+}
+
+/*.navbar-nav > li > a.active{
+  text-decoration: bold !important;
+  font-weight: 500 !important;
+}*/
+
+.active {
+  font-weight: 600 !important;
+  background-color: #F1F1F1 !important;
+}
+
+img {
+  height: fixed;
+  width: fixed;
+}
+
+/*
+li {
+  float: left;
+}
+*/
+li {
+  color: #284B63;
+}
+
+/*
+li a:hover {
+  background-color: #111;
+} */
+
+/* TEXT STYLING ***********************************************/
+h1 {
+  color: white;
+  text-align: left;
+  /*text-indent: 50px;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #3C0073;
+  font-size: 35px;
+}
+
+h2 {
+  color: #3C0073;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 35px;
+}
+
+h3 {
+  text-align: left;
+  color: white;
+}
+
+#make-a-donation {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 5em;
+  /*padding-left: 70px;*/
+  color: #3C0073;
+  font-weight: bold;
+}
+
+#donation-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 2em;
+  /*padding-left: 70px;*/
+  color: black;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 18px;
+  /*padding-left: 0;
+  padding-right: 0;*/
+  padding: 0;
+  flex-basis: 33%;
+}
+
+#landing-link {
+  text-decoration: none;
+  color: white;
+}
+
+#building-empowering {
+  text-align: left;
+  margin-left: 10%;
+  display: flex;
+}
+
+#esther-text {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 1em;
+}
+
+/* IMAGE STYLING ************************************************/
+.largeImage {
+  /*width: 599px;
+  height: 541px;*/
+  max-width: 600px;
+  max-height: 550px;
+  /*left: 105px;
+  top: 484px;*/
+
+  float: left;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+
+#banner {
+  max-height: 50%;
+  max-width: 100%;
+  /*mask-image: */
+
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#city-graphic {
+  width: 100%;
+  margin-bottom: -3em;
+  /*margin-top: -15%;*/
+  margin-top: -2em;
+  position: relative;
+}
+
+#paypal-graphic {
+  width: 4.5em;
+  height: 1.3em;
+}
+
+#mask {
+  max-height: 100%;
+  max-width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#partners-image {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 0;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.img-logo {
+  border-radius: 50%;
+  float: left;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 5px;
+  display: inline;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.logo {
+  margin-right: 1em;
+  height: 3em;
+}
+
+.logo-centered {
+  margin-right: 1em;
+  height: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#calendar {
+  border: solid 1px #777;
+  /*width: 800px; 
+  height: 600px; */
+  scroll-behavior: unset;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#matt-img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.aboutUs-img {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* FLEX BOXES ****************************************************/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.flex-container-row-to-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  block-size: initial;
+  margin: 10px 2%;
+}
+
+.flex-container-card {
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  block-size: initial;
+  margin: 10px 2%;
+  padding-bottom: 200px;
+}
+
+.flex-item-2col {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.flex-wave {
+  flex-basis: 100%;
+  margin: 0;
+  max-width: 100%;
+}
+
+.flex-item-left {
+  flex-basis: 100%;
+  text-overflow: unset;
+  /*padding-left: 50px;*/
+  margin-left: 5%;
+}
+
+.flex-image {
+  /*flex-basis: 100%;*/
+  /*text-align: center;*/
+  width: 120px;
+  height: 110px;
+  margin-right: 30px;
+}
+
+.flex-image-round {
+  max-width: 120px;
+  max-height: 110px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.flex-logo-round {
+  max-height: 4em;
+  margin-bottom: 0;
+  align-self: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.flex-image-round:hover {
+  filter: grayscale(0.5);
+  max-width: 150px;
+  max-height: 130px;
+}
+
+.flex-logo-round:hover {
+  filter: grayscale(0.5);
+}
+
+.flex-image-round-text {
+  text-align: center;
+  align-self: center;
+}
+
+.flex-image-large {
+  flex-grow: 0;
+  flex-shrink: 5;
+  flex-basis: 600px;
+  justify-content: unset;
+}
+
+.section-min-sizer {
+  min-height: 600px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+/* SHAPES *********************************************************/
+
+/*
+position: absolute;
+width: 1896px;
+height: 222px;
+left: 1440px;
+top: 833px;
+
+background: #FFFFFF;
+transform: rotate(-180deg);
+*/
+.map {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.wave-container {
+  background-image: url("assets/landing\ page\ banner.png");
+}
+
+.wave-container>svg {
+  display: block;
+}
+
+/* BUTTON STYLING ************************************************/
+#volunteer-learn-button {
+  background-color: #3C0073;
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+
+  display: inline;
+  margin-right: 5%;
+  margin-left: auto;
+  padding: 15px 15px;
+  font-size: 1.6em;
+}
+
+#get-connected-button {
+  background-color: #3C0073;
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+
+  display: inline;
+  margin-right: auto;
+  margin-left: 5%;
+  padding: 15px 15px;
+  font-size: 1.6em;
+}
+
+#learn-more-button {
+  background-color: #3C0073;
+  border-radius: 60px;
+  color: white;
+  border-style: none;
+
+  display: block;
+  margin-left: auto;
+  margin-right: 50px;
+  padding: 5px 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#get-involved-button {
+  background-color: #3C0073;
+
+  color: white;
+  border-style: none;
+  font-size: 2em;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#network-button {
+  background-color: #3C0073;
+  border-radius: 60px;
+  color: white;
+  border-style: none;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#subscribe-button {
+  background-color: #7000F4;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+}
+
+#support-our-mission-button {
+  background-color: #7000F4;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: none;
+  border-radius: 1.5em;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#donate-button {
+  background-color: #3C0073;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#paypal-button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: none;
+  border-radius: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 1;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: inline;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+
+.overlay-card {
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 70%;
+  right: 0;
+  text-align: right;
+  display: flex;
+}
+
+.overlay:before {
+  content: ' ';
+  display: block;
+  height: 50%;
+}
+
+#learn-more-button:hover {
+  background-color: #27014b;
+}
+
+#get-involved-button:hover {
+  background-color: #27014b;
+}
+
+#volunteer-learn-button:hover {
+  background-color: #27014b
+}
+
+#get-connected-button:hover {
+  background-color: #27014b;
+}
+
+#support-our-mission-button:hover {
+  background-color: #5a00c2;
+}
+
+#subscribe-button:hover {
+  background-color: #5a00c2;
+}
+
+/* ACTIVITY ******************************************************/
+@media only screen and (max-width: 600px) {
+  h1 {
+    display: none;
+  }
+
+  .img-logo {
+    border-radius: 50%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: none;
+  }
+}
+
+/* "OUR SITES" CARD STYLING *************************************************************/
+.card {
+  /*max-width: 800px;
+  max-height: 600px;*/
+  width: 40%;
+  height: 25em;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3em;
+  margin-top: 1em;
+  filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.25));
+}
+
+.card-title {
+  text-align: left;
+  margin-left: 2%;
+}
+
+.card-texty {
+  text-align: left;
+  margin: 0;
+  margin-left: -50px;
+  height: 50px;
+  /*overflow: hidden;*/
+  font-size: 0.8em;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 1.2em;
+  margin-bottom: -10px;
+  color: #274B63;
+}
+
+.card-body {
+  background-color: #F1F1F1;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+  height: 225px;
+  display: inline-block;
+
+}
+
+.card-img-top {
+  /*display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: center;
+  width: 15em;
+  height: 15em;*/
+  height: 100%;
+}
+
+/* ACTIVITY *******************************************************************/
+/*#cash-input {
+  margin-left: auto;
+  margin-right: 15%;
+}*/
+
+@media only screen and (max-width:860px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .flex-container-col {
+    margin: 0 -30px;
+  }
+}
+
+/*@media only screen and (min-width: 992px) {
+  #get-involved-button {
+    margin-right: 80px;
+    padding: 8px 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}*/
+
+@media only screen and (min-width: 992px) {
+  #building-empowering {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #building-empowering {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #building-empowering {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #make-a-donation {
+    font-size: 3em;
+    padding-left: 30px;
+  }
+
+  #donation-text {
+    font-size: 1em;
+    padding-left: 30px;
+  }
+}
+
+/* 650*/
+@media only screen and (max-width: 830px) {
+  .flex-container-row-to-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .card {
+    /*max-width: 800px;
+    max-height: 600px;*/
+    width: 80%;
+    height: 20em;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+
+}
+
+@media only screen and (max-width: 730px) {
+  .flex-container-row-to-col {
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .card {
+    /*max-width: 800px;
+    max-height: 600px;*/
+    width: 80%;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-name {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #get-involved-button {
+    font-size: 1.5em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #get-involved-button {
+    font-size: 1em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #volunteer-learn-button {
+    background-color: #3C0073;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+
+    display: inline;
+    margin-right: 5%;
+    margin-left: auto;
+    padding: 15px 15px;
+    font-size: 1em;
+  }
+
+  #get-connected-button {
+    background-color: #3C0073;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+
+    display: inline;
+    margin-right: auto;
+    margin-left: 5%;
+    padding: 15px 15px;
+    font-size: 1em;
+  }
+}

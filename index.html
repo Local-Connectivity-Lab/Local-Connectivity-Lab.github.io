@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!-- home page ?-->
+<html>
+
+<head>
+  <!-- probably on all pages -->
+
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--nav bar with header and tabs-->
+  <!-- nave bar should have click able drop downs-->
+  <header>
+    <a href="index.html">
+      <img class="img-logo" src="assets/logo.png" alt="Local Connectivity Lab Logo">
+    </a>
+    <h1>
+      <a id="landing-link" href="index.html"> Seattle Community Network </a>
+    </h1>
+  </header>
+
+  <!--NAV BAR CODE-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ourSites.html">Get Connected</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.google.com/maps/d/u/1/edit?mid=1xgICuEkAjJC35H_GXArqbcNVdcopq6k&usp=sharing">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/community/space/">Visit Our Space</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://seattlecommunitynetwork.square.site/">Merch!</a>
+          </li>
+            <!--dropdown-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <!--
+    <div class = "wave-container">
+      <p> asdlf </p>
+      <p>Check out my awesome waves!</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#FFF" d="…"></path>
+      </svg>
+    </div>
+  -->
+  <!--<img id = "banner" src = "assets/landing page banner.png" 
+         alt = "Seattle Community Network Banner">-->
+
+  <div class="img-wrapper">
+    <div class="parent">
+      <!--<img id="banner" src="assets/landing page banner.png" />-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/carousel1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <!--<img id="mask" src="assets/banner mask.png" />-->
+    </div>
+
+    <!--<div class="overlay2">
+        <img id = "city-graphic" src = "assets/City Graphic.png" alt = "image of buildings">
+        <h2 id="building-empowering"> Building. <br> Empowering.</h2>
+      </div>-->
+  </div>
+
+
+
+  <!--VOLUNTEER CAROSEL CODE
+    <h2> Our Volunteers </h2>
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel" carousel-control-color="#274B63">
+      <!--<div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>--
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class = "flex-container">
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class = "flex-container">
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class = "flex-container">
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+            <div class = "flex-container-col">
+              <a class="flex-image-round" href=""><img src="assets/derp Timo.jpg" class="d-block flex-image-round" alt="spring bird"></a>
+              <p class="flex-image-round-text"> Volunteer </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  -->
+
+  <!-- city graphic-->
+  <div class="img-wrapper">
+    <img id="city-graphic" src="assets/City Graphic.png" alt="image of buildings">
+    <div class="overlay">
+      <button onclick="location.href='https://docs.seattlecommunitynetwork.org/community/join'" type="button"
+        id="get-involved-button">
+        Get Involved &rarr;
+      </button>
+    </div>
+  </div>
+  <!--about us section, tan background, -->
+  <div class="landing-tan" style="margin-top: 100px;">
+    <h2> Seattle Community Network </h2>
+    <p>
+      The Seattle Community Network (SCN) is a community-run cellular (4G LTE)
+      Internet access network dedicated to providing fair access to underserved
+      communities all across the Puget Sound.
+      <br><br>
+      Our project is firmly grounded in the principles of community empowerment.
+      The network is a participatory construction, where local residents and
+      institutions help each other in a collaborative and community-minded way.
+      <br><br>
+      To learn more, visit our
+      <a href="https://docs.seattlecommunitynetwork.org">docs site</a>,
+      read our most recent <a href="https://tinyurl.com/scn-blog-2">blog post</a>,
+      or follow us on social media @SeattleCommNet on Facebook, Twitter, LinkedIn,
+      and Instagram! Refer to our
+      <a href="https://tinyurl.com/SCNbrochureSPS5-4-22">brochure</a> or
+      <a href="https://tinyurl.com/SCNflyerSPS5-4-22">flyer</a>
+      for a printable version of our materials!
+    </p>
+    <button onclick="location.href='https://docs.seattlecommunitynetwork.org/'" type="button" id="learn-more-button">
+      About Us &rarr;
+    </button>
+  </div>
+
+  <!-- MAP GO HERE-->
+  <div>
+    <h2> Get Involved </h2>
+    <!--take breaks out later -->
+    <br><br>
+    <div class="flex-container">
+      <button onclick="location.href='https://docs.seattlecommunitynetwork.org/community/join'" type="button"
+        id="volunteer-learn-button">
+        Volunteer & Learn &rarr;
+      </button>
+
+      <button onclick="location.href='ourSites.html'" type="button" id="get-connected-button">
+        Get Connected &rarr;
+      </button>
+    </div>
+    <br>
+  </div>
+
+  <!--CALENDAR OF UPCOMING EVENTS-->
+  <div>
+    <h2> Upcoming Events </h2>
+    <iframe id="calendar"
+      src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=Y19hMWhjOXVwMTBjOWs2YTNnNmYyb20zN2c2b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0"></iframe>
+  </div>
+
+  <!-- PARTNER LOGOS -->
+  <div>
+    <h2> Our Partners </h2>
+    <p>
+      The Seattle Community Network is a collaboration between many local
+      organizations, sponsors, and collaborators throughout the Puget Sound
+      area.
+    </p>
+    <img id="partners-image" src="assets/scn-partner-logos.png" alt="partners logos">
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <h3> Address </h3>
+        <p class="footer-text">
+          3800 E Stevens Way NE, Seattle, WA 98195
+          <br>
+          lcl@seattlecommunitynetwork.org
+        </p>
+        <a href="https://www.instagram.com/seattlecommnet/"><img class="logo" src="assets/IG_icon_circle.png"
+            alt="Instagram logo"></a>
+        <a href="https://twitter.com/SeattleCommNet"><img class="logo" src="assets/twitter_icon_circle.png"
+            alt="twitter logo"></a>
+        <a href="https://www.facebook.com/SeattleCommNet"><img class="logo" src="assets/facebook_icon_circle.png"
+            alt="Facebook logo"></a>
+        <br><br>
+      </div>
+
+      <div class="flex-item-left">
+        <h3> Mission </h3>
+        <p class="footer-text">
+          To facilitate community focused technology development and
+          research in support of low-income, marginalized populations
+          and groups.
+        </p>
+      </div>
+
+      <div class="flex-item-left">
+        <button onclick="location.href='https://discord.gg/gn4DKF83bP'" id="subscribe-button">
+          &nbsp; Join our Discord server &nbsp;
+        </button>
+        <br><br>
+        <button
+          onclick="location.href='https://groups.google.com/a/seattlecommunitynetwork.org/g/local-connectivity-lab/'"
+          id="subscribe-button">
+          Subscribe to Mailing List
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

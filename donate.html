@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- home page ?-->
+<html>
+
+<head> <!-- probably on all pages -->
+    
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Load Stripe.js on your website. -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/donate.js"></script>
+</head>
+
+<body>
+    <!--nav bar with header and tabs-->
+    <!-- nave bar should have click able drop downs-->
+
+    <header>
+      <a href = "index.html">
+        <img class = "img-logo" src = "assets/logo.png" alt = "Local Connectivity Lab Logo">
+      </a>
+      <h1> 
+        <a id = "landing-link" href = "index.html"> Seattle Community Network </a>
+      </h1>
+    </header>
+
+    <!--NAV BAR CODE-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourSites.html">Get Connected</a>
+              </li>
+              <li class="nav-item">
+                <a class = "nav-link" href="https://coverage.seattlecommunitynetwork.org/">Map</a>
+              </li>
+	      <li class="nav-item">
+            <a class="nav-link" href="https://docs.seattlecommunitynetwork.org/community/space/">Visit Our Space</a>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="donate.html">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://seattlecommunitynetwork.square.site/">Merch!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <div class = "donate-tan flex-container">
+      <img class = "flex-wave"src = "assets/upsidedown wave.png" alt = "wave graphic upside down">
+    </div>
+    <div class = "donate-tan flex-container">
+      <div class = "flex-item-2col">
+        <h2 id = "make-a-donation"> Make a Donation</h2>
+        <h3 id = "donation-text"> We appreciate your support of our mission!</h3>
+        <br>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="business" value="lcl@seattlecommunitynetwork.org" />
+          <input type="hidden" name="item_name" value="Donations / Fundraising" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <button id = "paypal-button">
+            <!--<img id = "paypal-graphic" src = "assets/paypal button.png" alt = "paypal button">-->
+            <input type="image" src="assets/paypal button.png" name="submit" title="Paypal donations are made to lcl@seattlecommunitynetwork.org." alt="Donate with PayPal button" />
+          </button>
+          <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+        <button onclick="location.href='https://www.gofundme.com/f/seattle-community-network-internet-access-for-all'" type = "button"id = "donate-button">Gofundme</button>
+        <button onclick="location.href='https://seattlecommunitynetwork.square.site'" type = "button"id = "donate-button">Square</button>
+      <!--<div class = "flex-item-2col">-->
+        <!--<form id = "cash-input" action="/action_page.php">
+          <label for="cash-amount"> $ </label>
+          <input type="text" id="cash-amount" name="cash-amount"><br><br>
+        </form>-->
+        <!--
+        <section class="price_section layout_padding">
+          <div class="container">
+            <div class="heading_container heading_center">
+            </div>
+            <div class="price_container ">
+                <section class="container">
+                  <div class="row donation">
+                    <div class="col-md-6 col-sm-12 col-lg-6">
+                      <button
+                              class="btn btn-info btn-block preset"
+                              data-checkout-mode="payment"
+                              data-price-id="price_1Hv71qFEZhRaTFJz0IYW1aew"
+                      >
+                        <span class="fa fa-heart"></span> Donate $5.00 once
+                      </button>
+                      <button
+                              class="btn btn-info btn-block preset"
+                              data-checkout-mode="payment"
+                              data-price-id="price_1Hv71rFEZhRaTFJzWPpeXWYM">
+                        <span class="fa fa-heart"></span> Donate $15.00 once
+                      </button>
+                      <button
+                              class="btn btn-info btn-block preset"
+                              data-checkout-mode="payment"
+                              data-price-id="price_1Hv71rFEZhRaTFJzE3hKot7F">
+                        <span class="fa fa-heart"></span> Donate $25.00 once
+                      </button>
+                      <form onsubmit="processCustomDonation()" action="#">
+                          <div class="form-row align-items-center">
+                              <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+                                  <label class="sr-only" for="customAmount">Amount</label>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <div class="input-group-text">$</div>
+                                      </div>
+                                      <input type="number" class="form-control" id="customAmount" placeholder="Amount">
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 my-2">
+                                  <button type="submit" class="btn btn-primary"><span class="fa fa-money"></span> Donate</button>
+                              </div>
+                          </div>
+                      </form>
+      
+                    </div>
+                    
+                  </div>
+                  
+                </section>
+              <div id="error-message"></div>
+            </div>
+          </div>
+        </section>-->
+        <!--<button id = "donate-button">Donate </button>-->
+        
+      </div>
+    </div>
+    <!---
+    <div>
+      <div class="row donation">
+        <div class="col-md-6 col-sm-12 col-lg-6 offset-md-3 offset-lg-3">
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <h3>Donate with Paypal</h3>
+            <p>All donations are made to Esther Jang at <code>lcl@seattlecommunitynetwork.org</code></p>
+            <input type="hidden" name="business" value="lcl@seattlecommunitynetwork.org" />
+            <input type="hidden" name="item_name" value="Donations / Fundraising" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </div>
+      </div>
+      <div class="row donation alert alert-warning">
+        <p><i class="fa fa-email"></i> Please <a href="mailto:lcl@seattlecommunitynetwork.org">email us</a> for donation questions or changes to your subscription. All donations will go towards our expenses and are tax deductible. LCL is a 501(c)(3) non-profit organization.</p> 
+      </div>
+    </div>
+  -->
+    
+    <!-- FOOTER -->
+    <div class = "footer">
+      <div class = "flex-container">
+        <div class = "flex-item-left">
+          <h3> Address </h3>
+          <p class = "footer-text"> 
+            3800 E Stevens Way NE, Seattle, WA 98195 
+            <br>
+            lcl@seattlecommunitynetwork.org
+          </p>
+          <a href = "https://www.instagram.com/seattlecommnet/"><img class = "logo" src = "assets/IG_icon_circle.png" alt = "Instagram logo"></a>
+          <a href = "https://twitter.com/SeattleCommNet"><img class = "logo" src = "assets/twitter_icon_circle.png" alt = "twitter logo"></a>
+          <a href = "https://www.facebook.com/SeattleCommNet"><img class = "logo" src = "assets/facebook_icon_circle.png" alt = "Facebook logo"></a>
+          <br><br>
+        </div>
+
+        <div class = "flex-item-left">
+          <h3> Mission </h3>
+          <p class = "footer-text">
+            To facilitate community focused technology development and 
+            research in support of low-income, marginalized populations 
+            and groups.
+          </p>
+        </div>
+
+        <div class = "flex-item-left">
+          <div class = "flex-item-left">
+            <button onclick="location.href='https://discord.gg/gn4DKF83bP'" id = "subscribe-button">
+              &nbsp; Join our Discord &nbsp;
+            </button>
+            <br><br>
+            <button onclick="location.href='https://groups.google.com/a/seattlecommunitynetwork.org/g/local-connectivity-lab/'" id = "subscribe-button">
+              Subscribe to Mailing List
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
