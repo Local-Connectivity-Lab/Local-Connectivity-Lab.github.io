@@ -9,10 +9,6 @@
         {
             href : m['buttons.discord.href'](),
             cta : m['buttons.discord.cta']()
-        },
-        {
-            href : m['buttons.mailing_list.href'](),
-            cta : m['buttons.mailing_list.cta']()
         }
     ];
 </script>
