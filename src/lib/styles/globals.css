@@ -90,6 +90,12 @@ a {
     color: var(--color-link);
 }
 
+button {
+    color: var(--color-text);
+    border: none;
+    cursor: pointer;
+}
+
 section {
     margin: var(--layout-section-vertical) 0;
 }
