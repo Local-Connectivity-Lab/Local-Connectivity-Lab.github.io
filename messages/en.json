@@ -47,6 +47,11 @@
     "socials.facebook.cta": "Facebook",
     "socials.facebook.href": "https://www.facebook.com/SeattleCommNet",
 
+    "cookieBanner.message": "We use cookies to improve your experience.<br /> By clicking \"Accept\", you consent to the use of analytics cookies.",
+    "cookieBanner.accept": "Accept",
+    "cookieBanner.deny": "Deny",
+    "cookieBanner.settings": "Cookie Settings",
+
 
     "=== PAGES HOME ===" : "comment",
 

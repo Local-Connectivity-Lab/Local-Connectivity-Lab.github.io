@@ -1,9 +1,11 @@
 <script>
     import { m } from '$lib/paraglide/messages.js';
-    // import { setLocale } from '$lib/paraglide/runtime';
     import Button from './Button.svelte';
     import Socials from './Socials.svelte';
     import Wrapper from './Wrapper.svelte';
+    import Analytics from './Analytics.svelte';
+
+    let analytics;
 
     const buttons = [
         {
@@ -33,6 +35,12 @@
                         <Button {href} type="medium">{cta}</Button>
                     </div>
                 {/each}
+
+                <div>
+                    <Button type="medium" onclick={() => analytics?.reopenBanner()}>
+                        {m["cookieBanner.settings"]()}
+                    </Button>
+                </div>
             </div>
 
             <!-- <button onclick={() => setLocale('en')}>en</button> -->
@@ -40,7 +48,9 @@
     </Wrapper>
 </div>
 
-<style>
+<Analytics bind:this={analytics} />
+
+<style lang="postcss">
     .footer {
         background-color: var(--color-brand-primary);
 
@@ -57,6 +67,7 @@
             margin: 0;
         }
     }
+
     footer {
         display: flex;
         flex-direction: column;
