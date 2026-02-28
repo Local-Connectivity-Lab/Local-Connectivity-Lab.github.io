@@ -121,12 +121,10 @@
     .nav {
         --nav-border: solid 1px var(--color-nav-border);
 
-        display: flex;
-        justify-content: center;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         @media screen and (width >= 1024px) {
-            padding: 0.5em 2em;
+            padding: 0.5em 0;
         }
     }
 
@@ -159,7 +157,9 @@
         }
 
         @media screen and (width >= 1024px) {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            width: 100%;
             padding: 0;
             position: unset;
             background: unset;
@@ -174,10 +174,12 @@
         text-decoration: none;
 
         @media screen and (width >= 1024px) {
+            flex-grow: 1;
+            text-align: center;
             border-right: var(--nav-border);
 
-            &:first-child {
-                border-left: var(--nav-border);
+            &:last-child {
+                border-right: none;
             }
         }
 
