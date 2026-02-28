@@ -121,8 +121,8 @@
     .nav {
         --nav-border: solid 1px var(--color-nav-border);
 
-        display: block;
-        position: relative;
+        display: flex;
+        justify-content: center;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         @media screen and (width >= 1024px) {
