@@ -186,15 +186,20 @@
             padding: 0.5em 1em;
             margin: 0 1em;
 
-            transition: margin 200ms, padding 200ms;
+            @media screen and (width >= 1024px) {
+              transition: margin 200ms, padding 200ms;
+            }
         }
 
         &:hover span {
-            padding: 0.5em 2em;
-            margin: 0;
             text-shadow: 0 0 1px var(--color-nav-text);
 
             background-color: var(--color-nav-background);
+
+            @media screen and (width >= 1024px) {
+              padding: 0.5em 2em;
+              margin: 0;
+            }
         }
 
         &.active span {
