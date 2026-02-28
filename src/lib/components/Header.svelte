@@ -165,14 +165,6 @@
             background: unset;
             border: none;
         }
-
-        span {
-            display: inline-block;
-            padding: 0.5em 1em;
-            margin: 0 1em;
-
-            transition: margin 200ms, padding 200ms;
-        }
     }
 
     .nav-link {
@@ -187,6 +179,14 @@
             &:first-child {
                 border-left: var(--nav-border);
             }
+        }
+
+        span {
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+
+            transition: margin 200ms, padding 200ms;
         }
 
         &:hover span {
