@@ -182,7 +182,7 @@
         }
 
         span {
-            display: inline-block;
+            display: block;
             padding: 0.5em 1em;
             margin: 0 1em;
 
