@@ -10,16 +10,9 @@
         m["pages.sites.details.list.0"](),
         m["pages.sites.details.list.1"](),
         m["pages.sites.details.list.2"](),
-        m["pages.sites.details.list.0"](),
-        m["pages.sites.details.list.1"](),
-        m["pages.sites.details.list.2"](),
     ];
 
     const eligibilityList = [
-        m["pages.sites.eligibility.list.0"](),
-        m["pages.sites.eligibility.list.1"](),
-        m["pages.sites.eligibility.list.2"](),
-        m["pages.sites.eligibility.list.3"](),
         m["pages.sites.eligibility.list.0"](),
         m["pages.sites.eligibility.list.1"](),
         m["pages.sites.eligibility.list.2"](),
