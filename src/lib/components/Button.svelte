@@ -1,10 +1,11 @@
 <script lang="ts">
     let {
-        href,
+        href = null,
         children,
         type = null,
         arrow = null,
         dataTest = null,
+        onclick = null
     } = $props();
 
     let cssClass = $state("button");
@@ -20,12 +21,21 @@
     }
 </script>
 
-<a href={href} class={cssClass} data-test={dataTest}>
-    {@render children()}
-    {#if arrow}
-        →
-    {/if}
-</a>
+{#if href}
+    <a href={href} class={cssClass} data-test={dataTest}>
+        {@render children()}
+        {#if arrow}
+            →
+        {/if}
+    </a>
+{:else}
+    <button class={cssClass} data-test={dataTest} onclick={onclick}>
+        {@render children()}
+        {#if arrow}
+            →
+        {/if}
+    </button>
+{/if}
 
 <style>
     .button {
