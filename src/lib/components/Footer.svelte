@@ -83,6 +83,8 @@
     }
 
     .ctas {
+        text-align: right;
+
         > :global(*) {
             margin-bottom: 1em;
         }
