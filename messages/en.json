@@ -41,11 +41,15 @@
     "socials.instagram.cta": "Instagram",
     "socials.instagram.href": "https://www.instagram.com/seattlecommnet/",
 
-    "socials.twitter.cta": "Twitter",
-    "socials.twitter.href": "https://twitter.com/SeattleCommNet",
+    "socials.x.cta": "X",
+    "socials.x.href": "https://x.com/SeattleCommNet",
 
     "socials.facebook.cta": "Facebook",
     "socials.facebook.href": "https://www.facebook.com/SeattleCommNet",
+
+    "socials.bluesky.cta": "Bluesky",
+    "socials.bluesky.href": "https://bsky.app/profile/seattlecommunitynetwork.org",
+
 
     "cookieBanner.message": "We use cookies to improve your experience.<br /> By clicking \"Accept\", you consent to the use of analytics cookies.",
     "cookieBanner.accept": "Accept",

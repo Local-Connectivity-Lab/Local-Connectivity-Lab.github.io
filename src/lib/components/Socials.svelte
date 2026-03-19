@@ -1,9 +1,7 @@
 <script lang="ts">
     import { m } from "$lib/paraglide/messages.js";
 
-    // type can be "light" or "dark"
-
-    let { type = "light" as "light" | "dark", size = undefined } = $props();
+    let { size = undefined } = $props();
 
     let cssClass = $state("socials");
 
@@ -15,34 +13,30 @@
         {
             href: m["socials.instagram.href"](),
             cta: m["socials.instagram.cta"](),
-            src: {
-                light: "/layout/socials/instagram-icon.png",
-                dark: "/layout/socials/instagram-icon-dark.png",
-            },
+            src: "/layout/socials/instagram.svg"
         },
         {
-            href: m["socials.twitter.href"](),
-            cta: m["socials.twitter.cta"](),
-            src: {
-                light: "/layout/socials/twitter-icon.png",
-                dark: "/layout/socials/twitter-icon-dark.png",
-            },
+            href: m["socials.x.href"](),
+            cta: m["socials.x.cta"](),
+            src: "/layout/socials/x.svg"
         },
         {
             href: m["socials.facebook.href"](),
             cta: m["socials.facebook.cta"](),
-            src: {
-                light: "/layout/socials/facebook-icon.png",
-                dark: "/layout/socials/facebook-icon-dark.png",
-            },
+            src: "/layout/socials/facebook.svg"
         },
+        {
+            href: m["socials.bluesky.href"](),
+            cta: m["socials.bluesky.cta"](),
+            src: "/layout/socials/bluesky.svg"
+        }
     ];
 </script>
 
 <div class={cssClass}>
     {#each socials as { href, cta, src }}
         <a {href} data-test={`social-${cta.toLowerCase()}`}>
-            <img src={src[type]} alt={cta} />
+            <img src={src} alt={cta} />
         </a>
     {/each}
 </div>
