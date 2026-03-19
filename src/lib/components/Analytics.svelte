@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { fly } from "svelte/transition";
 
-    import { PUBLIC_GOOGLE_ANALYTICS_ID } from "$env/static/public";
+    import { PUBLIC_GOOGLE_ANALYTICS_ID, PUBLIC_ANALYTICS_ENABLED } from "$env/static/public";
 
     import { m } from '$lib/paraglide/messages.js';
 
@@ -10,7 +10,12 @@
 
     let showBanner = $state(false);
 
+    // Don't initialize analytics if disabled
+    const isAnalyticsEnabled = PUBLIC_ANALYTICS_ENABLED === 'true';
+
     onMount(() => {
+        if (!isAnalyticsEnabled) return;
+
         const consentStatus = localStorage.getItem("consent_status");
 
         if (consentStatus === null) {
@@ -26,6 +31,8 @@
     });
 
     function handleAccept() {
+        if (!isAnalyticsEnabled) return;
+
         showBanner = false;
         localStorage.setItem("consent_status", "granted");
 
@@ -38,42 +45,48 @@
     }
 
     function handleDeny() {
+        if (!isAnalyticsEnabled) return;
+
         showBanner = false;
         localStorage.setItem("consent_status", "denied");
     }
 
     export function reopenBanner() {
+        if (!isAnalyticsEnabled) return;
+
         showBanner = true;
         localStorage.removeItem("consent_status");
     }
 </script>
 
 <svelte:head>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    {#if isAnalyticsEnabled && PUBLIC_GOOGLE_ANALYTICS_ID}
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-        window.gtag = gtag;
+            window.gtag = gtag;
 
-        gtag("consent", "default", {
-            analytics_storage: "denied",
-            ad_storage: "denied",
-            ad_user_data: "denied",
-            ad_personalization: "denied",
-        });
-    </script>
+            gtag("consent", "default", {
+                analytics_storage: "denied",
+                ad_storage: "denied",
+                ad_user_data: "denied",
+                ad_personalization: "denied",
+            });
+        </script>
 
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GOOGLE_ANALYTICS_ID}`}></script>
-    <script>
-        gtag("js", new Date());
-        gtag("config", "{PUBLIC_GOOGLE_ANALYTICS_ID}");
-    </script>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GOOGLE_ANALYTICS_ID}`}></script>
+        <script>
+            gtag("js", new Date());
+            gtag("config", "{PUBLIC_GOOGLE_ANALYTICS_ID}");
+        </script>
+    {/if}
 </svelte:head>
 
-{#if showBanner}
+{#if isAnalyticsEnabled && showBanner}
     <div transition:fly="{{ x: 20, duration: 300 }}" class="banner">
         <p>
             {@html m["cookieBanner.message"]() }

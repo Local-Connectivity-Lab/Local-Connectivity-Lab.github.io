@@ -1,11 +1,16 @@
-<script>
+<script lang="ts">
+    import { PUBLIC_ANALYTICS_ENABLED } from "$env/static/public";
+
     import { m } from '$lib/paraglide/messages.js';
+
     import Button from './Button.svelte';
     import Socials from './Socials.svelte';
     import Wrapper from './Wrapper.svelte';
     import Analytics from './Analytics.svelte';
 
-    let analytics;
+    let analytics: Analytics;
+
+    const isAnalyticsEnabled = PUBLIC_ANALYTICS_ENABLED === 'true';
 
     const buttons = [
         {
@@ -36,11 +41,13 @@
                     </div>
                 {/each}
 
+                {#if isAnalyticsEnabled}
                 <div>
                     <Button type="medium" onclick={() => analytics?.reopenBanner()}>
                         {m["cookieBanner.settings"]()}
                     </Button>
                 </div>
+                {/if}
             </div>
 
             <!-- <button onclick={() => setLocale('en')}>en</button> -->
