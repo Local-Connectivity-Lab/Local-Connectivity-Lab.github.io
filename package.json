@@ -12,7 +12,7 @@
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "eslint .",
         "test:e2e": "playwright test",
-        "test:ui" : "playwright test --ui",
+        "test:ui": "playwright test --ui",
         "test": "npm run test:e2e",
         "deploy": "npm run build && gh-pages -d build -t",
         "redirects": "node create-redirects.js"
@@ -39,6 +39,7 @@
         "@inlang/paraglide-js": "^2.0.0",
         "embla-carousel-autoplay": "^8.6.0",
         "embla-carousel-svelte": "^8.6.0",
+        "marked": "^17.0.4",
         "modern-normalize": "^3.0.1"
     }
 }

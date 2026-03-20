@@ -32,8 +32,10 @@
     "common.nav.5.href" : "https://docs.seattlecommunitynetwork.org/community/space/",
     "common.nav.6.label" : "Donate",
     "common.nav.6.href" : "/donate",
-    "common.nav.7.label" : "Merch!",
-    "common.nav.7.href" : "https://seattlecommunitynetwork.square.site/",
+    "common.nav.7.label" : "Blog",
+    "common.nav.7.href" : "/blogs",
+    "common.nav.8.label" : "Merch!",
+    "common.nav.8.href" : "https://seattlecommunitynetwork.square.site/",
 
     "buttons.discord.cta": "Join our Discord server",
     "buttons.discord.href": "https://discord.gg/gn4DKF83bP",
