@@ -42,6 +42,10 @@
         {
             href: m['common.nav.7.href'](),
             label: m['common.nav.7.label']()
+        },
+        {
+            href: m['common.nav.8.href'](),
+            label: m['common.nav.8.label']()
         }
     ];
 </script>
