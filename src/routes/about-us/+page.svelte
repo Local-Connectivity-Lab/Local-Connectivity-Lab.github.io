@@ -89,7 +89,7 @@
             <h2>{m["pages.about.sm.header"]()}</h2>
 
             <div class="center">
-                <Socials type="dark" size="medium" />
+                <Socials size="medium" />
 
                 <Button href={m["pages.about.sm.donate.href"]()} arrow={true} dataTest="about-us-donate-cta">
                     {m["pages.about.sm.donate.cta"]()}
