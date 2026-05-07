@@ -20,6 +20,10 @@
             label: m['common.nav.1.label']()
         },
         {
+            href: m['common.nav.8.href'](),
+            label: m['common.nav.8.label']()
+        },
+        {
             href: m['common.nav.2.href'](),
             label: m['common.nav.2.label']()
         },
@@ -169,6 +173,7 @@
 
     .nav-link {
         display: inline-block;
+        align-items: center;
 
         color: var(--color-nav-text);
         text-decoration: none;
@@ -184,7 +189,10 @@
         }
 
         span {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
             padding: 0.5em 1em;
             margin: 0 1em;
 
