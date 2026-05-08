@@ -22,6 +22,8 @@
     "common.nav.0.href" : "/",
     "common.nav.1.label" : "About Us",
     "common.nav.1.href" : "/about-us",
+    "common.nav.8.label" : "Blog",
+    "common.nav.8.href" : "https://wiki.seattlecommunitynetwork.org/",
     "common.nav.2.label" : "Docs",
     "common.nav.2.href" : "https://docs.seattlecommunitynetwork.org/",
     "common.nav.3.label" : "Get Connected",
