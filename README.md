@@ -9,31 +9,50 @@ The website is hosted on GitHub pages. See `./.github/workflows/static.yml` for 
 
 ## How to update this website
 
-You'll want to run the site locally so you can preview your changes. It's fairly simple to setup if you have any programming experience.
+Any updates require a pull request.
 
-Make your changes and confirm them in your locally running site. Commit change to a feature Branch, and create a pull request in GitHub.
+Run the site locally so you can preview your changes, then commit changes to a feature branch, and create a pull request in GitHub.
 
-The changes will then need to be reviewed and merged. After merging, a GitHub Action (`./.github/workflows/static.yml`) will kick off to build and deploy the site. This should only take 5 mins, after which your changes will be live!
+The changes will then need to be reviewed and merged.
+
+After merging, a GitHub Action (`./.github/workflows/static.yml`) will kick off to build and deploy the site. This should only take 5 mins, after which your changes will be live!
 
 
 ### Local setup
 
-**Install NodeJS** - two options:
+There are 2 options with different dependencies and setup. Read through both and choose which will work best for you (or just use the first one).
 
-1. Download and install NodeJS https://nodejs.org/en/download  
-See `./.nvmrc` for the version of NodeJS to install
-1. Use NVM https://github.com/nvm-sh/nvm
+Either option will start the NodeJs webserver at `http://localhost:5173`.
 
-**Setup**
+**First: clone this repo**
 
-1. Clone the repo
-1. Using NVM?
-    1. `nvm install` to install the correct NodeJS version
-    1. `nvm use` to use the installed NodeJS version
-1. Install dependencies with `npm install`
-1. Start a development server `npm run dev`
+#### 1 - No Container
 
-Open your browser to http://localhost:5173
+Good if you already use NodeJs, or are not using VS Code.
+
+1. Install NodeJs
+    - See `./nvmrc` for the correct version.
+    - Download and install from https://nodejs.org/en/download
+    - Or, use a Node version manager (nvm, pnpm etc)
+2. Install dependencies
+    - `npm ci`
+3. Run web site
+    - `npm run dev`
+
+#### 2 - Dev Container
+
+Good if you don't like using command line, or you like the stability of a container.
+
+1. Install Docker Desktop
+    - https://www.docker.com/products/docker-desktop/
+2. Install VS Code.
+    - https://code.visualstudio.com/download
+3. Install this extension in VS Code
+    - "Dev Containers" by Microsoft
+4. Open the repo in VS Code
+5. Run Command Palette (`ctrl`+`shift`+`p`)
+    - Dev Containers: Reopen in Container
+    - Wait for the first build to finish
 
 
 ### Update text

@@ -1,0 +1,16 @@
+{
+    "name": "Local Connectivity Lab",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+    "forwardPorts": [
+        5173
+    ],
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "svelte.svelte-vscode"
+            ]
+        }
+    },
+    "postAttachCommand": "npm run dev -- --host 0.0.0.0"
+}
