@@ -14,7 +14,8 @@ const config = {
                 '*',
                 '/donate',
                 '/about-us',
-                '/our-sites'
+                '/our-sites',
+                '/blogs'
             ],
             handleUnseenRoutes: 'warn'
         }
